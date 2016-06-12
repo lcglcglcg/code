@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/third_party/log4php/configurators
+END
+LoggerConfiguratorPhp.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/third_party/log4php/configurators/LoggerConfiguratorPhp.php
+END
+LoggerConfiguratorIni.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/third_party/log4php/configurators/LoggerConfiguratorIni.php
+END
+LoggerConfiguratorXml.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/third_party/log4php/configurators/LoggerConfiguratorXml.php
+END
+LoggerConfiguratorBasic.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/third_party/log4php/configurators/LoggerConfiguratorBasic.php
+END

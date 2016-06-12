@@ -1,0 +1,61 @@
+
+<html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<script type="text/javascript" src="/lg_ajax.js"></script>
+<script type="text/javascript">
+
+var url = "http://www.aaa.com/action";
+
+function get_conf() {
+
+    lg_send(url, "<packet type=\"get_conf\"></packet>", get_conf_recv);
+}
+
+function get_conf_recv(str) {
+
+    document.getElementById("m_edit").value = str;
+}
+
+function send_xml() {
+
+    var str = document.getElementById("m_edit").value;
+    lg_send(url, str, send_xml_recv);
+}
+
+function send_xml_recv(str) {
+
+    alert(str);
+}
+
+function tree_print() {
+
+    var str = document.getElementById("m_edit").value;
+    document.getElementById("m_tree_print").style.display="none";
+    document.getElementById("m_tree_print").innerHTML = str;
+
+    var root = document.getElementById("m_tree_print");
+    var server_list = root.getElementsByTagName("server");
+    for (i = 0; i < server_list.length; i++) {
+
+	var server_name = server_list[i].getAttribute("name");
+	var location_list = server_list[i].getElementsByTagName("location");
+	for (j = 0; j < location_list.length; j++) {
+
+	    var location_name = location_list[j].getAttribute("name");
+	    alert(server_name + '==>' + location_name);
+	}
+    }
+}
+
+</script>
+<button onclick="get_conf()">get_conf</button>
+<button onclick="tree_print()">tree_print</button>
+<button onclick="send_xml()">send_xml</button>
+<div id="m_tree_print"></div>
+<br>
+<textarea id="m_edit" cols="100" rows="15"></textarea>
+</html>
+
+
+
+

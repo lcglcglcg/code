@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar
+END
+RarVolumeInStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarVolumeInStream.cpp
+END
+RarIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarIn.h
+END
+RarHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarHandler.cpp
+END
+RarHeader.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarHeader.h
+END
+RarItem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarItem.cpp
+END
+RarVolumeInStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarVolumeInStream.h
+END
+RarHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarHandler.h
+END
+RarItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarItem.h
+END
+RarRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarRegister.cpp
+END
+RarIn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarIn.cpp
+END
+RarHeader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Rar/RarHeader.cpp
+END

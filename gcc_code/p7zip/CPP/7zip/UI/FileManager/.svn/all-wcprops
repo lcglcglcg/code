@@ -1,0 +1,653 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager
+END
+ViewSettings.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ViewSettings.h
+END
+PanelFolderChange.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelFolderChange.cpp
+END
+LangUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/LangUtils.cpp
+END
+makefile.list
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/makefile.list
+END
+ClassDefs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ClassDefs.cpp
+END
+ListViewDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ListViewDialog_rc.cpp
+END
+PanelSplitFile.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelSplitFile.cpp
+END
+SysIconUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SysIconUtils.h
+END
+OpenCallback.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/OpenCallback.cpp
+END
+CopyDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/CopyDialog_rc.cpp
+END
+FormatUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FormatUtils.h
+END
+HelpUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/HelpUtils.h
+END
+ComboDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ComboDialog.cpp
+END
+RegistryPlugins.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RegistryPlugins.h
+END
+SplitDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SplitDialog.h
+END
+SplitUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SplitUtils.h
+END
+RootFolder.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RootFolder.h
+END
+AppState.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/AppState.h
+END
+FM_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FM_rc.cpp
+END
+OverwriteDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/OverwriteDialog_rc.cpp
+END
+PluginLoader.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PluginLoader.h
+END
+PropertyName.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PropertyName.h
+END
+makefile.depend
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/makefile.depend
+END
+ViewSettings.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ViewSettings.cpp
+END
+ExtractCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ExtractCallback.h
+END
+StringUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/StringUtils.h
+END
+NetFolder.h.OUT
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/NetFolder.h.OUT
+END
+resourceGui.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/resourceGui.h
+END
+ProgressDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgressDialogRes.h
+END
+PropertyNameRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PropertyNameRes.h
+END
+PasswordDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PasswordDialog_rc.cpp
+END
+ProgressDialog2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgressDialog2.cpp
+END
+MessagesDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/MessagesDialogRes.h
+END
+PanelSort.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelSort.cpp
+END
+LangUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/LangUtils.h
+END
+FormatUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FormatUtils.cpp
+END
+MyLoadMenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/MyLoadMenu.cpp
+END
+MessagesDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/MessagesDialog_rc.cpp
+END
+SplitDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SplitDialog.cpp
+END
+FileFolderPluginOpen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FileFolderPluginOpen.cpp
+END
+RootFolder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RootFolder.cpp
+END
+OpenCallback.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/OpenCallback.h
+END
+PluginInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PluginInterface.h
+END
+ProgressDialog2Res.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgressDialog2Res.h
+END
+PropertyName.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PropertyName.cpp
+END
+PanelCrc.cpp.back
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelCrc.cpp.back
+END
+ListViewDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ListViewDialog.cpp
+END
+ExtractCallback.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ExtractCallback.cpp
+END
+StringUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/StringUtils.cpp
+END
+TextPairs.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/TextPairs.h
+END
+CopyDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/CopyDialog.cpp
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/makefile
+END
+ComboDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ComboDialogRes.h
+END
+PanelSelect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelSelect.cpp
+END
+FSFolderCopy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FSFolderCopy.cpp
+END
+PanelItemOpen.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelItemOpen.cpp
+END
+ProgramLocation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgramLocation.cpp
+END
+PanelItems.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelItems.cpp
+END
+FM.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FM.cpp
+END
+PanelOperations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelOperations.cpp
+END
+ComboDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ComboDialog_rc.cpp
+END
+Panel.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/Panel.h
+END
+FSFolder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FSFolder.cpp
+END
+ListViewDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ListViewDialogRes.h
+END
+OverwriteDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/OverwriteDialog.cpp
+END
+err
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/err
+END
+CopyDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/CopyDialogRes.h
+END
+ProgressDialog2.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgressDialog2.h
+END
+MyLoadMenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/MyLoadMenu.h
+END
+App.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/App.cpp
+END
+UpdateCallback100.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/UpdateCallback100.cpp
+END
+FileFolderPluginOpen.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FileFolderPluginOpen.h
+END
+wxFM.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/wxFM.cpp
+END
+PasswordDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PasswordDialog.cpp
+END
+TextPairs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/TextPairs.cpp
+END
+PanelMenu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelMenu.cpp
+END
+PanelListNotify.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelListNotify.cpp
+END
+OverwriteDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/OverwriteDialogRes.h
+END
+BrowseDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/BrowseDialog.h
+END
+RegistryAssociations.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RegistryAssociations.cpp
+END
+IFolder.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/IFolder.h
+END
+PanelCopy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelCopy.cpp
+END
+FSDrives.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FSDrives.h
+END
+SplitDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SplitDialogRes.h
+END
+ListViewDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ListViewDialog.h
+END
+MessagesDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/MessagesDialog.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/resource.h
+END
+RegistryUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RegistryUtils.h
+END
+Panel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/Panel.cpp
+END
+DialogSize.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/DialogSize.h
+END
+CopyDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/CopyDialog.h
+END
+SplitDialog_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SplitDialog_rc.cpp
+END
+PasswordDialogRes.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PasswordDialogRes.h
+END
+ProgramLocation.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgramLocation.h
+END
+SysIconUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SysIconUtils.cpp
+END
+FSFolder.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FSFolder.h
+END
+OverwriteDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/OverwriteDialog.h
+END
+SplitUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/SplitUtils.cpp
+END
+ComboDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ComboDialog.h
+END
+App.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/App.h
+END
+FSDrives.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/FSDrives.cpp
+END
+UpdateCallback100.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/UpdateCallback100.h
+END
+PasswordDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PasswordDialog.h
+END
+PanelCrc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/PanelCrc.cpp
+END
+MessagesDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/MessagesDialog.cpp
+END
+RegistryUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RegistryUtils.cpp
+END
+ProgressDialog2_rc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/ProgressDialog2_rc.cpp
+END
+RegistryAssociations.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/FileManager/RegistryAssociations.h
+END

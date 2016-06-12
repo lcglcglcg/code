@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0
+END
+soapclientcore.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/soapclientcore.php
+END
+FolderService.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/FolderService.php
+END
+ReportService.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/ReportService.php
+END
+AccountService.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/AccountService.php
+END
+KRService.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/KRService.php
+END
+CampaignService.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/CampaignService.php
+END
+AdgroupService.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/AdgroupService.php
+END
+CreativeService.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/CreativeService.php
+END
+KeywordService.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/KeywordService.php
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/application/libraries/api-client-php-1.0.0/Readme.txt
+END

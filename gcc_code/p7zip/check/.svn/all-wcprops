@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/CodeLib/!svn/ver/42/C/p7zip/check
+END
+clean_all.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/check/clean_all.sh
+END
+check_Client7z.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/check/check_Client7z.sh
+END
+check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/CodeLib/!svn/ver/42/C/p7zip/check/check.sh
+END
+check_7zr.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/check/check_7zr.sh
+END
+check_install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/check/check_install.sh
+END

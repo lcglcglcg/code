@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* Add by Wangzhe */
+*{margin:0px;padding:0px;}
+body{font-family:"宋体";font-size:12px;color:#000;background:#FFF; min-width:1000px;_width:expression((document.documentElement.clientWidth < 1000) ? "1000px":"auto");}
+div,ul,ol,li,dl,dt,dd,form{ margin:0; padding:0;}
+ul,ol,li,dl,dt,dd{ display:block; list-style:none;}
+img,a img{border:none;}
+.lf{ float:left;}
+.rg{ float:right;}
+a:visited{ color:#00F; text-decoration:none;}
+a:link{ text-decoration:none;}
+a:hover{ text-decoration:underline; cursor:pointer;}
+.cls{ clear:both; height:0px;}
+/*header start*/
+.header_box{ width:1000px; margin:0 auto;}
+.header{ width:961px; height:95px;_height:85px; margin:0 auto; background:#0686C2 url('../images/logo_bg.gif') no-repeat; padding:5px 20px 0 19px; color:#FFF; overflow:hidden;}
+.header .logo { width:944px; height:71px; _height:62px;}
+.header .logo_img{float:left; width:410px; height:61px;background:url('../images/logo_img_bg.gif') no-repeat;}
+
+.header .logo .logo_img .img_word {background-image: expression(this.runtimeStyle.backgroundImage = "none",this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",this.src = "/static/sem_web_1.0/web/images/logo_02_1.gif")}
+
+.header_r{ height:24px; width:700px;}
+.header .logo .welcome{ width:500px;height:50px; color:#FFF; float:right; padding-top:12px;}
+.header .logo .welcome ul{ height:22px; line-height:22px;}
+.header .logo .welcome ul li{ display:inline;}
+.header .logo .welcome ul li.w270{ width:270px; float:left;}
+.header .logo .welcome ul li.w30{ width:30px; float:left;}
+.header .logo .welcome ul li.w60{ width:60px;}
+.header .logo .welcome ul li a,.header_r .welcome ul li a:link,.header_r .welcome ul li a:visited{text-decoration:none; font-weight:bold; color:#FFF; }
+.header .logo .welcome ul li a:hover{ font-weight:bold; color:#F5CD14; text-decoration:underline;}
+.nav{font-size:14px; font-weight:bold; width:960px; height:24px;}
+.nav ul{ clear:both; float:right; height:24px;}
+.nav ul li { display:inline;}
+.nav ul li a{ display:block; width:87px; float:left; text-align:center; color:#FFF; height:24px; line-height:24px; text-decoration:none;}
+.nav ul li a:hover,.nav ul li .dh_hover{height:24px; color:#00F; background:url('../images/icon.gif') no-repeat 3px top; text-decoration:none;}
+.nav ul li span{ display:block; width:2px; height:24px; float:left; background:url('../images/pub_bg.gif') no-repeat right 5px;}
+.nav ul li span .S_iframe{width:91px;_width:94px; top:0px; left:-1px; filter:Alpha(Opacity="0",FinishOpacity="0",Style="2");position:absolute; z-index:-1;}
+.nav ul li .last{ background:none;}
+.nav ul li span .subnav{  position:absolute; margin:24px 0 0 -84px;width:91px;_width:93px; background:#eef9ff; border:1px solid #3ec0fe; z-index:999;}
+.nav ul li span .subnav ol li a{ display:block; height:24px; width:81px;_width:83px; color:#000; font-size:12px; font-weight:normal; padding-left:10px; text-align:left;}
+.nav ul li span .subnav ol li a:hover,.nav ul li span .subnav ol li .curr1{ height:24px; width:81px;_width:83px; color:#e70005; font-size:12px; font-weight:normal; background:#bee6fa;}
+/*header end*/
+/*ad_box start*/
+.ad_box{ width:990px; padding:0 5px; margin:0 auto; background:#0681BF;}
+.main{ width:990px; background:#FFF; overflow:hidden;}
+.curr_position{ width:976px; height:30px; line-height:30px; padding-left:14px; background:url('../images/pub_bg.gif') repeat-x 0 -50px;}
+
+/*ad_box end*/
+/*footer start*/
+.footer{ clear:both; width:1000px; height:70px; line-height:70px; text-align:center; margin:0 auto; background:#0681BF; color:#FFF;}
+.footer a:link,.footer a:visited{ color:#FFF;}
+.footer a:hover{ text-decoration:underline;}
+/*footer end*/
+
+/* color */
+.red{ color:#F00;}
+.green{ color:#07BF0B;}
+.rose{ color:#C805C1;}
+.brown{color:#7E2903;}
+.cyan{ color:#45BDBE;}
+.orange{ color:#ff9966;}
+.purple{ color:#6600cc;}
+.pink{ color:#ff00ff;}
+.wine{ color:#990066;}
+.sky_blue{ color:#0794c9;}
+.yellow{ color:#0794c9;}
+.gray{color:#999;}
+
+

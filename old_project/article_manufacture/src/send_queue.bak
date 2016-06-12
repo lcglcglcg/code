@@ -1,0 +1,97 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <curl/curl.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <libxml/parser.h>
+
+#include "lg_rabbitmq.h"
+#include "lg_thread_pool.h"
+#include "lg_config_file.h"
+
+char *host = "127.0.0.1";
+char *user = "lcglcg";
+char *pass = "123456";
+
+char *buffer = 
+"<task>"
+"<task_id>001</task_id>"
+"<task_queue>lcglcglcg</task_queue>"
+"<task_content>"
+"大家都知道，高血压患者应喝绿茶，但一些高血压患者和普通的茶，不想喝，但他还可以有更多的选择，例如，一个黑色的茶，不仅能降低血脂，还可以减少血栓的形成，与普通茶、效率和完整的，以下10点来介绍你的预防高血压的保健茶。"
+"</task_content>"
+"</task>";
+
+pthread_mutex_t send_conn_lock = PTHREAD_MUTEX_INITIALIZER;
+int task_send(char *queue_name, char *buffer)
+{
+
+    amqp_connection_state_t conn = lg_rabbitmq_conn(host, user, pass);
+
+    // pthread_mutex_lock(&send_conn_lock);
+    amqp_queue_declare(conn, 1, amqp_cstring_bytes(queue_name), 0, 0, 0, 1, amqp_empty_table);
+    int ret = amqp_basic_publish(conn,
+	    1,
+	    amqp_empty_bytes,
+	    amqp_cstring_bytes(queue_name),
+	    0,
+	    0,
+	    NULL,
+	    amqp_cstring_bytes(buffer));
+    // pthread_mutex_unlock(&send_conn_lock);
+
+    lg_rabbitmq_close(conn);
+
+    if (ret) fprintf(stderr, "err::%s\n", amqp_error_string2(ret));
+    return ret;
+}
+
+void *task_thread(lg_thread_node_t *thread_info)
+{
+
+    // amqp_connection_state_t conn = lg_rabbitmq_conn(host, user, pass);
+
+    int i, j;
+    for (i = 0; i < 1000; i++) {
+
+	for (j = 0; j < 1000; j++) {
+
+	    char queue_name[128];
+	    sprintf(queue_name, "queue_%02d", i);
+	    task_send(queue_name, buffer);
+	}
+    }
+
+    for (;;) sleep(1);
+    pthread_exit(NULL);
+}
+
+int main(int argc, char **argv)
+{
+
+    // amqp_connection_state_t conn = lg_rabbitmq_conn(host, user, pass);
+    return task_send("lcglcg", buffer);
+    return task_send("pseudo-original", buffer);
+
+    lg_thread_pool_t *pool = lg_thread_pool_create(
+	    100,
+	    task_thread,
+	    NULL);
+
+    lg_list_t *p = NULL;
+    lg_list_for_each (p, &pool->head) {
+
+	// lg_thread_node_t *node = (lg_thread_node_t *)p;
+	// node->arg = conn;
+    }
+
+    lg_thread_pool_start(pool);
+    lg_thread_pool_join(pool);
+    return 0;
+}
+
+

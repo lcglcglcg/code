@@ -1,0 +1,17 @@
+HTTP/1.0 302 Found
+Content-Length: 154
+Content-Type: text/html
+Date: Sat, 07 Nov 2015 04:40:52 GMT
+Location: http://image.baidu.com/search/index?tn=baiduimage&amp;ps=1&amp;ct=201326592&amp;lm=-1&amp;cl=2&amp;nc=1&amp;word=
+P3p: CP=" OTI DSP COR IVA OUR IND COM "
+Server: Apache
+Set-Cookie: BAIDUID=8495E668CDCFF1E2189671692F0BEB4B:FG=1; expires=Sun, 06-Nov-16 04:40:52 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+Tracecode: 24527975250294018058110712
+
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>

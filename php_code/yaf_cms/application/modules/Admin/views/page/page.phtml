@@ -1,0 +1,126 @@
+<? Yaf_Loader::import(PATH_VIEW . '/header.phtml'); ?>
+<head>
+    <title><?=$data['title'].'﹣'.SITENAME?></title>
+    <meta name="keywords" content="<?=$keywords?>">
+    <meta name="Description" content="<?=$description?>">
+    <link type="text/css" rel="stylesheet" href="<?=IMGURL?>static/css/content.css">
+    <link type="text/css" rel="stylesheet" href="<?=IMGURL?>static/css/bdsstyle.css">
+    <link type="text/css" rel="stylesheet" href="<?=IMGURL?>static/css/style.css">
+    <script type="text/javascript" src="<?=IMGURL?>static/js/userJsFrame.js"></script>
+    <script type="text/javascript" src="<?=IMGURL?>static/js/Statistics.js"></script>
+    <script src="<?=IMGURL?>static/js/logger.js"></script>
+    <script src="<?=IMGURL?>static/js/ag.js" async="" type="text/javascript"></script>
+</head>
+<div class="banner" name="rw_banner">
+    <img src="<?=IMGURL?>static/images/gg_banner.jpg">
+</div>
+<div class="dqwz">
+    您的当前位置：<a href="<?=BASEURL.SITEDIR.'/'?>"><?=SITENAME?></a> -&gt;&nbsp;<?=$data['title']?>
+</div>
+<div class="contain">
+    <div class="lb_left">
+        <div class="lbtop">
+            <div class="lbtop1">
+                <h1 class="title"><?=$data['title']?></h1>
+                <div class="ly">
+                    <span>来源：<?=$data['fromweb']?></span>
+                    <span>发布时间：<?=$data['inputtime']?></span>
+                </div>
+                <div class="rw_touxia" name="rw_touxia">
+                    <img src="<?=IMGURL?>static/images/gg_img04.jpg">
+                </div>
+                <div class="content">
+                   <?= isset($data['content'])?misc::replacebr(stripslashes($data['content'])):misc::replacebr($data['description']); ?>               
+                </div>
+                
+                <div class="wxts">
+                    <img src="<?=IMGURL?>static/images/neirong_15.jpg">
+                    <div>声明：文章内容仅供参考。您若对该稿件内容有任何疑问或质疑，请即与<?=SITENAME?>联系， 本网将迅速给您回应并做处理。</div>
+                </div>
+                <div class="clear"></div>
+                <p>Tag:</p>
+      
+                    <div class="syp">
+                        <li><?=$data['prenext']['previous']?></li>
+                    </div>
+                    <div class="xyp">
+                        <li><?=$data['prenext']['next']?></li>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="fenxiang">
+                <!-- Baidu Button BEGIN -->
+                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                <span class="bds_more" style="line-height:16px;">分享到：</span>
+                <a href="#" title="分享到QQ空间" class="bds_qzone"></a>
+                <a href="#" title="分享到新浪微博" class="bds_tsina"></a>
+                <a href="#" title="分享到腾讯微博" class="bds_tqq"></a>
+                <a title="累计分享0次" href="#" class="shareCount">0</a>
+                </div>
+                <script src="<?=IMGURL?>static/js/bds_s_v2.js" type="text/javascript" id="bdshare_js" data="type=tools"></script>
+                <script type="text/javascript"> 
+                document.getElementById("bdshell_js").src = "http://news.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+                </script>
+                <!-- Baidu Button END -->              
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+        <div class="rw_youce" name="rw_youce"><img src="<?=IMGURL?>static/images/gg_img01.jpg"></div>
+        <div class="rw_youce1" name="rw_youce1"><img src="<?=IMGURL?>static/images/gg_img02.jpg"></div>
+        <div class="rw_youce2" name="rw_youce2"><img src="<?=IMGURL?>static/images/gg_img03.jpg"></div>
+        <div class="wztj newsgg">
+            <div class="name"><img src="<?=IMGURL?>static/images/nrzxwz.jpg"></div>
+            <img src="<?=IMGURL?>static/images/index_82.jpg" style="margin-left:60px;">
+            <!--最新文章  name="yltoplb"-->
+            <div>
+                <ul>
+                    <?php
+                        foreach($data['zxwz'] as $v){
+                    ?>
+                    <li>
+                        <div class="gg_bLeft">
+                            <span></span>
+                            <a href="<?=BASEURL.SITEDIR.'/'.$v['catpath'].'/'.$v['id'].'.html'?>"><?=$v['title']?></a>
+                        </div>
+                        <div class="gg_bRight">
+                            <a href=""><img src="<?=IMGURL?>static/images/0f0005lthSdJ6lIqdKxpKs.gif"></a>
+                            <a name="sj_tel"><img src="<?=IMGURL?>static/images/0f000FP5WGB4V1my-HeNds.gif"></a>
+                        </div>
+                    </li>
+                    <?php
+                        }
+                    ?>
+                </ul>
+            </div>
+        </div>
+        <div class="wztj newsgg">
+            <div class="name"><img src="<?=IMGURL?>static/images/QQ20140604154254.jpg"></div>
+            <img src="<?=IMGURL?>static/images/index_82.jpg" style="margin-left:60px;">
+            <!--推荐文章 name="ylbtlb"-->
+            <div >
+                <ul>
+                    <?php
+                        foreach($data['tjwz'] as $v){
+                    ?>
+                    <li>
+                        <div class="gg_bLeft">
+                            <span></span>
+                            <a href="<?=BASEURL.SITEDIR.'/'.$v['catpath'].'/'.$v['id'].'.html'?>"><?=$v['title'];?></a>
+                        </div>
+                        <div class="gg_bRight">
+                            <a href=""><img src="<?=IMGURL?>static/images/0f0005lthSdJ6lIqdKxpKs.gif"></a>
+                            <a name="sj_tel"><img src="<?=IMGURL?>static/images/0f000FP5WGB4V1my-HeNds.gif"></a>
+                        </div>
+                    </li>
+                    <?php
+                        }
+                    ?>
+                </ul>
+            </div>        
+        </div>     
+    </div>    
+<div class="clear"></div>
+
+<? Yaf_Loader::import(PATH_VIEW . '/footer.phtml'); ?>

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -Wstrict-prototypes -Wno-unused-function -fno-common -fvisibility=hidden  -O3 -DNDEBUG    CMakeFiles/amqp-delete-queue.dir/delete_queue.c.o CMakeFiles/amqp-delete-queue.dir/common.c.o  -o amqp-delete-queue -rdynamic ../librabbitmq/librabbitmq.so.4.1.2 -lpopt -lssl -lcrypto -lrt -lpthread -Wl,-rpath,/make/rabbitmq-c-master/temp/librabbitmq: 

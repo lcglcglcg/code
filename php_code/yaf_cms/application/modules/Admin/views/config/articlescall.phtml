@@ -1,0 +1,155 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：文章调用管理
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="返回" href="/admin/index/index" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>返回</span></a>
+        </div>
+    </div>
+</div>
+<div class="dashboard row">
+    <div class="col-sm-12 column">
+        <!--列表页数据调用-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">列表页数据调用</h3></div>
+            <div class="panel-body results" >
+               <form action='/admin/config/articlescall?type=list' enctype="multipart/form-data" method="post">
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th width="5%">标题</th>
+                        <th width="5%">path</th>
+                        <th width="5%">start</th>
+                        <th width="5%">offset</th>
+                        <th width="5%">随机(0:否,1:是)</th>
+                        <th width="5%">id调用(0:否,1:是)</th>
+                        <th width="5%">全站(0:否,1:是)</th>
+                        <th width="5%">隐藏(0:否,1:是)</th>
+                        <th width="5%">缓存时间</th>
+                    </tr>
+                    <?php
+                    if ($data['listpage']) {
+                        foreach ($data['listpage'] as $k => $v) {
+                            ?>                                   
+                            <tr>
+                                <td><input type="text" name="listpage[<?=$k?>][title]" value="<?=$v['title']?>"></td>
+                                <td><?=$k?></td>
+                                <td><input type="text" name="listpage[<?=$k?>][start]" value="<?=$v['start']?>"></td>
+                                <td><input type="text" name="listpage[<?=$k?>][offset]" value="<?=$v['offset']?>"></td>
+                                <td><input type="text" name="listpage[<?=$k?>][isrand]" value="<?=$v['isrand']?>"></td>
+                                <td><input type="text" name="listpage[<?=$k?>][isid]" value="<?=$v['isid']?>"></td>
+                                <td><input type="text" name="listpage[<?=$k?>][isall]" value="<?=$v['isall']?>"></td>
+                                <td><input type="text" name="listpage[<?=$k?>][ishide]" value="<?=$v['isall']?>"></td>
+                                <td><input type="text" name="listpage[<?=$k?>][cachetime]" value="<?=$v['cachetime']?>"></td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+                    </table>
+                    
+                    <tr>
+                        <td style="width:100px;">&nbsp;</td>
+                        <td>
+                            <input type="submit" name="dosubmit" value="保存" class="btn btn-primary">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+        <style>
+            td{width:20px;}
+        </style>
+        <!--文章页数据调用-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">文章页数据调用</h3></div>
+            <div class="panel-body results" >
+               <form action='/admin/config/articlescall?type=content' enctype="multipart/form-data" method="post">
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th width="5%">标题</th>
+                        <th width="5%">path</th>
+                        <th width="5%">start</th>
+                        <th width="5%">offset</th>
+                        <th width="5%">随机(0:否,1:是)</th>
+                        <th width="5%">id调用(0:否,1:是)</th>
+                        <th width="5%">全站(0:否,1:是)</th>
+                        <th width="5%">隐藏(0:否,1:是)</th>
+                        <th width="5%">缓存时间</th>
+                    </tr>
+                    <?php
+                    if ($data['contentpage']) {
+                        foreach ($data['contentpage'] as $k => $v) {
+                            ?>                                   
+                            <tr>
+                                <td><input type="text" name="contentpage[<?=$k?>][title]" value="<?=$v['title']?>"></td>
+                                <td><?=$k?></td>
+                                <td><input type="text" name="contentpage[<?=$k?>][start]" value="<?=$v['start']?>"></td>
+                                <td><input type="text" name="contentpage[<?=$k?>][offset]" value="<?=$v['offset']?>"></td>
+                                <td><input type="text" name="contentpage[<?=$k?>][isrand]" value="<?=$v['isrand']?>"></td>
+                                <td><input type="text" name="contentpage[<?=$k?>][isid]" value="<?=$v['isid']?>"></td>
+                               <td><input type="text" name="contentpage[<?=$k?>][isall]" value="<?=$v['isall']?>"></td>
+                                <td><input type="text" name="contentpage[<?=$k?>][ishide]" value="<?=$v['isall']?>"></td>
+                                <td><input type="text" name="contentpage[<?=$k?>][cachetime]" value="<?=$v['cachetime']?>"></td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+                    </table>
+                    
+                    <tr>
+                        <td style="width:100px;">&nbsp;</td>
+                        <td>
+                            <input type="submit" name="dosubmit" value="保存" class="btn btn-primary">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+    <input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+    <script>
+        //添加行  
+        function appendRow(){
+            var num = $("#table2 tr").length - 2;
+            //var str = "<input name='test' value='1'>";
+            //$("#table2 tr:last").after(str);
+            var tr = $("#data0").clone(true);//克隆一行
+            tr.attr({"id":"data"+num,"form":"form"+num});
+            tr.find("td:first").html(num);
+            tr.find("td:eq(1)").html('<input type="text" name="show_data[data]['+num+'][title]">');
+            tr.find("td:eq(2)").html('<input type="text" name="show_data[data]['+num+'][path]">');
+            tr.find("td:eq(3) select").attr({"name":"show_data[data]["+num+"][sid]","id":"selectdata"+num});
+            tr.find("td:eq(4)").html('<input type="text" name="show_data[data]['+num+'][num]">');
+            tr.insertBefore("#table2 tr:last");//把这行加到表格的倒数第二行，表格添加完毕
+        } 
+
+        //删除相对应的行  
+        function delRow(rows){  
+            $(rows).parent("td").parent("tr").remove();  
+        }
+
+        $(function(){
+          $("select").change(function(){
+            var path = $(this).find("option:selected").attr("path");  //获取Select选择的Text 
+            var pathname = $(this).find("option:selected").attr("pathname");
+            var num = $("#table2 tr").length - 3;
+            var tr = $("#data"+num);
+            tr.find("td:eq(1)").html('<input type="text" name="show_data[data]['+num+'][title]" value="'+pathname+'">');
+            tr.find("td:eq(2)").html('<input type="text" name="show_data[data]['+num+'][path]" value="'+path+'">');
+          });
+        })
+
+    </script>
+    <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

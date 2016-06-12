@@ -1,0 +1,24 @@
+.h500{ height:500px;}
+.index_content{ width:978px; background:#FFF; overflow:hidden; margin:5px 5px 0px 5px !important;min-height:350px;height:auto;}
+
+/* 金额 start */
+.amount{ width:960px; height:29px; padding:0 14px; border:1px solid #abe4fe; background:#c9edfd;}
+.amount .amount_lf{ width:650px;}
+.amount .amount_rg{ width:300px; height:29px; line-height:29px; text-align:right;}
+.amount .amount_lf .amount_lf_lf,.amount .amount_lf .amount_lf_rg{ width:325px; height:29px; line-height:29px;}
+.amount .amount_lf .amount_lf_lf span,.amount .amount_lf .amount_lf_rg span,.amount .amount_rg span{ color:#FF0006;}
+/* 金额 end */
+
+/* 系统信息 start */
+.information{ width:988px; background:#E8F4FA; border:1px solid #ABE4FE;  border-bottom:none; margin-top:8px;}
+.information dl dt{ height:30px; line-height:30px; font-size:14px; font-weight:bold; text-align:center; border-bottom:1px solid #ABE4FE;}
+.information dl dd ul li{height:22px; line-height:22px; background:url(../images/icon.gif) no-repeat 5px -48px; border-bottom:1px solid #ABE4FE; padding:0 22px 0 35px ; }
+.information dl dd ul li span{ float:left;}
+.information dl dd ul li span a:visited{ color:#00F; text-decoration:none;}
+.information dl dd ul b{ font-size:14px; font-weight:normal;}
+.information dl dd ul s{ display:block;text-decoration:none; float:right;}
+.information dl dd ul li.news{ background:url(../images/icon.gif) no-repeat 4px -94px; padding-left:35px;}
+.information dl dd ul .red{color:#FF0000;}
+.information dl dd ul .black{ color:#000;}
+.information dl dd ul a.black:visited{ color:#000; text-decoration:none;}
+/* 系统信息 end */

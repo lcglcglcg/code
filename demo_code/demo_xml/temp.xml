@@ -1,0 +1,42 @@
+
+<http>
+
+<server name="www.aaa.com">
+	<location name="/">
+		<template_dir>a-001</template_dir>
+		<keyword_file>a-002</keyword_file>
+		<content_file>a-003</content_file>
+	</location>
+</server>
+
+<server name="www.bbb.com">
+	<location name="/">
+		<template_dir>b-001</template_dir>
+		<keyword_file>b-002</keyword_file>
+		<content_file>b-003</content_file>
+	</location>
+
+	<location name="/nanke">
+		<template_dir>b-004</template_dir>
+		<keyword_file>b-005</keyword_file>
+		<content_file>b-006</content_file>
+	</location>
+
+	<location name="/fuke">
+		<template_dir>b-007</template_dir>
+		<keyword_file>b-008</keyword_file>
+		<content_file>b-009</content_file>
+	</location>
+</server>
+
+<server name="www.ccc.com">
+	<location name="/">
+		<template_dir>c-001</template_dir>
+		<keyword_file>c-002</keyword_file>
+		<content_file>c-003</content_file>
+	</location>
+</server>
+
+</http>
+
+

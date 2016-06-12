@@ -1,0 +1,3 @@
+yum install gcc glibc
+yum install gcc-c++ libstdc++-devel 
+yum install openssl-devel libcurl-devel

@@ -1,0 +1,33 @@
+html, body, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6,span, strong, em, i, img, form, input{ margin:0 auto;padding:0;}
+body{font-size:12px; color:#2b2d2d;}
+em, i{ font-style:normal;}
+img, input{ border:none; background:none;}
+a{ color:#3581a4; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+p{ line-height:25px;}
+ul{ list-style:none;}
+/*zong*/
+header, article, footer{
+width:98%;
+max-width:800px;
+margin:0 auto;
+background-color:#f7f7f7;
+}
+article, footer{overflow:hidden;}
+/*clr*/
+.clr{ width:0;height:0;margin:0;padding:0;clear:both;overflow:hidden;}
+.detial{ color:#006cc7;}
+.left{ float:left;}
+.right{ float:right;}
+#zk{ float:right; position:relative;}
+#zk img{ float:left; margin: 5px 10px 0 0; cursor:pointer;}
+#zk .content{ width:210px; display:block!important; border:1px solid #ccc; background-color:#006CC7; z-index:999; position:absolute; top:27px; right:0px;}
+#zk .content.none{display:none!important;}
+#zk .content ul{ width:200px; overflow:hidden; padding:5px;}
+#zk .content ul li{ width:100px; float:left; height:20px; line-height:20px; text-align:left;white-space:nowrap; text-overflow:ellipsis; white-space:Nowrap\9; overflow:hidden;}
+#zk .content ul li a{color:#fff;}
+article{ padding-bottom:10px;}
+footer{ height:60px; line-height:43px; background-color:#3e96f7;width:98%;max-width:800px;}
+footer  span{ float:left; width:320px; height:35px; padding-top:8px; background:url(../images/sjmh_021.jpg) no-repeat; text-align:center; color:#fff; font-size:14px; font-family:"΢���ź�"; line-height:16px; margin-right:10px; position:fixed;  bottom:46px;}
+footer .p4{ height:60px;position:fixed; bottom:0px; width:98%;max-width:800px; margin:0 auto; z-index:99; text-align:center; background-color:#3e96f7;}
+footer .p4 a{ padding:0;margin:0;display:block;float:left;width:25%;}

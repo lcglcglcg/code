@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql
+END
+innodb_priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/innodb_priv.h
+END
+service_thd_alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/service_thd_alloc.h
+END
+client_plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/client_plugin.h
+END
+plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/plugin.h
+END
+mysql
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/mysql
+END
+plugin_auth.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/plugin_auth.h
+END
+thread_pool_priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/thread_pool_priv.h
+END
+service_thd_wait.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/service_thd_wait.h
+END
+services.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/services.h
+END
+plugin_audit.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/plugin_audit.h
+END
+plugin_ftparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/plugin_ftparser.h
+END
+service_thread_scheduler.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/service_thread_scheduler.h
+END
+plugin_auth_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/plugin_auth_common.h
+END
+service_my_snprintf.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/service_my_snprintf.h
+END

@@ -1,0 +1,60 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：前台信息设置
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="新建前台信息" href="/admin/config/add" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>新建前台信息</span></a>
+        </div>
+    </div>
+</div>
+<div class="dashboard row">
+    <div class="col-sm-12 column">
+
+        <!--文档列表-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title"> 前台信息列表</h3></div>
+            <div class="panel-body " >
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th>描述</th>
+                        <th>内容</th>
+                        <th>操作</th>
+                    </tr>
+
+                    <?php
+                    if ($data['data']) {
+                        foreach ($data['data'] as $key => $new) {
+                            ?>                                   
+                            <tr>
+                                <td><?= mb_substr($new['description'], 0, 20, 'UTF-8') ?></td>
+                                <td><?php echo $new['value'] ?></td>
+                                <td>
+                                    <a href='/admin/config/update?variable=<?php echo $new['variable'] ?>'>编辑</a>
+                                    <a href='/admin/config/delete?variable=<?php echo $new['variable'] ?>' onclick="javascript:return confirm('确定要删除吗？')">删除</a>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+                    <tr>
+                        <td colspan=9 style='text-align:right;'><?php echo isset($data['page']) ? $data['page'] : ''; ?> </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

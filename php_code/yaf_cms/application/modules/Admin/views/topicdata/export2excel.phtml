@@ -1,0 +1,53 @@
+<?php
+$title = SITENAME.'_'.date('YmdHis').'_'.$data['topic_name']."_专题文章列表";
+header ( "Content-type:application/vnd.ms-excel" );
+header ( "Content-Disposition:filename=$title.xls" );
+$s = "";
+$s = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<title>无标题文档</title>
+    <style>
+    td{
+        text-align:center;
+        font-size:12px;
+        font-family:Arial, Helvetica, sans-serif;
+        border:#1C7A80 1px solid;
+        color:#152122;
+        width:100px;
+    }
+    table,tr{
+        border-style:none;
+    }
+    .title{
+        background:#7DDCF0;
+        color:#FFFFFF;
+        font-weight:bold;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table width='800' border='1'>
+        <tr>
+            <td class='title'>日期</td>
+            <td class='title'>标题</td>
+            <td class='title'>栏目</td>
+            <td class='title' style='width:500px;text-align:left;'>url地址</td>
+        </tr>";
+
+        foreach($data['data'] as $k=>$v){
+            $url = BASEURL.SITEDIR.'/'.$v['topic_path'].'/'.$subclass[$v['sid']]['path'].'/'.$v['id'].'.html';
+
+            $s .= "<tr>
+                <td>".date('Y-m-d H:i:s',$v['inputtime'])."</td>
+                <td style='text-align:left;'>".$v['title']."</td>
+                <td style='text-align:left;'>".$subclass[$v['sid']]['title']."</td>
+                <td style='text-align:left;'><a href='".$url."'>".$url."</a></td></tr>";
+        }
+
+    $s .= "</table></body></html>";
+
+    echo $s;
+?>

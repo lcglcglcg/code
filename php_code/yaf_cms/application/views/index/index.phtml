@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><?= $config['title'] . $config['sitename'] ?></title>
+        <base target="_blank" />
+        <meta name="Keywords" content="<?= $config['keywords'] ?>" />
+        <meta name="Description" content="<?= $config['description'] ?>" />
+        <link rel="stylesheet" href="<?= IMGURL ?>static/css/index.css"  />
+        <script language="javascript" src="<?=IMGURL?>static/js/index.js"></script>
+        <script language="javascript" src="<?=IMGURL?>static/js/pc2m.js"></script>
+<!--        <script language="javascript" type="text/javascript"> 
+var url1="http://mtip.ufstone.com/showswt.php?charset=gb2312&names=hangzhoupb";
+document.writeln("<scr"+"ipt src=\"" + url1 + "\"  language=\"javascript\"   type=\"text/javascript\" charset=\"gb2312\" ><\/scr"+"ipt>");
+</script>-->
+        <script language="javascript">mobile_device_detect("/hyzx/m/");</script>
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="logo"></div>
+            <div class="top_img"></div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="/hyzx/ssjf/">瘦身减肥</a></li>
+                <li><a href="/hyzx/tszl/">特色诊疗</a></li>
+                <li><a href="/hyzx/bzbj/">不知不觉</a></li>
+                <li><a href="/hyzx/cnly/">长年累月</a></li>
+                <li><a href="/hyzx/myqf/">明月清风</a></li>
+                <li><a href="/hyzx/yszd/">养生之道</a></li>
+                <li><a href="/hyzx/qsjt/">强身健体</a></li>
+                <li><a href="/hyzx/jgyx/">巾帼英雄</a></li>
+                <li><a href="/hyzx/pybm/">疲于奔命</a></li>
+                <li><a href="/hyzx/jkyl/">健康医疗</a></li>
+                <li><a href="/hyzx/jkbj/">健康保健</a></li>
+                <li><a href="/hyzx/jbzd/">疾病诊断</a></li>
+            </ul>
+        </div>
+
+        <div class="contain">
+            <div class="index_l">
+                <div class="index_l1">
+                    <ul>
+<?php foreach($data['zxwz_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['zxwz'] as $k => $v):?>
+                            <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="left_lm1">
+                    <div class="name"><a href="/hyzx/ssjf/">瘦身减肥</a></div>
+                    <ul>
+<?php foreach($data['ssjf_h'] as $k => $v):?>
+                         <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?= mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT ) ?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['ssjf'] as $k => $v):?>
+                         <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?= mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT ) ?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1 left_lm2">
+                    <div class="name"><a href="/hyzx/tezl/">特色诊疗</a></div>
+                    <div class="lmimg1"></div>
+                    <ul>
+<?php foreach($data['tszl_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT ) ?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['tszl'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT ) ?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1 left_lm3">
+                    <div class="name"><a href="/hyzx/bzbj/">不知不觉</a></div>
+                    <ul>
+<?php foreach($data['bzbj_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['bzbj'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1">
+                    <div class="name"><a href="/hyzx/cnly/">长年累月</a></div>
+                    <ul>
+<?php foreach($data['cnly_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT ) ?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['cnly'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT ) ?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1 left_lm4" >
+                    <div class="name"><a href="/hyzx/myqf/">明月清风</a></div>
+                    <div class="lmimg2"></div>
+                    <ul>
+<?php foreach($data['myqf_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;" >
+                    <ul>
+<?php foreach($data['myqf'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div class="left_lm1 left_lm4 left_lm5">
+                    <div class="name"><a href="/hyzx/yszd/">养生之道</a></div>
+                    <ul>
+<?php foreach($data['yszd_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['yszd'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1 left_lm2 left_lm6" id="left_lm1">
+                    <div class="name"><a href="/hyzx/qsjt/">强身健体</a></div>
+                    <div class="lmimg3"></div>
+                    <ul>
+<?php foreach($data['qsjt_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12?mb_substr($v['title'], 0 ,12):str_pad($v['title'], 36, "　", STR_PAD_RIGHT )?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['qsjt'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12?mb_substr($v['title'], 0 ,12):str_pad($v['title'], 36, "　", STR_PAD_RIGHT )?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1">
+                    <div class="name"><a href="/hyzx/jgyx/">巾帼英雄</a></div>
+                    <ul>
+<?php foreach($data['jgyx_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT )?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['jgyx'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_strlen($v['title'])>12 ? mb_substr($v['title'], 0 ,12) : str_pad($v['title'], 36, "　", STR_PAD_RIGHT )?></a>|</li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="index_r">
+                <div class="right_lm1">
+                    <div class="name"><a href="/hyzx/pybm/">疲于奔命</a></div>
+                    <ul>
+<?php foreach($data['pybm_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['pybm'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="left_lm1 left_lm4 left_lm5">
+                    <div class="name"><a href="/hyzx/jkyl/">健康医疗</a></div>
+                    <ul>
+<?php foreach($data['jkyl_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['jkyl'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="right_img"></div>
+
+                <div class="left_lm1 left_lm4 left_lm5 left_lm7">
+                    <div class="name"><a href="/hyzx/jkbj/">健康保健</a></div>
+                    <ul>
+<?php foreach($data['jkbj_h'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+                <div style="display: none;">
+                    <ul>
+<?php foreach($data['jkbj'] as $k => $v):?>
+                        <li><a href="/hyzx/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,12)?></a></li>
+<?php endforeach;?>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+                <div class="lmqh clearfix">
+                    <ul class="lmqhtit">
+                        <li class="kjy_a" id="Button11" ><a href="/hyzx/jbzd/">疾病诊断</a></li>
+                    </ul>
+                    <div id="ContentBox11">
+                        <ul  class="lmqhnr">
+                            <?php foreach ($data['jbzd'] as $v) { ?>
+                            <li><a href="/<?= SITEDIR ?>/<?= $category[$v['catid']]['catpath'] ?>/<?= $v['id'] ?>.html"><?= misc::remove_nbsp(mb_substr($v['title'], 0, 21)) ?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                    <div id="ContentBox12" style="display:none">
+                        <ul  class="lmqhnr">
+                            <?php foreach ($data['topiclist'] as $v) { ?>
+                            <li><a href="/<?= SITEDIR ?>/jhdxyy/<?= $topicsubclass[$v['sid']]['path'] ?>/<?= $v['id'] ?>.html"><?= misc::remove_nbsp(mb_substr($v['title'], 0, 21)) ?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <?php Yaf_Loader::import(PATH_VIEW . '/footer.phtml');?>

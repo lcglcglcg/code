@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis
+END
+NsisHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisHandler.h
+END
+NsisDecode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisDecode.cpp
+END
+NsisRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisRegister.cpp
+END
+NsisIn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisIn.cpp
+END
+NsisDecode.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisDecode.h
+END
+NsisIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisIn.h
+END
+NsisHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Nsis/NsisHandler.cpp
+END

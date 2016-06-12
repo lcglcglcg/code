@@ -1,0 +1,102 @@
+<html>
+    <head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+	<script type="text/javascript">
+
+	    function get_request(){
+		if (window.XMLHttpRequest) {
+		    return new XMLHttpRequest();
+		}else if(window.ActiveXObject){
+		    return new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		return null;
+	    }
+
+var xhr = get_request();
+function my_send(str){
+
+    //创建异步POST
+    xhr.open("POST","http://lcg.leechat.com/action", true);
+
+    //接收状态变更回调函数
+    xhr.onreadystatechange = my_recv;
+    xhr.send(str);
+}
+
+function my_recv(){
+
+    //状态4表示数据已经准备好了
+    if (xhr.readyState == 4) {
+
+	//检查服务器是否发送了数据，并且请求是200OK
+	if (xhr.responseText && xhr.status == 200) {
+
+	    document.getElementById("my_print").innerHTML = xhr.responseText;
+	    // alert(xhr.responseText);
+	}
+    }
+}
+
+function login(){
+    var str = "server={\"PACKET_TYPE\":\"LOGIN\",\"ACCOUNT_NAME\":\"lcglcg\",\"PASSWORD\":\"96e79218965eb72c92a549dd5a330112\",\"VAR_CODE\":\"";
+    str += document.getElementById("var_code").value + "\"}";
+    my_send(str);
+}
+
+function logout(){
+    var str = "server={\"PACKET_TYPE\":\"LOGOUT\"}";
+    my_send(str);
+}
+
+function login_check(){
+    var str = "server={\"PACKET_TYPE\":\"LOGIN_CHECK\"}";
+    my_send(str);
+}
+
+function get_account_info(){
+    var str = "server={\"PACKET_TYPE\":\"GET_ACCOUNT_INFO\"}";
+    my_send(str);
+}
+
+function bind_wangmeng(){
+    var str = "server={\"PACKET_TYPE\":\"BIND_WANGMENG_ACCOUNT\", \"ACCOUNT_NAME\":\"解放军163男科\",\"PASSWORD\":\"063f3b5ba171c0eda857beec70b46599\"}";
+    my_send(str);
+}
+
+function login_wangmeng(){
+    var str = "server={\"PACKET_TYPE\":\"LOGIN_WANGMENG\"}";
+    my_send(str);
+}
+
+function bind_ruanwen(){
+    var str = "server={\"PACKET_TYPE\":\"BIND_RUANWEN_ACCOUNT\", \"ACCOUNT_NAME\":\"gly001\",\"PASSWORD\":\"123123\"}";
+    my_send(str);
+}
+
+function login_ruanwen(){
+    var str = "server={\"PACKET_TYPE\":\"LOGIN_RUANWEN\"}";
+    my_send(str);
+}
+
+</script>
+
+</head>
+<body> 
+    <img src="http://lcg.leechat.com/action" />
+    <input type="text" id="var_code" name="var_code"><br>
+    <button onclick="login()">login</button>
+    <button onclick="logout()">logout</button>
+    <button onclick="login_check()">login_check</button>
+    <button onclick="get_account_info()">get_account_info</button>
+    <button onclick="bind_wangmeng()">bind_wangmeng</button>
+    <button onclick="login_wangmeng()">login_wangmeng</button>
+    <button onclick="bind_ruanwen()">bind_ruanwen</button>
+    <button onclick="login_ruanwen()">login_ruanwen</button>
+    <div id="my_print"></div>
+</body>
+</html>
+
+
+
+

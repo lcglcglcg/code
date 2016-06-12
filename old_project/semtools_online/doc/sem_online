@@ -1,0 +1,61 @@
+﻿//王峥
+表		字段		含义
+baidu_user	baidu_account	百度账户
+baidu_user	baidu_password 	百度密码
+baidu_user	baidu_token 	百度token
+baidu_user	baidu_domain 	百度帐号对应域名
+baidu_user	last_time	百度最后修改时间
+baidu_user	user_account	百度帐号属于那个用户
+baidu_user	status		0正常,>0参考百度API,<0我用
+baidu_user	status		0正常,>0参考百度API,<0我用
+baidu_user	stop_marker	0正常,-1不可用
+baidu_user	check_time	最后修改密码时间
+
+task_list	task_name	任务名称
+task_list	create_time	任务创建时间
+task_list	reservation	预约标识
+task_list	reservation_col	预约属于商务通文件的列
+task_list	zoosnet_path	商务通上传路径
+task_list	download_path	任务生成后下载路径
+task_list	status		0任务完成,-1任务执行中,-2商务通错误,-3百度错误
+
+baidu_calendar	baidu_account	百度用户
+baidu_calendar	date		有数据
+
+zoosnet_calendar	sem_id	SEM用户ID
+zoosnet_calendar	date	有数据
+
+sem_id 		SEM用户ID
+sem_account	SEM用户
+
+
+
+//小双
+companyId:SEM用户ID
+sem_account:SEM用户名
+sem_passwod:SEM密码
+baidu_account:百度用户
+baidu_password:百度密码
+baidu_list:百度列表
+
+authLogin:
+Request:sem_account,sem_passwod
+Return:companyId,code
+code: 0(成功), -1(用户名密码错误), -2(账户冻结), -3(帐号到期)
+
+queryAccount:
+Request:companyId
+Return:baidu_list, code, status
+code: 0成功, -1(companyId错误), -2(没有百度列表)
+status: 0删除 1有效 2禁用 3密码失效
+
+updateAccount
+Request:accountName,password,domain,apiToken,companyId
+Return:result
+result: 0(成功), baidu_code(百度验证失败), -1(其他错误)
+
+addAccount
+return
+code: 2000该账户已被绑定
+
+

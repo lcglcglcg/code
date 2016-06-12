@@ -1,0 +1,71 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：清除缓存
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="清除全站缓存" href="/admin/config/flushall" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>清除全站缓存</span></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-sm-12 column">
+
+        <!--清除缓存-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">清除常用缓存</h3></div>
+            <div class="panel-body " >
+                <div style="padding:10px">
+                    <form id ="search_news" action="/admin/config/flush" method="post">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td style='width:200px;'>
+                                    缓存类型：
+                                    <select name="cachetype" class="form-control" id="cachetype">
+                                        <option value="option">配置信息:option</option>
+                                        <option value="category">网站栏目:category</option>
+                                        <option value="table">数据分表:table</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input name='dosubmit' style="position:relative;top:22px;" type="submit" value="清除缓存" class="btn btn-primary btn-sm" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--清除缓存-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">清除文章缓存</h3></div>
+            <div class="panel-body " >
+                <div style="padding:10px">
+                    <form id ="search_news" action="/admin/config/flush" method="get">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td style='width:200px;'>
+                                    文章ID：<input type='text' value="<?=isset($_['id']) ? $cond['id'] : "" ?>" name="id" class = "text-field admintextinputwidget form-control" maxlength = "50" name = "name" type = "text">
+                                </td>
+                                <td>
+                                    <input name='dosubmit' style="position:relative;top:22px;" type="submit" value="清除缓存" class="btn btn-primary btn-sm" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+
+    <script type="text/javascript"> var _actions_icnt = "<?= $data['perNum'] ?>";</script>
+    <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

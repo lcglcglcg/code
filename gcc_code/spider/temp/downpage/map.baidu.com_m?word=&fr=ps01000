@@ -1,0 +1,9 @@
+HTTP/1.0 302 Found
+Content-Length: 0
+Date: Sat, 07 Nov 2015 05:00:10 GMT
+Http_x_bd_logid: 2329160569
+Http_x_bd_logid64: 12279869886158082570
+Location: http://map.baidu.com
+Server: apache
+Content-Type: text/plain; charset=utf-8
+

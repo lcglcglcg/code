@@ -1,0 +1,136 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<!--编辑器-->
+<link rel="stylesheet" href="/static/admin/editor/themes/default/default.css" />
+<script charset="utf-8" src="/static/admin/editor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/static/admin/editor/lang/zh_CN.js"></script>
+<!--编辑器初始化-->
+<script>
+    var editor;
+    KindEditor.ready(function (K) {
+        editor = K.create('textarea[name="content"]', {
+            allowFileManager: true,
+            filterMode: false,
+            minChangeSize: 10
+        });
+    });</script>
+
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：添加关键词
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">   
+        </ul>
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="关键词列表"  href="/admin/replace/index" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>返回列表</span></a>
+        </div>
+    </div>
+</div>    
+
+
+
+<form id="documentFrom" class = "exform rended" enctype = "multipart/form-data" action = "" method = "post" onsubmit="check()">
+    <input type = "hidden" value = "<?php echo $data?>" name = "id">
+    <input type = "hidden" value = "<?php //echo $data['referer'] ?>" name = "referer">
+    <div class = "form-container row clearfix">
+        <div id = "column-0" class = "column form-column main col col-sm-9 form-horizontal ui-sortable">
+
+            <div class = "panel panel-default fieldset" id = "box-1">
+                <div class = "panel-heading"><i class = "icon icon-chevron-up chevron"></i><h3 class = "panel-title">添加替换词</h3></div>
+                <div class = "panel-body ">
+
+                    <div class = "form-group">
+                        <label class = "control-label ">关键词描述：</label>
+                        <div class = "controls ">
+                            <textarea   id = "desc" name="desc" style="width:80%;height:50px;" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">关键词：</label>
+                        <div class = "controls ">
+                            <input name = "keywords" id = "title"  required  minlength="1" maxlength="200" value="" class = "text-field admintextinputwidget form-control" type = "text">
+                        </div>
+                    </div>
+
+                    <div  class = "form-group">
+                        <label class = "control-label ">排序(越小越靠前)</label>
+                        <div class = "controls ">
+                            <input name = "listorder" id = "listorder" minlength="0" maxlength="50" value="0" class = "text-field admintextinputwidget form-control"  type = "text">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">替换为：</label>
+                        <div class = "controls ">
+                            <textarea   id = "replace" name="replace" style="width:80%;height:100px;" ></textarea>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="form-actions well well-sm clearfix fixed">
+                <a href="/host/maintainlog/1/delete/" class="btn btn-danger deletelink col-xs-2 show-xs"><i class="icon-trash"></i></a>
+
+                <div class="btn-group clearfix show-xs save-group col-xs-10">
+                    <button type="submit" class="default btn btn-primary col-xs-10" name="_save" data-loading-text="保存中.."><i class="icon-save"></i> 保存</button>
+                    <button type="button" class="more btn btn-primary col-xs-2" data-toggle="collapse" data-target=".nav-collapse.more-btns"><i class="icon-ellipsis-vertical"></i></button>
+                </div>
+                <button type="submit" class="default btn btn-primary hide-xs" name="_save" data-loading-text="保存中.."><i class="icon-save"></i> 保存</button>
+            </div>
+
+
+            <input type = 'hidden' id = '_portal_key' value = 'dashboard:home:pos' />
+        </div>
+    </div>
+
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        //验证
+        $("#documentFrom").validate({
+            rules: {
+                catid: {
+                    min: 0 ,
+                    digits: true
+                },
+                desc: {
+                    required: true,
+                    minlength: 1,
+                    maxlength: 200
+                },
+                title: {
+                    required: true,
+                    minlength: 1,
+                    maxlength: 200
+                },
+                listorder: {
+                    digits: true
+                },
+                islink: {
+                    url: true
+                }
+            },
+            messages: {
+                desc: "请填写关键词描述",
+            }
+
+        });
+
+    });
+</script>
+
+<!--验证-->
+<script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.validate.messages.cn.js"></script>
+
+
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

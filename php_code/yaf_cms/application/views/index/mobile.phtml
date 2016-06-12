@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title><?=$config['title'].$config['sitename']?></title>
+		<base target="_blank" />                    
+		<meta name="keywords" content="<?=$config['keywords']?>" /> 
+		<meta name="Description" content="<?=$config['description']?>" />
+                <meta name="applicable-device" content="mobile"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+		<meta name="format-detection" content="telephone=no"/>
+		<link href="<?=IMGURL?>static/css/style1211.css" rel="stylesheet" type="text/css">
+		<link href="<?=IMGURL?>static/css/index1211.css" rel="stylesheet" type="text/css">
+		<script src="<?=IMGURL?>static/js/index0929.js" type="text/javascript"></script>
+		<script src="<?=IMGURL?>static/js/jquery-1.4.2.js" type="text/javascript"></script>
+		<script src="<?=IMGURL?>static/js/dhqh.js" type="text/javascript"></script>
+		<script language="javascript" type="text/javascript"> 
+		var url1="http://mtip.ufstone.com/showswt.php?charset=gb2312&names=hangzhoupb";
+		document.writeln("<scr"+"ipt src=\"" + url1 + "\"  language=\"javascript\"   type=\"text/javascript\" charset=\"gb2312\" ><\/scr"+"ipt>");
+		</script>
+	</head>
+	<body>
+		<!--header导航 start-->
+		<header>
+			<div class="hd01">
+				<a href="/<?=SITEDIR?>/" class="a1">首页</a>
+				<div id="zk">
+					<img src="<?=IMGURL?>static/images/sjmh_003.jpg" width="22" height="17" />
+					<div class="content none">
+						<ul>
+							<li><a href="/hyzx/ssjf/">瘦身减肥</a></li>
+							<li><a href="/hyzx/tszl/">特色诊疗</a></li>
+							<li><a href="/hyzx/bzbj/">不知不觉</a></li>
+							<li><a href="/hyzx/cnly/">长年累月</a></li>
+							<li><a href="/hyzx/myqf/">明月清风</a></li>
+							<li><a href="/hyzx/yszd/">养生之道</a></li>
+							<li><a href="/hyzx/qsjt/">强身健体</a></li>
+							<li><a href="/hyzx/jgyx/">巾帼英雄</a></li>
+							<li><a href="/hyzx/pybm/">疲于奔命</a></li>
+							<li><a href="/hyzx/jkyl/">健康医疗</a></li>
+							<li><a href="/hyzx/jkbj/">健康保健</a></li>
+							<li><a href="/hyzx/jbzd/">疾病诊断</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="hd02"><a style="text-decoration:none;"><?=$config['sitename']?></a></div>
+		</header>
+		<!--header导航 end-->
+		<p class="clr"></p>
+
+		<article>
+			<!--菜单 start-->
+			<div class="hd_3">
+				<div class="rslides_container">
+					<div class="rslides" id="slider">
+						<ul class="mm">
+							<li><a href="/hyzx/ssjf/">瘦身减肥</a></li>
+							<li><a href="/hyzx/tszl/">特色诊疗</a></li>
+							<li><a href="/hyzx/bzbj/">不知不觉</a></li>
+							<li><a href="/hyzx/cnly/">长年累月</a></li>
+							<li><a href="/hyzx/myqf/">明月清风</a></li>
+							<li><a href="/hyzx/yszd/">养生之道</a></li>
+							<li><a href="/hyzx/qsjt/">强身健体</a></li>
+							<li><a href="/hyzx/jgyx/">巾帼英雄</a></li>
+						</ul>
+						<ul class="mm" style="display:none;">
+							<li><a href="/hyzx/pybm/">疲于奔命</a></li>
+							<li><a href="/hyzx/jkyl/">健康医疗</a></li>
+							<li><a href="/hyzx/jkbj/">健康保健</a></li>
+							<li><a href="/hyzx/jbzd/">疾病诊断</a></li>
+							<li><a>癫痫病医院</a></li>
+							<li><a>癫痫病</a></li>
+							<li><a>亲子育儿</a></li>
+							<li><a>快速咨询</a></li>
+						</ul>
+					</div>
+					<a class="prev"></a>
+					<span class="btn111 xuant"></span>
+					<span class="btn222"></span>
+					<a class="next"></a>
+				</div>
+			</div>
+			<!--菜单 end-->
+
+			<!--精华文章/推荐文章/热点文章 start-->
+			<div class="qh1">
+				<ul class="ul1">
+					<li onMouseMove="TabMove(6,1,3)" id="Button61" class="kjy_a"><a>精华文章</a></li>
+					<li onMouseMove="TabMove(6,2,3)" id="Button62" class="kjy"><a>推荐文章</a></li>
+					<li onMouseMove="TabMove(6,3,3)" id="Button63" class="kjy"><a>热点文章</a></li>
+				</ul>
+				<div id="ContentBox61" class="qh2">
+					<ul class="ul2">
+						<?php foreach($data['jhwz'] as $v){ ?>
+                                            <li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=  rand(100, 200)?></em></li>
+						<?php } ?>
+					</ul>
+				</div>
+				<div id="ContentBox62" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['tjwz'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+					</ul>
+				</div>
+				<div id="ContentBox63" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['rdwz'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+					</ul>
+				</div>
+			</div>
+			<!--精华文章/推荐文章/热点文章 end-->
+			
+			<!--banner start-->
+			<div class="banner">
+				<a><img src="<?=IMGURL?>static/images/sjmh_018.jpg" width="98%" /></a>
+			</div>
+			<!--banner end-->
+
+			<!--第一列表 start-->
+			<div class="qh">
+				<div class="qh1">
+				<ul class="ul1">
+					<li onMouseMove="TabMove(2,1,3)" id="Button21" class="kjy_a"><a href="/<?=SITEDIR?>/ssjf/">瘦身减肥</a></li>
+					<li onMouseMove="TabMove(2,2,3)" id="Button22" class="kjy"><a href="/<?=SITEDIR?>/tszl/">特色诊疗</a></li>
+					<li onMouseMove="TabMove(2,3,3)" id="Button23" class="kjy"><a href="/<?=SITEDIR?>/bzbj/">不知不觉</a></li>
+				</ul>
+				<div id="ContentBox21" class="qh2">
+					<ul class="ul2">
+						<?php foreach($data['ssjf'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/bzbj/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox22" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['tszl'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/tszl/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox23" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['bzbj'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/bzbj/">查看更多内容>></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--第一列表 end-->
+
+			<!--第二列表 start-->
+			<div class="qh1">
+				<ul class="ul1">
+					<li onMouseMove="TabMove(3,1,3)" id="Button31" class="kjy_a"><a href="/<?=SITEDIR?>/cnly">长年累月</a></li>
+					<li onMouseMove="TabMove(3,2,3)" id="Button32" class="kjy"><a href="/<?=SITEDIR?>/myqf/">明月清风</a></li>
+					<li onMouseMove="TabMove(3,3,3)" id="Button33" class="kjy"><a href="/<?=SITEDIR?>/yszd/">养生之道</a></li>
+				</ul>
+				<div id="ContentBox31" class="qh2">
+					<ul class="ul2">
+						<?php foreach($data['cnly'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/cnly/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox32" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['myqf'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/myqf/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox33" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['yszd'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/yszd/">查看更多内容>></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--第二列表 end-->
+			
+			<!--第三列表 start-->
+			<div class="qh1">
+				<ul class="ul1">
+					<li onMouseMove="TabMove(4,1,3)" id="Button41" class="kjy_a"><a href="/<?=SITEDIR?>/qsjt/">强身健体</a></li>
+					<li onMouseMove="TabMove(4,2,3)" id="Button42" class="kjy"><a href="/<?=SITEDIR?>/jgyx/">巾帼英雄</a></li>
+					<li onMouseMove="TabMove(4,3,3)" id="Button43" class="kjy"><a href="/<?=SITEDIR?>/pybm/">疲于奔命</a></li>
+				</ul>
+				<div id="ContentBox41" class="qh2">
+					<ul class="ul2">
+						<?php foreach($data['qsjt'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/qsjt/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox42" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['jgyx'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/jgyx/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox43" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['pybm'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/pybm/">查看更多内容>></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--第三列表 end-->
+
+			<!--第四列表 start-->
+			<div class="qh1">
+				<ul class="ul1">
+					<li onMouseMove="TabMove(5,1,2)" id="Button51" class="kjy_a"><a href="/<?=SITEDIR?>/jkyl/">健康医疗</a></li>
+					<li onMouseMove="TabMove(5,2,3)" id="Button52" class="kjy"><a href="/<?=SITEDIR?>/jkbj/">健康保健</a></li>
+					<li onMouseMove="TabMove(5,3,3)" id="Button53" class="kjy"><a href="/<?=SITEDIR?>/jbzd/">疾病诊断</a></li>
+				</ul>
+				<div id="ContentBox51" class="qh2">
+					<ul class="ul2">
+						<?php foreach($data['jkyl'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/jkyl/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox52" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['jkbj'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/jkbj/">查看更多内容>></a></li>
+					</ul>
+				</div>
+				<div id="ContentBox53" class="qh2" style="display:none;">
+					<ul class="ul2">
+						<?php foreach($data['jbzd'] as $v){ ?>
+						<li><span><a href="/<?=SITEDIR?>/<?=$category[$v['catid']]['catpath']?>/<?=$v['id']?>.html"><?=mb_substr($v['title'], 0 ,17)?></a></span><em>点击量：<?=rand(100, 200)?></em></li>
+						<?php } ?>
+						<li class="limore"><a href="/<?=SITEDIR?>/jbzd/">查看更多内容>></a></li>
+					</ul>
+				</div>
+			</div>
+			<!--第四列表 end-->
+		</div>
+	</article>
+
+	<p class="clr"></p>
+
+	<!--手机底部-->
+	<footer>
+		<p class="p4">
+		<a name="sj_tel"><img src="<?=IMGURL?>static/images/qq20140707153814_01.jpg"></a>
+		<a href="javascript:openZoosUrl('chatwin')" name="sj_swt"><img src="<?=IMGURL?>static/images/qq20140707153814_02.jpg"></a>
+		<a href="javascript:openZoosUrl('chatwin')" name="sj_swt"><img src="<?=IMGURL?>static/images/qq20140707153814_03.jpg"></a>
+		<a href="javascript:openZoosUrl('chatwin')" name="sj_swt"><img src="<?=IMGURL?>static/images/qq20140707153814_04.jpg"></a>
+		</p>
+	</footer>
+	<!--手机底部end-->
+	</body>
+</html>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Hfs
+END
+HfsHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Hfs/HfsHandler.cpp
+END
+HfsHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Hfs/HfsHandler.h
+END
+HfsRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Hfs/HfsRegister.cpp
+END
+HfsIn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Hfs/HfsIn.cpp
+END
+HfsIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Hfs/HfsIn.h
+END

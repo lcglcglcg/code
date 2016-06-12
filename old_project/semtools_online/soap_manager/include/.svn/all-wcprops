@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include
+END
+network.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/network.h
+END
+soapH.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/soapH.h
+END
+soap_manager.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/soap_manager.h
+END
+stdsoap2.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/stdsoap2.h
+END
+soapStub.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/soapStub.h
+END
+pack_manager.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/pack_manager.h
+END

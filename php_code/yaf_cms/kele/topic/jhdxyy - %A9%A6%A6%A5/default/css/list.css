@@ -1,0 +1,70 @@
+/* CSS Document */
+
+.tSaoXVE {float:left; background:#4d669f;width:650px; height:35px;padding-left:20px; color:#ffffff; font-size:16px; line-height:35px;overflow:hidden;}
+.tSaoXVE a {color:#fff}
+.tSaoXVE a:hover {color: #c13d48;}
+#listContent{ overflow:hidden; clear:both;width:1000px;margin:0 auto;}
+.dKthhOn {width:680px; float:left;}
+.NIDcUwc {border-right:1px solid #e9e9e9;padding-right:10px;overflow:hidden;padding-top:10px}
+.NIDcUwc li {border-top:1px solid #e9e9e9;background-color:#f9fafe;margin-bottom:7px;padding:10px;float: left;}
+.NIDcUwc li h2 {font-size:18px;line-height:30px;font-family:"Microsoft Yahei";font-weight:normal;}
+.NIDcUwc li h2 a {color:#000;}
+.NIDcUwc li h2 a:hover {color: #c13d48;}
+.NIDcUwc li p {font-size:12px;line-height:24px;padding-top:10px;color:#58595b;}
+/*-- colAuto --*/
+.tlMykyy {width:320px;float:right;}
+.tlMykyy .onlineImg {border:1px solid #CCCCCC;height:128px;width:318px;display:block;}
+.tlMykyy .onlineImg img {height:128px;width:318px;display:block;}
+.tlMykyy .column1 {background:#3b60b0 url(../images/column1.gif) no-repeat left center;height:42px;}
+.tlMykyy .VpRKHTi {background:#3b60b0 url(../images/column2.gif) no-repeat left center;height:42px;}
+.tlMykyy .pREERNz {background:#3b60b0 url(../images/column3.gif) no-repeat left center;height:42px;}
+.tlMykyy .ZJYFaFh {background:#3b60b0 url(../images/column4.gif) no-repeat left center;height:42px;}
+.JtsyjGQ { background-color:#FFFFFF; }
+.FNzsDjX {margin-bottom:10px;}
+
+.bgC13D48 li {background:url(../images/bgC13D48.gif) no-repeat right center;height:28px;line-height:28px;font-size:14px;color:#ffffff;padding-left:40px;margin-top:5px;}
+.yiyuan {color:#59595b;font-size:12px;line-height:25px;padding:10px 20px 0;}
+.tlMykyy img { margin:0 10px;}
+
+.FhlLQUR { padding-bottom:10px;}
+.FhlLQUR li {height:138px;overflow:hidden;margin-top:10px;color:#58595b;}
+.FhlLQUR li h3 {float:right;width:183px;font-size:16px;line-height:21px;height:21px;margin-right:10px;text-align: center;}
+.FhlLQUR li h3 a {color:#3b60b0;}
+.FhlLQUR li p {font-size:12px;line-height:20px;padding-top:3px;}
+.FhlLQUR li img {float:left;margin-right:10px;}
+.FhlLQUR .qSzhUPL {padding-top:5px;}
+.FhlLQUR .qSzhUPL a {display:inline-block;width:83px;height:26px;line-height:25px;text-align:center;background:#c13d48;color:#FFF;margin:0px 5px;font-size:14px;}
+.FhlLQUR .qSzhUPL a:hover {background:#3b60b0;}
+
+.lxxRybA li p {font-size:12px;line-height:25px;padding:3px 15px;color:#58595b}
+.lxxRybA li img {float:left;margin:10px;}
+.lxxRybA h3 {text-align: center;font-size:14px}
+.tYQaJLL {width:670px;height:27px;text-align:center;margin:10px 0 0 0;background:#ffffff;padding:10px 0;}
+.tYQaJLL a {color:#333}
+.tYQaJLL a , .tYQaJLL span {display:inline-block;padding:5px;text-align:center;background:#ccc;font-size:12px;font-family:Tahoma;margin:-1px;vertical-align:top;font-size:14px;border-radius:2px;outline:none;margin:0 2px;}
+.tYQaJLL span , .tYQaJLL a:hover {color:#fff;background:#E75242;text-decoration:none;}
+
+
+.qULbup { width:670px; background-color:#ffffff;padding-bottom: 10px;}
+.qULbup h2 {text-align:center; font-size:16px; line-height:50px; font-weight:bold; color:#4d669f; }
+.qULbup h3 { color:#999999; font-size:12px; font-weight:normal;text-align:center; line-height:20px;}
+.ZqmmNco { margin:0 10px 10px 10px;}
+.ZqmmNco p {line-height:25px; font-size:14px;margin-top:10px;text-indent:2em}
+.pex { width:650px;padding:0 10px 10px 10px;height:16px}
+.pex span {font-size:14px; color:#3675c1}
+.nextleft {float:left;}
+.nextright {float:right;}
+
+.wz_ad00 {float:left;width:670px;background:#ffffff;margin-top:10px;margin-bottom:10px;}
+.wz_ad00 h1 { background:#3b60b0; height:49px; line-height:49px; width:670px; color:#FFFFFF; font-size:24px; font-weight:800; text-align:center;}
+.wz_ad00_zj { width:670px; height:160px;font-size:12px;color:#333;line-height:24px;}
+.wz_ad00_zj li { width:325px; float:left; margin:10px 5px 5px 5px;}
+.wz_ad00_zj li img { float:left; padding:5px;}
+.wz_ad00_zjnr { float:left; width:215px;}
+.wz_ad00_zjnr span { color:#ff0000; font-size:14px;font-weight:bold}
+
+.pGTtEkF {width: 670px;background-color: #ffffff;margin-top:10px;overflow: hidden;}
+.pGTtEkF ul {padding:10px;}
+.pGTtEkF ul li {line-height:27px;font-size:12px;float:left;background: url(../images/dian.gif) left center no-repeat;padding-left: 10px;width: 315px;height:27px;overflow: hidden;}
+.pGTtEkF ul li a {color:#595a5e;font-size:14px;}
+.pGTtEkF ul li a:hover {color:#c13f49;text-decoration:underline;}

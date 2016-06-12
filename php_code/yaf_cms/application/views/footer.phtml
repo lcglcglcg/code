@@ -1,0 +1,14 @@
+<div class="clear"></div>
+<div class="footer">
+    <div class="footerinfo">
+        <p class="ftinfo1"><a href="/hyzx/kqfj/">康强逢吉</a>|<a href="/hyzx/rsnf/">人寿年丰</a>|<a href="/hyzx/sytq/">寿与天齐</a>|<a href="/hyzx/lmth/">六脉调和</a>|<a>联系我们</a>|<a>网站地图</a></p>
+        <p><?=$config['footer_tel']?></p>
+        <p><?=$config['footer_info']?></p>
+    </div>
+</div>
+</body>
+</html>
+<?php
+unset($data);
+DEBUG == 1 && Yaf_Loader::import(PATH_VIEW . '/footer_debug.phtml');
+?>

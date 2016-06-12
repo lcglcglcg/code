@@ -1,0 +1,225 @@
+<div class="panel-group hide-sm nav-sitemenu col-md-2" id="nav-accordion">
+
+    <?php
+    foreach ($menu_list as $key => $children) {
+        ?>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h6 class="panel-title">
+                    <span class="badge badge-info"><?php echo count($children['child']); ?></span>
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-<?php echo $key; ?>">
+
+                        <i class="icon-fixed-width  icon-th-large"></i>
+
+                        <?php echo $children['top']['menu_name']; ?>
+
+                    </a>
+                </h6>
+            </div>
+            <div id="nav-panel-<?php echo $key; ?>" class="list-group panel-collapse collapse">
+
+                <?php
+                foreach ($children['child'] as $k => $v) {
+                    ?>
+                    <a href="<?php echo $v['url'] ?>" class="list-group-item" >
+
+                        <?php echo $v['menu_name']; ?></span>
+                    </a>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
+        <?php
+    }
+    ?>
+    <!--判断菜单状态-->
+    <script type="text/javascript">
+        var url_path = window.location.pathname;
+        var url_search = window.location.search;
+        if(url_search){
+            url_search += url_path;
+        }else{
+            url_search = url_path;
+        }
+        //遍历菜单栏目
+        $('.list-group-item').each(function(){
+            var str = $(this).attr("href");
+            if(str){
+                if( -1 != str.indexOf('?')){
+                    str = str.substr(0,str.indexOf('?'));
+                }
+            }
+            if($(this).attr("href") == url_search || str == url_path ){
+                //变更顶级菜单样式
+                $(this).parent().removeClass("list-group panel-collapse collapse");
+                $(this).parent().addClass("list-group panel-collapse in");
+                $(this).removeClass("accordion-toggle");
+                //变更子菜单样式
+                $(this).addClass("accordion-toggle collapsed");
+                $(this).css('background-color','lightblue');
+            }
+        });
+    </script>
+
+    <!---
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          <span class="badge badge-info">3</span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-1">
+            
+            <i class="icon-fixed-width icon-flag"></i>
+            
+            App
+            
+          </a>
+        </h6>
+      </div>
+      <div id="nav-panel-1" class="list-group panel-collapse collapse">
+        
+        <a href="/app/continent/" class="list-group-item">
+          <i class="icon-fixed-width icon-globe"></i>
+          Continents</span>
+        </a>
+        
+        <a href="/app/country/" class="list-group-item">
+          <i class="icon-fixed-width icon-flag"></i>
+          Countries</span>
+        </a>
+        
+        <a href="/app/kitchensink/" class="list-group-item">
+          <i class="icon-fixed-width icon-briefcase"></i>
+          Kitchen sinks</span>
+        </a>
+        
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          <span class="badge badge-info">3</span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-2">
+            
+            <i class="icon-fixed-width icon-lock"></i>
+            
+            Auth
+            
+          </a>
+        </h6>
+      </div>
+      <div id="nav-panel-2" class="list-group panel-collapse collapse">
+        
+        <a href="/auth/group/" class="list-group-item">
+          <i class="icon-fixed-width icon-group"></i>
+          组</span>
+        </a>
+        
+        <a href="/auth/permission/" class="list-group-item">
+          <i class="icon-fixed-width icon-lock"></i>
+          权限</span>
+        </a>
+        
+        <a href="/auth/user/" class="list-group-item">
+          <i class="icon-fixed-width icon-user"></i>
+          用户</span>
+        </a>
+        
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          <span class="badge badge-info">1</span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-3">
+            
+            <i class="icon-fixed-width icon-comment"></i>
+            
+            Comments
+            
+          </a>
+        </h6>
+      </div>
+      <div id="nav-panel-3" class="list-group panel-collapse collapse">
+        
+        <a href="/comments/comment/" class="list-group-item">
+          <i class="icon-fixed-width icon-comment"></i>
+          评论</span>
+        </a>
+        
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          <span class="badge badge-info">5</span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-4">
+            
+            <i class="icon-fixed-width icon-exclamation-sign"></i>
+            IDC Management
+            
+          </a>
+        </h6>
+      </div>
+      <div id="nav-panel-4" class="list-group panel-collapse collapse">
+        
+        <a href="/host/host/" class="list-group-item">
+          <i class="icon-fixed-width icon-exclamation-sign"></i>
+          Host</span>
+        </a>
+        
+        <a href="/host/hostgroup/" class="list-group-item">
+          <i class="icon-fixed-width icon-exclamation-sign"></i>
+          Host Group</span>
+        </a>
+        
+        <a href="/host/maintainlog/" class="list-group-item">
+          <i class="icon-fixed-width icon-exclamation-sign"></i>
+          Maintain Log</span>
+        </a>
+        
+        <a href="/host/idc/" class="list-group-item">
+          <i class="icon-fixed-width icon-exclamation-sign"></i>
+          IDC</span>
+        </a>
+        
+        <a href="/host/accessrecord/" class="list-group-item">
+          <i class="icon-fixed-width icon-exclamation-sign"></i>
+          Access Record</span>
+        </a>
+        
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h6 class="panel-title">
+          <span class="badge badge-info">2</span>
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-5">
+            
+            <i class="icon-fixed-width icon-file"></i>
+            
+            Reversion
+            
+          </a>
+        </h6>
+      </div>
+      <div id="nav-panel-5" class="list-group panel-collapse collapse">
+        
+        <a href="/reversion/revision/" class="list-group-item">
+          <i class="icon-fixed-width icon-exchange"></i>
+          Revisions</span>
+        </a>
+        
+        <a href="/reversion/version/" class="list-group-item">
+          <i class="icon-fixed-width icon-file"></i>
+          Versions</span>
+        </a>
+        
+      </div>
+    </div>
+    -->
+</div>

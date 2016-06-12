@@ -1,0 +1,460 @@
+
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#include "php.h"
+#include "php_ini.h"
+#include "ext/standard/info.h"
+#include "php_site_builder.h"
+#include <uuid/uuid.h>
+
+/* If you declare any globals in php_site_builder.h uncomment this:
+   ZEND_DECLARE_MODULE_GLOBALS(site_builder)
+   */
+
+/* True global resources - no need for thread safety here */
+static int le_site_builder;
+
+/* {{{ site_builder_functions[]
+ *
+ * Every user visible function must have an entry in site_builder_functions[].
+ */
+const zend_function_entry site_builder_functions[] = {
+    PHP_ME(site_builder, __construct, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, __destruct, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, create_template_id, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, create_keyword_id, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, create_content_id, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, create_link_group_id, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, create_link_external_id, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, add_template_dir, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, add_keyword_file, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, add_content_file, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, add_link_group_file, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, add_link_external_file, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, get_config, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_ME(site_builder, set_config, NULL, ZEND_ACC_PUBLIC | ZEND_ACC_CTOR)
+	PHP_FE_END	/* Must be the last line in site_builder_functions[] */
+};
+/* }}} */
+
+/* {{{ site_builder_module_entry
+*/
+zend_module_entry site_builder_module_entry = {
+#if ZEND_MODULE_API_NO >= 20010901
+    STANDARD_MODULE_HEADER,
+#endif
+    "site_builder",
+    site_builder_functions,
+    PHP_MINIT(site_builder),
+    PHP_MSHUTDOWN(site_builder),
+    PHP_RINIT(site_builder),		/* Replace with NULL if there's nothing to do at request start */
+    PHP_RSHUTDOWN(site_builder),	/* Replace with NULL if there's nothing to do at request end */
+    PHP_MINFO(site_builder),
+#if ZEND_MODULE_API_NO >= 20010901
+    PHP_SITE_BUILDER_VERSION,
+#endif
+    STANDARD_MODULE_PROPERTIES
+};
+/* }}} */
+
+#ifdef COMPILE_DL_SITE_BUILDER
+ZEND_GET_MODULE(site_builder)
+#endif
+
+    /* {{{ PHP_INI
+    */
+    /* Remove comments and fill if you need to have entries in php.ini
+       PHP_INI_BEGIN()
+       STD_PHP_INI_ENTRY("site_builder.global_value",      "42", PHP_INI_ALL, OnUpdateLong, global_value, zend_site_builder_globals, site_builder_globals)
+       STD_PHP_INI_ENTRY("site_builder.global_string", "foobar", PHP_INI_ALL, OnUpdateString, global_string, zend_site_builder_globals, site_builder_globals)
+       PHP_INI_END()
+       */
+    /* }}} */
+
+    /* {{{ php_site_builder_init_globals
+    */
+    /* Uncomment this function if you have INI entries
+       static void php_site_builder_init_globals(zend_site_builder_globals *site_builder_globals)
+       {
+       site_builder_globals->global_value = 0;
+       site_builder_globals->global_string = NULL;
+       }
+       */
+    /* }}} */
+
+    /* {{{ PHP_MINIT_FUNCTION
+    */
+    zend_class_entry *site_builder_ce = NULL;
+PHP_MINIT_FUNCTION(site_builder)
+{
+    zend_class_entry site_builder;
+    INIT_CLASS_ENTRY(site_builder, "site_builder", site_builder_functions);
+    site_builder_ce=zend_register_internal_class_ex(&site_builder, NULL, NULL TSRMLS_CC);
+    zend_declare_property_null(site_builder_ce, ZEND_STRL("name"), ZEND_ACC_PUBLIC TSRMLS_CC);
+    return SUCCESS;
+}
+/* }}} */
+
+/* {{{ PHP_MSHUTDOWN_FUNCTION
+*/
+PHP_MSHUTDOWN_FUNCTION(site_builder)
+{
+    /* uncomment this line if you have INI entries
+       UNREGISTER_INI_ENTRIES();
+       */
+    return SUCCESS;
+}
+/* }}} */
+
+/* Remove if there's nothing to do at request start */
+/* {{{ PHP_RINIT_FUNCTION
+*/
+PHP_RINIT_FUNCTION(site_builder)
+{
+    return SUCCESS;
+}
+/* }}} */
+
+/* Remove if there's nothing to do at request end */
+/* {{{ PHP_RSHUTDOWN_FUNCTION
+*/
+PHP_RSHUTDOWN_FUNCTION(site_builder)
+{
+    return SUCCESS;
+}
+/* }}} */
+
+/* {{{ PHP_MINFO_FUNCTION
+*/
+PHP_MINFO_FUNCTION(site_builder)
+{
+    php_info_print_table_start();
+    php_info_print_table_header(2, "site_builder support", "enabled");
+    php_info_print_table_end();
+
+    /* Remove comments if you have entries in php.ini
+       DISPLAY_INI_ENTRIES();
+       */
+}
+/* }}} */
+
+char *site_builder_uuid(char *key)
+{
+    uuid_t uuid;
+    uuid_generate(uuid);
+    uuid_unparse(uuid, key);
+    return key;
+}
+
+int site_builder_create_dir(char *key)
+{
+    char path[128] = SITE_BUILDER_HOME;
+    strcpy(&path[SITE_BUILDER_HOME_SIZE], site_builder_uuid(key));
+
+    if (mkdir(path, 0755))
+	return -1;
+
+    return 0;
+}
+
+int site_builder_create_file(char *key)
+{
+    char path[128] = SITE_BUILDER_HOME;
+    strcpy(&path[SITE_BUILDER_HOME_SIZE], site_builder_uuid(key));
+
+    FILE *fp = fopen(path, "wb");
+    if (!fp) return -1;
+
+    fclose(fp);
+    return 0;
+}
+
+int site_builder_copy(const char *dest_path, const char *src_path)
+{
+
+    FILE *src_fp = fopen(src_path, "rb");
+    FILE *dest_fp = fopen(dest_path, "wb");
+    char buffer[1024];
+
+    for (;;) {
+
+	int size = fread(buffer, 1, 1024, src_fp);
+	if (size <= 0) break;
+
+	fwrite(buffer, 1, size, dest_fp);
+    }
+}
+
+int site_builder_load_dir(const char *path, int path_len, const char *template_id)
+{
+
+    DIR *dir = NULL;
+    struct dirent *dir_info = NULL;
+
+    char src_path[1024];
+    char dest_path[1024] = SITE_BUILDER_HOME;
+    char *key = &src_path[path_len];
+
+    if (!(dir = opendir(path)))
+	return -1;
+
+    while((dir_info = readdir(dir))) {
+
+	if((strcmp(dir_info->d_name,".") == 0))
+	    continue;
+
+	if ((strcmp(dir_info->d_name,"..")==0))
+	    continue;
+
+	sprintf(src_path, "%s/%s", path, dir_info->d_name);
+	if (dir_info->d_type == 4) { //dir
+
+	    site_builder_load_dir(src_path, path_len, template_id);
+
+	} else if (dir_info->d_type == 8) { //file
+
+	    sprintf(&dest_path[SITE_BUILDER_HOME_SIZE], "/%s/%s", template_id, key);
+	    fprintf(stdout, "[%s][%s]\n", dest_path, src_path);
+	    
+	    site_builder_copy(dest_path, src_path);
+	}
+    }
+
+    closedir(dir);
+    return 0;
+}
+
+PHP_METHOD(site_builder, __construct)
+{
+
+}
+
+PHP_METHOD(site_builder, __destruct)
+{
+
+}
+
+PHP_METHOD(site_builder, create_template_id)
+{
+
+    char template_id[64];
+    if (site_builder_create_dir(template_id))
+	RETURN_STRING("create id: error!", 1);
+
+    RETURN_STRING(template_id, 1);
+}
+
+PHP_METHOD(site_builder, create_keyword_id)
+{
+
+    char id[64];
+    if (site_builder_create_file(id))
+	RETURN_STRING("create id: error!", 1);
+
+    RETURN_STRING(id, 1);
+}
+
+PHP_METHOD(site_builder, create_content_id)
+{
+
+    char id[64];
+    if (site_builder_create_file(id))
+	RETURN_STRING("create id: error!", 1);
+
+    RETURN_STRING(id, 1);
+}
+
+PHP_METHOD(site_builder, create_link_group_id)
+{
+
+    char id[64];
+    if (site_builder_create_file(id))
+	RETURN_STRING("create id: error!", 1);
+
+    RETURN_STRING(id, 1);
+}
+
+PHP_METHOD(site_builder, create_link_external_id)
+{
+
+    char id[64];
+    if (site_builder_create_file(id))
+	RETURN_STRING("create id: error!", 1);
+
+    RETURN_STRING(id, 1);
+}
+
+PHP_METHOD(site_builder, add_template_dir)
+{
+
+    char *template_id = NULL;
+    int template_id_size = 0;
+
+    char *dir_path = NULL;
+    int dir_path_size = 0;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ss",
+		&template_id,
+		&template_id_size,
+		&dir_path,
+		&dir_path_size
+		) == FAILURE)
+	return;
+
+    if (template_id_size != 36)
+	RETURN_LONG(-2);
+
+    site_builder_load_dir(dir_path, dir_path_size, template_id);
+
+    RETURN_LONG(0);
+}
+
+PHP_METHOD(site_builder, add_keyword_file)
+{
+
+    char *id = NULL;
+    int id_size = 0;
+
+    char *file_path = NULL;
+    int file_path_size = 0;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ss",
+		&id,
+		&id_size,
+		&file_path,
+		&file_path_size
+		) == FAILURE)
+	return;
+
+    if (id_size != 36) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    char dest_path[128] = SITE_BUILDER_HOME;
+    strcpy(&dest_path[SITE_BUILDER_HOME_SIZE], id);
+    if (access(dest_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    if (file_path_size <= 0) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    if (access(file_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    site_builder_copy(dest_path, file_path);
+}
+
+PHP_METHOD(site_builder, add_content_file)
+{
+
+    char *id = NULL;
+    int id_size = 0;
+
+    char *file_path = NULL;
+    int file_path_size = 0;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ss",
+		&id,
+		&id_size,
+		&file_path,
+		&file_path_size
+		) == FAILURE)
+	return;
+
+    if (id_size != 36) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    char dest_path[128] = SITE_BUILDER_HOME;
+    strcpy(&dest_path[SITE_BUILDER_HOME_SIZE], id);
+    if (access(dest_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    if (file_path_size <= 0) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    if (access(file_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    site_builder_copy(dest_path, file_path);
+}
+
+PHP_METHOD(site_builder, add_link_group_file)
+{
+
+    char *id = NULL;
+    int id_size = 0;
+
+    char *file_path = NULL;
+    int file_path_size = 0;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ss",
+		&id,
+		&id_size,
+		&file_path,
+		&file_path_size
+		) == FAILURE)
+	return;
+
+    if (id_size != 36) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    char dest_path[128] = SITE_BUILDER_HOME;
+    strcpy(&dest_path[SITE_BUILDER_HOME_SIZE], id);
+    if (access(dest_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    if (file_path_size <= 0) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    if (access(file_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    site_builder_copy(dest_path, file_path);
+}
+
+PHP_METHOD(site_builder, add_link_external_file)
+{
+
+    char *id = NULL;
+    int id_size = 0;
+
+    char *file_path = NULL;
+    int file_path_size = 0;
+
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ss",
+		&id,
+		&id_size,
+		&file_path,
+		&file_path_size
+		) == FAILURE)
+	return;
+
+    if (id_size != 36) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    char dest_path[128] = SITE_BUILDER_HOME;
+    strcpy(&dest_path[SITE_BUILDER_HOME_SIZE], id);
+    if (access(dest_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_ID);
+
+    if (file_path_size <= 0) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    if (access(file_path, 0)) 
+	RETURN_LONG(SITE_BUILDER_NOT_FILE);
+
+    site_builder_copy(dest_path, file_path);
+}
+
+PHP_METHOD(site_builder, get_config)
+{
+
+}
+
+PHP_METHOD(site_builder, set_config)
+{
+
+}
+
+

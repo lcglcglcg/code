@@ -1,0 +1,23 @@
+/* CSS Document */
+.message_backg{ background:#0681bf; width:330px;padding:0 10px 10px 10px; font-size:12px; font-family:宋体;}
+ul,ol,li,dl,dt,dd{ display:block; padding:0; margin:0; list-style:none;}
+/* title*/
+.title{ width:220px; height:30px; background:url(../images/refuse.gif) no-repeat; margin:0 auto; text-align:center; color:#FFF; line-height:30px; font-weight:bold;}
+/*cont */
+.cont{ width:310px; background:#FFF; height:auto; padding:20px 10px 10px 10px;}
+.cont ul li{ height:30px; line-height:30px;}
+.cont .cont_t{ width:310px;height:auto; overflow:auto;}
+.cont .cont_t ul{ height:auto; overflow:auto;}
+.cont .cont_t ul li{width:310px; height:auto; text-align:left; line-height:18px; overflow:auto;}
+.cont ul li.w200{ width:310px; height:auto; text-align:left;  float:left;}
+
+/* r_btn 两个按钮自动居中 */
+.r_btn{ clear:both; width:310px; height:22px; margin-top:10px;}
+.r_btn ol,.r_btn ol li{ width:65px;height:22px;}
+.r_btn ol li a{ color:#000; display:block; width:65px; height:20px; line-height:20px; float:left; text-align:center; background:url(../images/icon.gif) no-repeat 0 -400px; margin: 0 10px;}
+.r_btn ol li a:link,.r_btn ol li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.r_btn ol li a:hover{ background:url(../images/icon.gif) no-repeat 0 -350px; color:#FFF; text-decoration:none;}
+
+
+
+

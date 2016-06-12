@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm
+END
+ChmIn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmIn.cpp
+END
+ChmHeader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmHeader.cpp
+END
+ChmIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmIn.h
+END
+ChmHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmHandler.cpp
+END
+ChmHeader.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmHeader.h
+END
+ChmHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmHandler.h
+END
+ChmRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Chm/ChmRegister.cpp
+END

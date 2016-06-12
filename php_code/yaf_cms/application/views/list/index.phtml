@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><?= isset($title) ? $title . '_' . $config['sitename'] : SITENAME ?></title>
+        <base target="_blank" />
+        <meta name="keywords" content="<?= isset($keywords) ? $keywords : (isset($config['keywords']) ? $config['keywords'] : '') ?>" />
+        <meta name="Description" content="<?= isset($description) ? $description : (isset($config['description']) ? $config['description'] : '') ?>" />
+        <link rel="stylesheet" href="<?= IMGURL ?>static/css/index.css"  />
+<!--        <script language="javascript" type="text/javascript"> 
+        var url1="http://mtip.ufstone.com/showswt.php?charset=gb2312&names=hangzhoupb";
+        document.writeln("<scr"+"ipt src=\"" + url1 + "\"  language=\"javascript\"   type=\"text/javascript\" charset=\"gb2312\" ><\/scr"+"ipt>");
+        </script>-->
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="logo"></div>
+            <div class="top_img"></div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="/hyzx/ssjf/">瘦身减肥</a></li>
+                <li><a href="/hyzx/tszl/">特色诊疗</a></li>
+                <li><a href="/hyzx/bzbj/">不知不觉</a></li>
+                <li><a href="/hyzx/cnly/">长年累月</a></li>
+                <li><a href="/hyzx/myqf/">明月清风</a></li>
+                <li><a href="/hyzx/yszd/">养生之道</a></li>
+                <li><a href="/hyzx/qsjt/">强身健体</a></li>
+                <li><a href="/hyzx/jgyx/">巾帼英雄</a></li>
+                <li><a href="/hyzx/pybm/">疲于奔命</a></li>
+                <li><a href="/hyzx/jkyl/">健康医疗</a></li>
+                <li><a href="/hyzx/jkbj/">健康保健</a></li>
+                <li><a href="/hyzx/jbzd/">疾病诊断</a></li>
+            </ul>
+        </div>
+
+        <div class="contain">
+            <div class="dqwz"><span><a href="/<?=SITEDIR?>/">首页</a> > <a href="/<?=SITEDIR?>/<?=$hover?>"><?= $title ?></a></span></div>
+            <div class="index_l">
+                <ul class="lb_ul">
+                    <?php foreach ($data['data'] as $k => $v) : ?>
+                    <li><a href="/<?= SITEDIR . '/' . $hover . '/' . $v['id'] . '.html' ?>"><?= misc::remove_nbsp($v['title']); ?></a><?= date('Y-n-j', $v['inputtime']); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+                <ul style="display: none;">
+                    <?php foreach ($data['data_h'] as $k => $v) : ?>
+                    <li><a href="/<?= SITEDIR . '/' . $hover . '/' . $v['id'] . '.html' ?>"><?= misc::remove_nbsp($v['title']); ?></a><?= date('Y-n-j', $v['inputtime']); ?></li>
+                    <?php endforeach; ?>
+                    <div class="fenye"><?= isset($data['page']) ? $data['page'] : '' ?></div>
+                </ul>
+            </div>
+
+            <div class="index_r">
+                <div class="left_lm1 left_lm4 left_lm5 right_lm2">
+                    <div class="name"><a href="">最新资讯</a></div>
+                    <ul style="display: none;">
+                        <?php foreach ($data['new'] as $k=>$v) :?>
+                        <li><a href="/<?= SITEDIR . '/' . $category[$v['catid']]['catpath'] . '/' . $v['id'] . '.html' ?>"><?= mb_substr($v['title'], 0, 18) ?></a></li>
+                        <?php if ($k > 38) break;endforeach;?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <?php Yaf_Loader::import(PATH_VIEW . '/footer.phtml');?>

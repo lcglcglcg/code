@@ -1,0 +1,27 @@
+/* CSS Document */
+ul,ol,li,dl,dt,dd{ display:block; padding:0; margin:0; list-style:none;}
+/* 弹出带问号确认框 */
+.msg_box{ font-size:12px; font-family:宋体; background:#0681bf; width:220px; min-height:120px;height:auto; padding:0 5px 5px 5px; position:absolute; z-index:999;}
+.msg_title{ culor:#FFF; font-weight:buld; height:28px; line-height:28px;}
+.msg_title b{ float:left;}
+.msg_title span{ float:right; padding-top:7px;}
+.msg_cont{ background:#FFF;  min-height:85px;height:auto; padding-bottom:5px;}
+.content{ padding: 25px 30px 19px 65px; background:url(../images/icon.gif) no-repeat 26px -788px;}
+.content_fu{ padding: 25px 30px 19px 65px; background:url(../images/icon.gif) no-repeat 16px -866px;}
+
+.msg_btn ul{ display:block; width:120px; text-align:center; height:25px; margin:0 auto; padding-right:15px; }
+.msg_btn ul.wp60{ display:block; width:50px; text-align:center; height:22px; margin:0 auto; padding-right:15px;}
+.msg_btn ul li{ display:inline; height:22px;}
+.msg_btn ul li a{ display:block; width:50px; height:22px; line-height:22px; float:left;font-weight:bold; text-align:center; background:url(../images/icon.gif) no-repeat 0 -300px; margin-left:10px;}
+.msg_btn ul li a:link,.msg_btn ul li a:visited{  color:#000; font-weight:bold;font-weight:bold;text-decoration:none;}
+.msg_btn ul li a:hover{ background:url(../images/icon.gif) no-repeat 0 -250px; font-weight:bold;culor:#FFF; text-decoration:none; color:#FFF;}
+.msg_box .m_w250{width:250px;}
+
+
+
+
+
+
+
+
+

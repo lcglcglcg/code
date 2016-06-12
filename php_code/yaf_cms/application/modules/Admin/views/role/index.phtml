@@ -1,0 +1,169 @@
+<!-- Header -->
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+
+    <div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+         data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+         data-class-sm="navbar content-navbar navbar-default navbar-xs">
+        <div class="navbar-header">
+
+
+            <button class="navbar-toggle pull-left" data-toggle="class" data-target="#body-content" data-class-name="show_menu">
+                <i class="icon-list"></i>
+            </button>
+
+            <a title="添加小组件" href="/xadmin/role/add/?user=1&amp;page_id=home&amp;_redirect=/" class="navbar-toggle pull-right">
+                <i class="icon-plus icon-white"></i></a>
+
+
+
+            <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+
+                <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：权限管理
+
+            </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+            </ul>
+
+
+            <div class="navbar-btn navbar-right hide-xs">
+
+
+
+                <a title="新建角色" href="/admin/role/add/" class="btn btn-primary">
+                    <i class="icon-plus icon-white"></i> <span>新建角色</span></a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="dashboard row">
+
+
+
+
+
+
+
+        <div class="col-sm-12 column">
+
+
+            <!--角色列表-->
+            <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+                <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">
+
+
+
+
+                        角色列表
+
+                    </h3></div>
+                <div class="panel-body " >
+
+                    <table class="table table-hover table-striped">
+
+                        <tr>
+                            <th>角色ID</th>
+                            <th>角色名</th>
+                            <th>角色描述</th>
+                            <th>状态</th>
+                            <th>添加时间</th>
+                            <th>操作</th>
+                        </tr>
+                        <?php
+                            foreach($role_list as $key => $value){
+                                ?>
+                                 <tr>
+                                     <td><?php echo $value['role_id'];?></td>
+                                     <td><?php echo $value['role_name'];?></td>
+                                     <td><?php echo $value['role_description'];?></td>
+                                     <td><?php echo (int)$value['is_forbid'] ? '禁用' : '启用';?></td>
+                                     <td><?php echo $value['add_time'];?></td>
+                                     <td>
+                                         <a href='/admin/role/add?id=<?php echo $value["role_id"];?>'>编辑</a>
+                                        <?php
+                                            if($value['role_id'] !=1){
+                                                ?>
+                                                <a href='/admin/privilege/index?rid=<?php echo $value["role_id"]?>'>设置权限</a>
+                                                <a href='/admin/role/delete?id=<?php echo $value["role_id"]?>' onclick="return confirm('确定要删除该角色吗？')">删除</a>
+                                                <?php
+                                            }else{
+                                                echo '设置权限 删除';
+                                            }
+                                        ?>
+
+
+
+                                     </td>
+                                 </tr>
+                                <?php
+                            }
+                        ?>
+
+
+                    </table>
+
+
+                </div>
+
+                <div class="modal fade widget_options" tabindex="-1" role="dialog" id="88-opts-form">
+                    <div class="modal-content">
+                        <form method="post" class="box-form form-horizontal short_label widget-form exform">
+                            <input type='hidden' name='csrfmiddlewaretoken' value='Isk5jWAs5OI5aoD6qCMv2uQNZ4doVbny' />
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">小组件设置项</h4>
+                            </div>
+                            <div class="modal-body">
+
+
+
+                                <input type='hidden' name='csrfmiddlewaretoken' value='Isk5jWAs5OI5aoD6qCMv2uQNZ4doVbny' /> <input id="id_id" name="id" type="hidden" value="88" /> <div id="div_id_title" class="form-group"><label for="id_title" class="control-label ">
+                                        Widget Title
+                                    </label><div class="controls "><input class="text-field admintextinputwidget form-control" id="id_title" name="title" type="text" value="e" /> </div></div><div id="div_id_model" class="form-group"><label for="id_model" class="control-label  requiredField">
+                                        Target Model<span class="asteriskField">*</span></label><div class="controls "><select class="adminselectwidget form-control" id="id_model" name="model"><option value="host.host">Host</option><option value="comments.comment">评论</option><option value="host.accessrecord" selected="selected">Access Record</option><option value="app.country">country</option><option value="reversion.version">version</option><option value="xadmin.bookmark">书签</option><option value="app.kitchensink">kitchen sink</option><option value="host.idc">IDC</option><option value="reversion.revision">revision</option><option value="xadmin.usersettings">用户设置</option><option value="auth.permission">权限</option><option value="auth.group">组</option><option value="xadmin.userwidget">用户小组件</option><option value="auth.user">用户</option><option value="host.maintainlog">Maintain Log</option><option value="app.continent">continent</option><option value="host.hostgroup">Host Group</option></select></div></div>
+
+
+                                <input type="hidden" name="_delete"/>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-danger pull-left btn-remove">删除</button>
+                                <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <input class="btn btn-primary" type="submit" value="保存变更"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </div>
+    <input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+
+</div>
+</div>
+
+
+<!--footer-->
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>
+
+
+
+</body>
+</html>

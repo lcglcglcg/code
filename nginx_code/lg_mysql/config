@@ -1,0 +1,3 @@
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/*.c"
+CORE_INCS="$CORE_INCS /usr/local/mysql/include"
+CORE_LIBS="$CORE_LIBS -lmysqlclient"

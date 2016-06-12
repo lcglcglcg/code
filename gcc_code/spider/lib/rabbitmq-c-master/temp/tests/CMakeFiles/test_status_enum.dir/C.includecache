@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../librabbitmq/amqp.h
+sys/types.h
+-
+stddef.h
+-
+stdint.h
+-
+amqp_framing.h
+-
+
+../librabbitmq/amqp_framing.h
+amqp.h
+-
+
+/make/rabbitmq-c-master/tests/test_status_enum.c
+config.h
+/make/rabbitmq-c-master/tests/config.h
+amqp.h
+/make/rabbitmq-c-master/tests/amqp.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+librabbitmq/config.h
+

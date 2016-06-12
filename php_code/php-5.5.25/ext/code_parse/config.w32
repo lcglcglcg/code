@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("code_parse", "for code_parse support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("code_parse", "enable code_parse support", "no");
+
+if (PHP_CODE_PARSE != "no") {
+	EXTENSION("code_parse", "code_parse.c");
+}
+

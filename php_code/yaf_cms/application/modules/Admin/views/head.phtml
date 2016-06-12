@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="robots" content="NONE,NOARCHIVE" />
+        <title>联创CMS</title>
+        <link href="/static/admin/css/bootstrap.css" type="text/css" media="screen" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" id="site-theme" href="/static/admin/css/bootstrap-xadmin.css" />
+        <link href="/static/admin/css/font-awesome.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.main.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.plugins.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.responsive.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.page.dashboard.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/datepicker.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.form.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/jquery.validate.css" type="text/css" media="screen" rel="stylesheet" />
+        <link rel='stylesheet' type='text/css' href='/static/admin/css/customer.css' />
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/admin/css/bootstrap-datetimepicker.min.css">
+        <script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+        <script type="text/javascript">
+            window.__admin_media_prefix__ = "/static/xadmin/";
+            window.__admin_path_prefix__ = "/";
+        </script>
+        <script type="text/javascript" src="/static/admin/js/jsi18n/index.js"></script>
+    </head>
+    <body class="dashboard">
+        <!-- Header start-->
+        <div id="top-nav" class="navbar navbar-xs navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/admin/index/index/">联创CMS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+
+
+
+                    <li class="dropdown g-add">
+                        <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                            <i class="icon-plus icon-white"></i> <span class="hide-sm">新建 <i class="caret"></i></span></a>
+                        <ul id="g-add-menu" class="dropdown-menu" role="menu">
+                            <li><a href="/admin/document/create"><i class="icon-plus"></i> 新建 文章</a></li>
+                            <li><a href="/admin/category/index"><i class="icon-plus"></i> 新建 批量上传文章</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <script type="text/javascript">
+            $(function () {
+                $('#g-setlang-menu a').click(function (e) {
+                    var lang = $(this).data('lang');
+                    $('#setlang-form #setlang-id_language').attr('value', lang);
+                    $('#setlang-form').submit();
+
+                    var topmenu = $('#top-nav .navbar-collapse');
+                    if (topmenu.data('bs.collapse'))
+                        topmenu.collapse('hide');
+                })
+            })
+                    </script>
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                            <strong>欢迎， <?php echo $user_profile['username']; ?></strong> <span class="caret"></span></a>
+                        <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                            <li><a href="/admin/user/changePassword/"><i class="icon-key"></i>修改密码</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/admin/user/dealLogout/"><i class="show-sm icon-signout"></i><span class="hide-sm">注销</span></a></li>
+                </ul>
+
+
+
+            </div>
+        </div>
+        <!-- Header end-->
+
+        <!-- body start-->
+        <div id="body-content" class="clearfix row" style='min-height:700px;'>
+            <div id="left-side" class="col-sm-1 col-md-2">
+                <!-- menu -->
+                <div class="panel-group hide-sm nav-sitemenu col-md-2" id="nav-accordion">
+
+                    <?php
+                    foreach ($menu_list as $key => $children) {
+                        ?>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">
+                                    <span class="badge badge-info"><?php echo count($children['child']); ?></span>
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-<?php echo $key; ?>">
+
+                                        <i class="icon-fixed-width  icon-th-large"></i>
+
+                                        <?php echo $children['top']['menu_name']; ?>
+
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="nav-panel-<?php echo $key; ?>" class="list-group panel-collapse collapse">
+
+                                <?php
+                                foreach ($children['child'] as $k => $v) {
+                                    ?>
+                                    <a href="<?php echo $v['url'] ?>" class="list-group-item" >
+
+                                        <?php echo $v['menu_name']; ?></span>
+                                    </a>
+                                    <?php
+                                }
+                                ?>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                    <!--判断菜单状态-->
+                    <script type="text/javascript">
+                        var url_path = window.location.pathname;
+                        var url_search = window.location.search;
+                        if (url_search) {
+                            url_search += url_path;
+                        } else {
+                            url_search = url_path;
+                        }
+                        //遍历菜单栏目
+                        $('.list-group-item').each(function () {
+                            var str = $(this).attr("href");
+                            if (str) {
+                                if (-1 != str.indexOf('?')) {
+                                    str = str.substr(0, str.indexOf('?'));
+                                }
+                            }
+                            if ($(this).attr("href") == url_search || str == url_path) {
+                                //变更顶级菜单样式
+                                $(this).parent().removeClass("list-group panel-collapse collapse");
+                                $(this).parent().addClass("list-group panel-collapse in");
+                                $(this).removeClass("accordion-toggle");
+                                //变更子菜单样式
+                                $(this).addClass("accordion-toggle collapsed");
+                                $(this).css('background-color', 'lightblue');
+                            }
+                        });
+                    </script>
+                </div>
+
+            </div>
+            <!-- content start -->
+            <div id="content-block" class="col-sm-11 col-md-10">
+
+
+                <?php
+                $alerts = Alert::get();
+                if ($alerts) {
+                    foreach ($alerts as $type => $alert) {
+                        ?>
+                        <div class="alert alert-<?php echo $type; ?> alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <?php echo $alert; ?>
+                        </div>
+                        <?php
+                    }
+                }
+                ?>

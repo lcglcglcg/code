@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control
+END
+ProgressBar.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/ProgressBar.h
+END
+Window2.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Window2.h
+END
+Dialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Dialog.cpp
+END
+Controls.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Controls.cpp
+END
+Dialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Dialog.h
+END
+DialogImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/DialogImpl.h
+END
+Window2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Window2.cpp
+END
+Edit.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Edit.h
+END
+ListView.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/ListView.h
+END
+Static.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/Static.h
+END
+ComboBox.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/ComboBox.h
+END
+StatusBar.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Control/StatusBar.h
+END

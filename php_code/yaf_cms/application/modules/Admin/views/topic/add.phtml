@@ -1,0 +1,213 @@
+<!-- Header -->
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+
+
+        <button class="navbar-toggle pull-left" data-toggle="class" data-target="#body-content" data-class-name="show_menu">
+            <i class="icon-list"></i>
+        </button>
+
+        <a title="添加小组件" href="/xadmin/userwidget/add/?user=1&amp;page_id=home&amp;_redirect=/" class="navbar-toggle pull-right">
+            <i class="icon-plus icon-white"></i></a>
+
+
+
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：添加专题
+
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+
+        </ul>
+
+
+        <div class="navbar-btn navbar-right hide-xs">
+
+
+
+            <a title="添加新文章" href='/admin/topic/index<?php if(isset($pageid)){echo "?pageid=".$pageid;} ?>' class="btn btn-primary">
+                <i class="icon-backward icon-white"></i> <span>返回列表</span></a>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="dashboard row">
+
+
+
+
+
+
+
+<div class="col-sm-12 column">
+
+
+
+
+
+<!--新建专题-->
+<div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+    <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">
+
+
+
+
+            <?php echo isset($category_detail) ? '编辑' : '新建'?>专题 <small>所有项均为必填项</small>
+
+
+
+        </h3></div>
+    <div class="panel-body " >
+            <form action='/admin/topic/add/' enctype="multipart/form-data" method='post' style='width:480px;'>
+
+                <table class="table table-hover table-striped">
+
+                    <tr>
+                        <td style='width:80px;'>专题名</td>
+                        <td>
+                            <input class="form-control" name="topic[topic_name]" type="text" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='width:100px;'>专题path</td>
+                        <td>
+                            <input class="form-control" name="topic[topic_path]" type="text" />
+                        </td>
+                    </tr>
+                    
+                    <?php if($is_admin == "true"){ ?>
+                    <tr>
+                        <td style='width:80px;'>文章限制</td>
+                        <td>
+                            <input class="form-control" name="topic[max_post]" type="text" />
+                            <small style='color:gray'>每月可发最大文章数</small>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style='width:80px;'>排序号</td>
+                        <td>
+                            <input class="form-control" name="topic[order_id]" type="text" />
+                            <small style='color:gray'>越大越靠前</small>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='width:80px;'>分配给用户</td>
+                        <td>
+                            <select class="form-control" name='topic[topic_userid]'>
+                                <option value="0">不分配</option>
+                                <?php foreach($userlist as $v){ ?>
+                                <option value="<?=$v['id']?>"><?=$v['username']?></option>
+                                <?php } ?>
+                            </select>
+                        </td>
+                    </tr>
+                    <?php } ?>
+                    <tr>
+                        <td style='width:80px;'>是否启用</td>
+                        <td>
+                            <select class="form-control" name='topic[is_show]'>
+                                <option value=1 selected='selected'>是</option>
+                                
+                                <option value=0 selected='selected'>否</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style='width:100px;'>商务通链接:</td>
+                        <td>
+                            <input class="form-control" name="topic[topic_guidec]" type="text" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style='width:100px;'>标题(title):</td>
+                        <td>
+                            <input class="form-control" name="topic[topic_title]" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='width:100px;'>关键字(keywords):</td>
+                        <td>
+                            <input class="form-control" name="topic[topic_keywords]" type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='width:100px;'>专题描述(description):</td>
+                        <td>
+                            <textarea name='topic[topic_description]' class="form-control" style='width:370px;height:79px;'></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="width:100px;">&nbsp;</td>
+                        <td>
+                            <input type="submit" name="dosubmit" value="保存" class="btn btn-primary">
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+
+    </div>
+
+    <div class="modal fade widget_options" tabindex="-1" role="dialog" id="88-opts-form">
+        <div class="modal-content">
+            <form method="post" class="box-form form-horizontal short_label widget-form exform">
+                <input type='hidden' name='csrfmiddlewaretoken' value='Isk5jWAs5OI5aoD6qCMv2uQNZ4doVbny' />
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">小组件设置项</h4>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <input type='hidden' name='csrfmiddlewaretoken' value='Isk5jWAs5OI5aoD6qCMv2uQNZ4doVbny' /> <input id="id_id" name="id" type="hidden" value="88" /> <div id="div_id_title" class="form-group"><label for="id_title" class="control-label ">
+                            Widget Title
+                        </label><div class="controls "><input class="text-field admintextinputwidget form-control" id="id_title" name="title" type="text" value="e" /> </div></div><div id="div_id_model" class="form-group"><label for="id_model" class="control-label  requiredField">
+                            Target Model<span class="asteriskField">*</span></label><div class="controls "><select class="adminselectwidget form-control" id="id_model" name="model"><option value="host.host">Host</option><option value="comments.comment">评论</option><option value="host.accessrecord" selected="selected">Access Record</option><option value="app.country">country</option><option value="reversion.version">version</option><option value="xadmin.bookmark">书签</option><option value="app.kitchensink">kitchen sink</option><option value="host.idc">IDC</option><option value="reversion.revision">revision</option><option value="xadmin.usersettings">用户设置</option><option value="auth.permission">权限</option><option value="auth.group">组</option><option value="xadmin.userwidget">用户小组件</option><option value="auth.user">用户</option><option value="host.maintainlog">Maintain Log</option><option value="app.continent">continent</option><option value="host.hostgroup">Host Group</option></select></div></div>
+
+
+                    <input type="hidden" name="_delete"/>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger pull-left btn-remove">删除</button>
+                    <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <input class="btn btn-primary" type="submit" value="保存变更"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+</div>
+
+</div>
+<input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+
+
+
+<!--footer-->
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

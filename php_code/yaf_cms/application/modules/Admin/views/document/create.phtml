@@ -1,0 +1,177 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<!--编辑器-->
+<link rel="stylesheet" href="/static/admin/editor/themes/default/default.css" />
+<script charset="utf-8" src="/static/admin/editor/kindeditor-min.js"></script>
+<script charset="utf-8" src="/static/admin/editor/lang/zh_CN.js"></script>
+<!--编辑器初始化-->
+<script>
+    var editor;
+    KindEditor.ready(function (K) {
+        editor = K.create('textarea[name="content"]', {
+            allowFileManager: true,
+            filterMode: false,
+            minChangeSize: 10
+        });
+    });</script>
+
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：添加文章
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">   
+        </ul>
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="添加用户"  href="/admin/document/index" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>返回列表</span></a>
+        </div>
+    </div>
+</div>    
+
+
+
+<form id="documentFrom" class = "exform rended" enctype = "multipart/form-data" action = "" method = "post" onsubmit="check()">
+    <input type = "hidden" value = "<?php echo $data['news']['id'] ?>" name = "id">
+    <input type = "hidden" value = "<?php echo $data['referer'] ?>" name = "referer">
+    <div class = "form-container row clearfix">
+        <div id = "column-0" class = "column form-column main col col-sm-9 form-horizontal ui-sortable">
+
+            <div class = "panel panel-default fieldset" id = "box-1">
+                <div class = "panel-heading"><i class = "icon icon-chevron-up chevron"></i><h3 class = "panel-title">编辑会员</h3></div>
+                <div class = "panel-body ">
+
+                    <div  class = "form-group">
+                        <label class = "control-label ">栏目</label>
+                        <div class = "controls ">
+                            <select name="catid" id = "catid" class = "text-field admintextinputwidget form-control" >
+                                <option value="-1"   >请选择栏目 </option>
+                                <?php foreach ($data['category'] as $key => $category) { ?>
+                                    <option value="<?= $category['catid'] ?>"   ><?= $category['catname'] ?> </option>
+                                <?php } ?>      
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">标题</label>
+                        <div class = "controls ">
+                            <input name = "title" id = "title"  required  minlength="5" maxlength="150" value="" class = "text-field admintextinputwidget form-control" type = "text">
+                        </div>
+                    </div>
+
+
+                    <div id = "keywords" class = "form-group">
+                        <label class = "control-label ">关键词</label>
+                        <div class = "controls ">
+                            <input name = "keywords" value="<?= $data['news']['keywords'] ?>" class = "text-field admintextinputwidget form-control"  type = "text">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">缩略图</label>
+                        <div class = "controls ">
+                            <input name = "defaultpic" id = "defaultpic"   minlength="5" maxlength="150" value="" class = "text-field admintextinputwidget form-control" type = "file">
+                        </div>
+                    </div>
+
+                    <div  class = "form-group">
+                        <label class = "control-label ">排序(越小越靠前)</label>
+                        <div class = "controls ">
+                            <input name = "listorder" id = "listorder" minlength="0" maxlength="50" value="0" class = "text-field admintextinputwidget form-control"  type = "text">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">链接地址</label>
+                        <div class = "controls ">
+                            <input name = "url"   id = "islink"   minlength="5" maxlength="100" value="" class = "text-field admintextinputwidget form-control" type = "text">
+                        </div>
+                    </div>
+
+                    <div  class = "form-group">
+                        <label class = "control-label ">推荐位</label>
+                        <div class = "controls ">
+                            <select name="attribute" id="attribute" class = "text-field admintextinputwidget form-control" >
+                                <option  selected="selected" >请选择推荐位</option>
+                                <option value="0"  >无</option>
+                                <option value="1"  >推荐</option>
+                                <option value="2" >精华</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">描述</label>
+                        <div class = "controls ">
+                            <textarea   id = "desc" name="desc" style="width:98%;height:150px;" ></textarea>                                        
+                        </div>
+                    </div>
+
+                    <div  class = "form-group" >
+                        <label class = "control-label ">内容</label>
+                        <div class = "controls ">
+                            <textarea  name="content"  id = "content" style="width:98%;height:400px;" required class="{required:true}"></textarea>                                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-actions well well-sm clearfix fixed">
+                <a href="/host/maintainlog/1/delete/" class="btn btn-danger deletelink col-xs-2 show-xs"><i class="icon-trash"></i></a>
+
+                <div class="btn-group clearfix show-xs save-group col-xs-10">
+                    <button type="submit" class="default btn btn-primary col-xs-10" name="_save" data-loading-text="保存中.."><i class="icon-save"></i> 保存</button>
+                    <button type="button" class="more btn btn-primary col-xs-2" data-toggle="collapse" data-target=".nav-collapse.more-btns"><i class="icon-ellipsis-vertical"></i></button>
+                </div>
+                <button type="submit" class="default btn btn-primary hide-xs" name="_save" data-loading-text="保存中.."><i class="icon-save"></i> 保存</button>
+            </div>
+
+
+            <input type = 'hidden' id = '_portal_key' value = 'dashboard:home:pos' />
+        </div>
+    </div>
+
+</form>
+
+<script type="text/javascript">
+    $(function () {
+        //验证
+        $("#documentFrom").validate({
+            rules: {
+                catid: {
+                    min: 0,
+                    digits: true
+                },
+                title: {
+                    required: true,
+                    minlength: 5,
+                    maxlength: 150
+                },
+                listorder: {
+                    digits: true
+                },
+                islink: {
+                    url: true
+                }
+            },
+            messages: {
+                catid: "请选择栏目",
+            }
+
+        });
+
+    });
+</script>
+
+<!--验证-->
+<script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.validate.additional.methods.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.validate.messages.cn.js"></script>
+
+
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

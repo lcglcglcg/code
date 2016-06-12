@@ -1,0 +1,10 @@
+
+ngx_addon_name=manager_site_builder_module
+HTTP_MODULES="$HTTP_MODULES manager_site_builder_module"
+
+CORE_INCS="$CORE_INCS /usr/include/libxml2"
+CORE_INCS="$CORE_INCS $ngx_addon_dir/include"
+CORE_LIBS="$CORE_LIBS -luuid -lxml2"
+
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/*.c"
+

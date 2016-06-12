@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console
+END
+OpenCallbackConsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/OpenCallbackConsole.cpp
+END
+PercentPrinter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/PercentPrinter.cpp
+END
+OpenCallbackConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/OpenCallbackConsole.h
+END
+makefile.list
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/makefile.list
+END
+MainAr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/MainAr.cpp
+END
+PercentPrinter.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/PercentPrinter.h
+END
+ExtractCallbackConsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/ExtractCallbackConsole.cpp
+END
+List.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/List.cpp
+END
+ExtractCallbackConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/ExtractCallbackConsole.h
+END
+BenchCon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/BenchCon.cpp
+END
+UserInputUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/UserInputUtils.cpp
+END
+List.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/List.h
+END
+UpdateCallbackConsole.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/UpdateCallbackConsole.cpp
+END
+Main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/Main.cpp
+END
+BenchCon.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/BenchCon.h
+END
+UserInputUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/UserInputUtils.h
+END
+UpdateCallbackConsole.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/UpdateCallbackConsole.h
+END
+ConsoleClose.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/ConsoleClose.cpp
+END
+makefile.depend
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/makefile.depend
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/makefile
+END
+ConsoleClose.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/UI/Console/ConsoleClose.h
+END

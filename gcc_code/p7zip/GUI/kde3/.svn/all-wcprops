@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3
+END
+p7zip_test.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/p7zip_test.desktop
+END
+p7zip_extract_subdir.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/p7zip_extract_subdir.desktop
+END
+p7zip_extract.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/p7zip_extract.desktop
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/readme.txt
+END
+p7zip_compress.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/p7zip_compress.desktop
+END
+p7zip_extract_to.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/p7zip_extract_to.desktop
+END
+p7zip_compress2.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/GUI/kde3/p7zip_compress2.desktop
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/database/drivers/sqlsrv
+END
+sqlsrv_forge.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/database/drivers/sqlsrv/sqlsrv_forge.php
+END
+sqlsrv_utility.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/database/drivers/sqlsrv/sqlsrv_utility.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/database/drivers/sqlsrv/index.html
+END
+sqlsrv_driver.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/database/drivers/sqlsrv/sqlsrv_driver.php
+END
+sqlsrv_result.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/database/drivers/sqlsrv/sqlsrv_result.php
+END

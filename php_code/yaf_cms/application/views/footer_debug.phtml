@@ -1,0 +1,27 @@
+<pre>
+<b>MEMORY USAGE </b> = <?= core::humansize(memory_get_usage()); ?></br>
+
+    <b>Total Execution Time</b> = <?= number_format(microtime(1) - $_SERVER['starttime'], 4); ?>
+
+    <b>GET DATA </b> = <?= htmlspecialchars(print_r($_GET, 1)); ?>
+
+    <b>POST DATA </b> = <?= htmlspecialchars(print_r($_POST, 1)); ?>
+
+    <b>COOKIE DATA</b> = <?= htmlspecialchars(print_r($_COOKIE, 1)); ?>
+
+    <b>DATABASE:</b> = <? print_r($_SERVER['sqls']) ?>
+    <?
+    /*
+    $xhprof_data = xhprof_disable();
+    include APP_PATH . "/static/xhprof/xhprof_lib/utils/xhprof_lib.php";
+    include APP_PATH . "/static/xhprof/xhprof_lib/utils/xhprof_runs.php";
+    $xhprof_runs = new XHProfRuns_Default();
+    $run_id = $xhprof_runs->save_run($xhprof_data, "xhprof_baby");
+        <b>xhprof:</b> =<a href="<?=BASEURL?>static/xhprof/index.php?run=<?= $run_id ?>&source=xhprof_baby" style="color: blue" target="_blank">点击查看</a>
+
+    */
+    ?>
+
+</pre>
+
+</div>

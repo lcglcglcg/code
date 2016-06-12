@@ -1,0 +1,70 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：前台信息
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">   
+        </ul>
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="添加用户"  onClick="javascript :history.back(-1);" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>返回列表</span></a>
+        </div>
+    </div>
+</div>    
+
+
+
+<form class = "exform rended" enctype = "multipart/form-data" action = "/admin/config/add/" method = "post">
+    <div class = "form-container row clearfix">
+        <div id = "column-0" class = "column form-column main col col-sm-9 form-horizontal ui-sortable">
+
+            <div class = "panel panel-default fieldset" id = "box-1">
+                <div class = "panel-heading"><i class = "icon icon-chevron-up chevron"></i><h3 class = "panel-title">新建前台信息</h3></div>
+                <div class = "panel-body ">
+
+                    <div class = "form-group">
+                        <label class = "control-label ">范围(可以不填)</label>
+                        <div class = "controls ">
+                            <input name = "scope" id = "title" minlength="5" maxlength="150" value="" class = "text-field admintextinputwidget form-control" type = "text">
+                        </div>
+                    </div>
+
+                    <div  class = "form-group">
+                        <label class = "control-label ">变量(必填)</label>
+                        <div class = "controls ">
+                            <input name = "variable" id = "listorder" class = "text-field admintextinputwidget form-control"  type = "text">
+                        </div>
+                    </div>
+
+                    <div class = "form-group">
+                        <label class = "control-label ">值（必填）</label>
+                        <div class = "controls ">
+                            <input name = "value"  value="" class = "text-field admintextinputwidget form-control" type = "text">
+                        </div>
+                    </div>
+                    <div class = "form-group">
+                        <label class = "control-label ">描述（可不填）</label>
+                        <div class = "controls ">
+                            <textarea   id = "desc" name="description" style="width:98%;height:150px;" ></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions well well-sm clearfix fixed">
+                <a href="/host/maintainlog/1/delete/" class="btn btn-danger deletelink col-xs-2 show-xs"><i class="icon-trash"></i></a>
+                <input type="submit" class="default btn btn-primary hide-xs" name="_save" data-loading-text="保存中.." value="保存"/>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

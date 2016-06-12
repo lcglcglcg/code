@@ -1,0 +1,45 @@
+    <div class="classify">
+    	<ol>
+       	  <li>创意分类：<span class="pink">[专题]</span>男科</li>
+        	<li>创意别名：顶部大Banner别名</li>
+        </ol>
+		<ul>
+        	<li><a href="#">查看原因</a></li>
+            <li><a href="#">修改创意</a></li>
+			<li class="w100">
+                <a style="color:#00F" id="AQuery1" onClick="queryCreative('iAQuery1','AQuery2','contc1','contc2')">查看已通过创意</a>
+                <a style="color:#00F;display:none;" id="idAQuery2" onClick="queryCreative('AQuery2','AQuery1','contc2','contc1')">过创意</a>
+           </li>
+        </ul>
+    </div>
+    <div class="bian">
+    <div class="preview">
+    	<ul>
+        	<li>
+            	<b id="contc1">预览-最新创意[<span class="red">审核拒绝</span>]</b>
+            	<b id="contc2" style="display:none;">预览-已通过创意</b>
+             </li>
+            <li class="w450">
+            	<ol><li><a id="linka1" onClick="clickTxt(1,'linka','conta',5)">1</a></li>
+                	<li><a id="linka2" onClick="clickTxt(2,'linka','conta',5)">2</a></li>
+                    <li><a id="linka3" onClick="clickTxt(3,'linka','conta',5)">3</a></li>
+                    <li><a id="linka4" onClick="clickTxt(4,'linka','conta',5)">4</a></li>
+                    <li><a id="linka5" onClick="clickTxt(5,'linka','conta',5)">5</a></li>
+                   <li class="w110 red">(点击数字切换图片)</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="photo">
+   	  <ul>
+      	<li class="photo_li borwn_bg">图片预览<span class="red">(点击图片可查看原图)</span></li>
+        <li class="photo_img" id="conta1"><a href="photo1.shtml" target="_blank"><img src="/static/sem_web_1.0/web/images/view_photo.gif" ></a></li>
+        <li class="photo_img" style="display:none" id="conta2"><a href="photo1.shtml" target="_blank"><img src="/static/sem_web_1.0/web/images/view_photo1.gif" ></a></li>
+        <li class="photo_img" style="display:none" id="conta3"><a href="photo1.shtml" target="_blank"><img src="/static/sem_web_1.0/web/images/view_photo2.gif" ></a></li>
+        <li class="photo_img" style="display:none" id="conta4"><a href="photo1.shtml" target="_blank"><img src="/static/sem_web_1.0/web/images/view_photo3.gif" ></a></li>
+        <li class="photo_img" style="display:none" id="conta5"><a href="photo1.shtml" target="_blank"><img src="/static/sem_web_1.0/web/images/view_photo4.gif" ></a></li>
+      	<li class="photo_li borwn_bg">图片链接地址<span class="red">(点击地址可访问)</span></li>
+      	<li class="photo_li lfline">输入图片目标访问网址：<input name="" type="text" value="http://www.15talk.com/" style="width:300px;"><a href="http://www.15talk.com/" target="_blank">浏览目标网址</a></li>
+      </ul>
+    </div>
+    </div>

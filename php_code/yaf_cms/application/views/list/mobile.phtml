@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <title><?= isset($title) ? $title.'_'.$config['sitename'] : $config['sitename'] ?></title>
+        <base target="_blank" />                                
+        <meta name="keywords" content="<?= isset($keywords) ? misc::remove_nbsp($keywords) : (isset($config['keywords']) ? $config['keywords'] : '') ?>" /> 
+        <meta name="Description" content="<?= isset($description) ? misc::remove_nbsp($description) : (isset($config['description']) ? $config['description'] : '') ?>" />
+        <meta name="applicable-device" content="mobile"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+        <meta name="format-detection" content="telephone=no"/>
+        <link href="<?= IMGURL ?>static/css/style1211.css" rel="stylesheet" type="text/css">
+        <link href="<?= IMGURL ?>static/css/index1211.css" rel="stylesheet" type="text/css">
+        <script src="<?= IMGURL ?>static/js/index0929.js" type="text/javascript"></script>
+        <script src="<?= IMGURL ?>static/js/jquery-1.4.2.js" type="text/javascript"></script>
+        <script src="<?= IMGURL ?>static/js/dhqh.js" type="text/javascript"></script>
+        <script language="javascript" type="text/javascript"> 
+        var url1="http://mtip.ufstone.com/showswt.php?charset=gb2312&names=hangzhoupb";
+        document.writeln("<scr"+"ipt src=\"" + url1 + "\"  language=\"javascript\"   type=\"text/javascript\" charset=\"gb2312\" ><\/scr"+"ipt>");
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="hd01">
+                <a href="/<?=SITEDIR?>/" class="a1">首页</a>
+                <div id="zk"><img src="<?= IMGURL ?>static/images/sjmh_003.jpg" width="22" height="17" />
+                    <div class="content none">
+                        <ul>
+                            <li><a href="/hyzx/ssjf/">瘦身减肥</a></li>
+                            <li><a href="/hyzx/tszl/">特色诊疗</a></li>
+                            <li><a href="/hyzx/bzbj/">不知不觉</a></li>
+                            <li><a href="/hyzx/cnly/">长年累月</a></li>
+                            <li><a href="/hyzx/myqf/">明月清风</a></li>
+                            <li><a href="/hyzx/yszd/">养生之道</a></li>
+                            <li><a href="/hyzx/qsjt/">强身健体</a></li>
+                            <li><a href="/hyzx/jgyx/">巾帼英雄</a></li>
+                            <li><a href="/hyzx/pybm/">疲于奔命</a></li>
+                            <li><a href="/hyzx/jkyl/">健康医疗</a></li>
+                            <li><a href="/hyzx/jkbj/">健康保健</a></li>
+                            <li><a href="/hyzx/jbzd/">疾病诊断</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hd02"><a style="text-decoration:none;"><?= isset($title) ? $title.'_'.$config['sitename'] : $config['sitename'] ?></a></div>
+        </header>
+        <p class="clr"></p>
+        <article>
+            <div class="path">您当前的位置：<a href="/<?=SITEDIR?>/"><?= $config['sitename'] ?></a>  > <?=$title?></div>
+            <div class="banner" name="sj_banner"><a href=""><img src="<?= IMGURL ?>static/images/sjmh_jh01.jpg" width="100%" /></a></div>
+            <!--推荐阅读-->
+            <div class="lm">
+                <p class="btp"><span>推荐阅读</span></p>
+                <div class="lcont">
+                    <dl>
+                        <img src="<?= IMGURL ?>static/images/mhlb_004.jpg" width="56" height="63" />
+                        <dd><?=strip_tags($data['tjyd'][0]['description'])?>...<a href="/<?=SITEDIR.'/'.$hover.'/'.$data['tjyd'][0]['id'].'.html'?>">[详情]</a></dd>
+                    </dl>
+                    <p>
+                        <span>
+                            <a href="/<?=SITEDIR.'/'.$hover.'/'.$data['tjyd'][1]['id'].'.html'?>"><?=$data['tjyd'][1]['title']?></a>
+                        </span>  
+                        <span>
+                            <a href="/<?=SITEDIR.'/'.$hover.'/'.$data['tjyd'][2]['id'].'.html'?>"><?=$data['tjyd'][2]['title']?></a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <!--推荐阅读end-->
+            <div class="list">
+                <dl>
+                    <img src="<?= IMGURL ?>static/images/aa_index1.jpg" width="66" height="54" />
+                    <dt>
+                        <a href="/<?=SITEDIR.'/'.$hover.'/'.$data['data'][0]['id'].'.html'?>"><?=$data['data'][0]['title']?></a>
+                        <em><?=rand(100, 200)?>人点击</em>
+                    </dt>
+                    <dd><?=strip_tags($data['data'][0]['description'])?>...<a href="/<?=SITEDIR.'/'.$hover.'/'.$data['data'][0]['id'].'.html'?>" class="detial">[详细]</a></dd>
+                </dl>
+                <dl>
+                    <img src="<?= IMGURL ?>static/images/aa_index2.jpg" width="66" height="54" />
+                    <dt><a href="/<?=SITEDIR.'/'.$hover.'/'.$data['data'][1]['id'].'.html'?>"><?=$data['data'][1]['title']?></a><em><?=rand(100, 200)?>人点击</em></dt>
+                    <dd><?=strip_tags($data['data'][1]['description'])?>...<a href="/<?=SITEDIR.'/'.$hover.'/'.$data['data'][1]['id'].'.html'?>" class="detial">[详细]</a></dd>
+                </dl>
+
+                <ul> 
+                    <?php foreach($data['data'] as $k=>$v){ if($k >1){?>
+                    <li>
+                        <a href="/<?=SITEDIR.'/'.$hover.'/'.$v['id'].'.html'?>"><?=$v['title']?></a>
+                        <span><?= date('Y-n-j',$v['inputtime'])?></span>
+                    </li>
+                    <?php }}?>
+                </ul>
+                <div class="page">
+                    <span><a href="/<?=SITEDIR.'/'.$hover.'/default_1.html'?>">首页</span>&nbsp; 
+                    <span>上一页</span> &nbsp;
+                    <?php
+                    $next = $page+1;
+                    for($i=$page;$i<=($page+3);$i++){
+                            if($i==$page){
+                    ?>
+                    <a href="/<?=SITEDIR.'/'.$hover.'/default_'.$i.'.html'?>"><font color="#FF0000"><b><?=$i?></b></font></a>
+                    <?php
+                            }else{
+                    ?>
+                    <a href="/<?=SITEDIR.'/'.$hover.'/default_'.$i.'.html'?>"><?=$i?></a> 
+                    <?php
+                            }
+                    }?> 
+                    <a href="/<?=SITEDIR.'/'.$hover.'/default_'.$next.'.html'?>">下一页</a> 
+                    <a href="/<?=SITEDIR.'/'.$hover.'/default_'.$totalpage.'.html'?>">尾页</a> 共<?=$total?>条记录<?=$page.'/'.$totalpage?>
+                </div>
+            </div>
+            <p class="clr"></p>
+            <!--精华文章-->
+            <div class="yy">
+                <dl>
+                    <img src="<?= IMGURL ?>static/images/mhlb_010_01.jpg" width="66" height="54" />
+                    <dt>精华文章</dt>
+                    <dd><a href="/<?=SITEDIR.'/'.$hover.'/'.$data['jhwz'][0]['id'].'.html'?>"><?=$data['jhwz'][0]['title']?></a></dd>
+                </dl>
+                <p><?=strip_tags($data['jhwz'][0]['description'])?>...<a href="/<?=SITEDIR.'/'.$hover.'/'.$data['jhwz'][0]['id'].'.html'?>" class="detial">[详细]</a></p>
+            </div>
+            <!--精华文章 end-->
+            <p class="clr"></p>
+            <!--热点阅读-->
+            <div class="qh1">
+                <p><span>热点阅读</span></p>
+                <div class="qh2">
+                    <ul class="ul2">
+                        <?php foreach($data['rdyd'] as $v) : ?>
+			<li>
+                            <a href="/<?=SITEDIR.'/'.$category[$v['catid']]['catpath'].'/'.$v['id'].'.html'?>"><?=$v['title']?></a>
+                            <em>点击量：<?=rand(100, 200)?></em>
+                        </li>
+                        <?php endforeach;?>
+                    </ul>
+                </div>
+            </div>
+            <!--热点阅读end-->
+        </article>
+        <!--手机底部-->
+        <footer>
+            <p class="p4">
+                <a name="sj_tel"><img src="<?= IMGURL ?>static/images/qq20140707153814_01.jpg"></a>
+                <a href="javascript:openZoosUrl('chatwin')" name="sj_swt"><img src="<?= IMGURL ?>static/images/qq20140707153814_02.jpg"></a>
+                <a href="javascript:openZoosUrl('chatwin')" name="sj_swt"><img src="<?= IMGURL ?>static/images/qq20140707153814_03.jpg"></a>
+                <a href="javascript:openZoosUrl('chatwin')" name="sj_swt"><img src="<?= IMGURL ?>static/images/qq20140707153814_04.jpg"></a>
+            </p>
+        </footer>
+        <!--手机底部end-->
+    </body>
+</html>

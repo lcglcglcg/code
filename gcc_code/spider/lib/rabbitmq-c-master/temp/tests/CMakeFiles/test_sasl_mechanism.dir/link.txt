@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -Wstrict-prototypes -Wno-unused-function -fno-common -fvisibility=hidden  -O3 -DNDEBUG    CMakeFiles/test_sasl_mechanism.dir/test_sasl_mechanism.c.o  -o test_sasl_mechanism -rdynamic ../librabbitmq/librabbitmq.a -lssl -lcrypto -lrt -lpthread 

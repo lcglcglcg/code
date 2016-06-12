@@ -1,0 +1,11 @@
+<div class="msg_box m_w250" id="sure" style="display:none;">
+  <div class="msg_title"><b>提示信息</b><span><input name="close_bnt" type="image" src="/static/sem_web_1.0/web/images/view_close.gif"></span></div>
+  <div class="msg_cont">
+  	<div class="content" >验证失败！请重新输入！</div>
+    <div class="msg_btn">
+    <ul class="wp60">
+    	 <li><a href="javascript:$UE.close('sure');$UE.close('account_alert');">确定</a></li>
+	</ul>
+    </div>
+  </div>
+</div>

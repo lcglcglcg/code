@@ -1,0 +1,16 @@
+ngx_addon_name=manager_account_module
+HTTP_MODULES="$HTTP_MODULES manager_account_module"
+CORE_INCS="$CORE_INCS src/manager_account/include"
+CORE_INCS="$CORE_INCS src/manager_account/include/core"
+CORE_INCS="$CORE_INCS src/manager_account/include/libgd"
+CORE_INCS="$CORE_INCS src/manager_account/include/hiredis"
+CORE_INCS="$CORE_INCS src/manager_account/include/json"
+CORE_INCS="$CORE_INCS src/manager_account/include/oci"
+CORE_INCS="$CORE_INCS src/manager_account/include/ocilib"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/*.c"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/core/*.c"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/json/*.c"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ocilib/*.c"
+CORE_LIBS="$CORE_LIBS -luuid -lssl -ltar -lpng -lgd -lnnz10 -lclntsh -lhiredis"
+
+

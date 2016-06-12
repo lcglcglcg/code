@@ -1,0 +1,138 @@
+<script src="http://www.muia.net/shangwutong/js.php?w=1" type="text/javascript" language="javascript"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <base target="_blank"/>  
+        <title><?=$data['sub']['name']?></title>
+        <meta name="keywords" content="<?=$data['sub']['keywords']?>" />
+        <meta name="description" content="<?=$data['sub']['description']?>" />
+        <script type="text/javascript" src="<?=TOPIC_URL.$topic?>/default/images/junhai.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?=TOPIC_URL.$topic?>/default/css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="<?=TOPIC_URL.$topic?>/default/css/list.css"/>
+        <script type="text/javascript" src="<?=TOPIC_URL.$topic?>/default/js/dqdaily.js"></script>
+        <script src="<?=TOPIC_URL.$topic?>/default/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <script src="<?=TOPIC_URL.$topic?>/default/js/jquery.kinMaxShow-300.js" type="text/javascript"></script>
+        <script type="text/javascript" src="<?=TOPIC_URL.$topic?>/default/js/uaredirect.js"></script>
+        <script type="text/javascript">
+                    $(function(){$("#SlideBanner").kinMaxShow(); });</script>
+    </head>
+    <body>
+<div id="LRdiv2" style="display:none;"></div><div id="LRdiv3" style="display:none;"></div><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="0" height="0" id="LR_Flash" class="noswap"><param name="movie" value="http://bft.jhdxyy.com/js/lrfla.swf"><param name="BGColor" value="FFFFFF"><param name="quality" value="high"><param name="Scale" value="NoBorder"><param name="allowScriptAccess" value="always"><embed src="http://bft.jhdxyy.com/js/lrfla.swf" quality="high" width="0" height="0" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" name="LR_Flash" allowscriptaccess="always"></object><script language="VBScript">
+On Error Resume Next
+Sub LR_Flash_FSCommand(ByVal command, ByVal args)
+    Call LR_Flash_DoFSCommand(command, args)
+End Sub
+</script>
+
+<div class="JiGnWVW">
+<div class="WjVtYgn"><a href="<?=$guidec_links?>" rel="nofollow" target="_blank"><img src="http://js.liangyi360.com/tu/logo.jpg"></a>
+</div>
+</div>
+<div class="uTUKaYQ">
+    <ul>
+        <li><a href="<?=$guidec_links?>" rel="nofollow">网站首页</a></li>
+        <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病的起因</a></li>
+        <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病危害</a></li>
+        <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病治疗方法</a></li>
+        <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病人的护理</a></li>
+        <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病的饮食</a></li>
+        <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫遗传</a></li>
+    </ul>
+</div>
+ 
+
+<ul class="kinMaxShow_button"><li class=""> </li><li class="focus"> </li><li class=""> </li></ul></div>
+<div class="krHXTlt">
+    <form name="formsearch" action="<?=$guidec_links?>" target="_blank" class="AHoWStL" rel="nofollow">
+        <input name="query" id="query" value="在这里搜索..." class="ROUVJsc" onfocus="if (this.value == & #39; 在这里搜索... & #39; ){this.value = & #39; & #39; ; }" onblur="if (this.value == & #39; & #39; ){this.value = & #39; 在这里搜索... & #39; ; }" type="text"/>
+        <input value="搜 索" class="hWAcAAu" type="submit"/>
+    </form>
+    <ul class="xmhbrHL">
+        <li><a href="<?=$guidec_links?>" rel="nofollow" target="_blank">癫痫病能彻底治愈吗？</a></li>
+        <li><a href="<?=$guidec_links?>" rel="nofollow" target="_blank">癫痫病的最新治疗方法是什么？</a></li>
+        <li><a href="<?=$guidec_links?>" rel="nofollow" target="_blank">癫痫病最好的医院是哪家医院？</a>
+        </li>
+    </ul>
+</div>
+<div id="listContent">
+    <div class="dKthhOn">
+        <div class="tSaoXVE">您当前位置：<a href="/<?=SITEDIR?>/<?=$topic?>/">北京最好的癫痫病医院</a> &gt; <a href="/<?=SITEDIR?>/<?=$topic?>/<?=$subtopic?>"><?=$topicinfo['topic_name']?></a> &gt; 文章列表</div>
+        <div class="NIDcUwc FNzsDjX">
+            <?php foreach($data['list'] as $k=>$v){ ?>
+            <li>
+                <h2><a href="/<?=SITEDIR?>/<?=$topic?>/<?=$subtopic?>/<?=$v['id']?>.html" target="_blank"><?=misc::stringFormat($v['title'],0,10)?></a></h2>
+                <p><?=misc::stringFormat($v['content'],0,100)?>…<a href="/<?=SITEDIR?>/<?=$topic?>/<?=$subtopic?>/<?=$v['id']?>.html" class="dQjbLEu">[阅读全文]</a></p>
+            </li>
+            <?php } ?>
+
+            <div class="tYQaJLL">
+                <li><a href="default_1.html">首页</a></li>
+                <?php if($page >=2) :?>
+                <li><a href="default_<?= $page-1;?>.html">上一页</a></li>
+                <?php endif;?>
+                <?php for($i=1;$i<=$data['totalpage'];$i++){ if($i != $page){ ?>
+                <li><a href='default_<?=$i?>.html'><?=$i?></a></li>
+                <?php }else{ ?>
+                <li class="thisclass"><?=$i?></li>
+                <?php }} ?>
+                <?php if($page < $data['totalpage']) :?>
+                <li><a href="default_<?= $page+1;?>.html">下一页</a></li>
+                <?php endif;?>
+                <li><a href="default_<?=$data['totalpage'] ? $data['totalpage'] : 1;?>.html">末页</a></li>
+                <li><span class="pageinfo">共 <strong><?=$data['totalpage']?></strong>页<strong><?=$data['total']?></strong>条</span></li>
+            </div>
+        </div>
+    </div>
+    <div class="tlMykyy">
+        <div class="JtsyjGQ FNzsDjX">
+            <h5 class="ZJYFaFh"></h5>
+            <img src="<?=TOPIC_URL.$topic?>/default/images/junhai.jpg" alt="中国脑科癫痫研究院" class="MT10" height="174" width="300" style="margin:10px"/>
+            <ul class="bgC13D48">
+                <li>中国十佳癫痫病专科医院</li>
+                <li>中医医师协会会员单位</li>
+                <li>爱心救助基金指定救助单位</li>
+                <li>中国脑科癫痫研究院脑科研究院</li>
+            </ul>
+            <p class="yiyuan" style="text-indent:2em;">中国脑科癫痫研究院是北京市卫生局批准的专业医疗机构，获准入围北京亦庄高新经济技术开发区的具有二级医院规模的脑科医院。，是京城一家集医疗、科研、教学、预防保健为一体的癫痫病专业医院。</p>
+        </div>
+        <div class="JtsyjGQ">
+            <h5 class="VpRKHTi"></h5>
+            <ul class="lxxRybA">
+                <li>
+                    <a href="<?=$guidec_links?>" target="_blank"><img src="http://js.liangyi360.com/tu/anli2.jpg" width="300" height="122" alt="因癫痫发作休学在家 圆梦中国脑科癫痫研究院顽疾终治愈"></a>
+                    <h3><a href="<?=$guidec_links?>" target="_blank">因癫痫发作休学在家 圆梦中国脑科癫痫研究院顽疾终治愈</a></h3>
+                    <p>燕琦权今年5岁，在一所幼儿园读大班，在整个幼儿园的小朋友印象中，燕琦权是个小药罐子，经常生病，一生病就请假。有的小朋友患了小感冒不想…<span><a href="<?=$guidec_links?>" target="_blank">[阅读全文]</a></span></p>
+                </li>
+                <li>
+                    <a href="<?=$guidec_links?>" target="_blank"><img src="http://js.liangyi360.com/tu/anli5.jpg" width="300" height="122" alt="意外摔倒成癫痫祸因 治病十八载终见治愈希望"></a>
+                    <h3><a href="<?=$guidec_links?>" target="_blank">意外摔倒成癫痫祸因 治病十八载终见治愈希望</a></h3>
+                    <p>初见冯靖涛是在病房，他和母亲正满脸笑容地收拾行李，经主治医师中国脑科癫痫研究院癫痫诊疗专家杨全兴主任确诊，冯靖涛的病已经痊愈了，他们已经…<span><a href="<?=$guidec_links?>" target="_blank">[阅读全文]</a></span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <div class="BNeQwiK">
+            <div class="RUKPnib">
+                <a href="<?=$guidec_links?>" title="24小时咨询电话" rel="nofollow" target="_blank">
+                    <img src="<?=TOPIC_URL.$topic?>/default/images/footTel.gif" alt="24小时咨询电话" height="100" width="1000">
+                </a>
+            </div>
+            <ul class="hkqWept">
+                <li><a href="<?=$guidec_links?>" rel="nofollow">网站首页</a></li>
+                <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病的起因</a></li>
+                <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病危害</a></li>
+                <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病治疗方法</a></li>
+                <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病人的护理</a></li>
+                <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫病的饮食</a></li>
+                <li class="KiAJRYi"><a href="<?=$guidec_links?>" rel="nofollow">癫痫遗传</a></li>
+            </ul>
+            <div class="xsXVdxK">
+                <p>特别声明：本站信息仅作健康参考，并非医疗诊断和治疗依据，具体疾病诊疗请遵照诊疗医生意见。</p>
+                <p>中国脑科癫痫研究院 京ICP备11035394号-3 京卫网审[2013]第0164号</p>
+            </div>
+        </div>
+    </body>
+</html>
+<script language="javascript" src="http://js.liangyi360.com/tc/junhaidx/swt.php?web=www.hangzhou.com.cn"></script>

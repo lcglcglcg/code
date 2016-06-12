@@ -1,0 +1,154 @@
+﻿
+SEM用户登录验证
+http://192.168.10.150:8000/login
+&sem_account_size&sem_account
+&password_md5_size&password_md5
+成功:{code: 0, sem_id:XXX, baidu_count: XXX, baidu_stopmarker_count: XXX}
+错误:{code: -1用户名密码错误,-2账户冻结,-3帐号到期,-4报文错误}
+
+SEM用户密码修改
+http://192.168.10.150:8000/sem/pass
+&sem_id_size&sem_id
+&password_size&password
+&new_password_size&new_password
+成功:{code: 0}
+失败:{code: -1}
+
+创建任务-文件
+http://192.168.10.150:8000/task/file/add
+&sem_id_size&sem_id
+&task_name_size&task_name
+&zoosnet_path_size&zoosnet_path
+&reservation_str_size&reservation_str
+&reservation_col_str_size&reservation_col_str
+&not_reservation_str_size&not_reservation_str
+成功:{code: 0}
+失败:{code: -1任务运行中,-2商务通错误,-3百度数据错误,-4报文错误}
+
+创建任务-日历
+http://192.168.10.150:8000/task/calendar/add
+&sem_id_size&sem_id
+&task_name_size&task_name
+&start_time_size&start_time
+&end_time_size&end_time
+成功:{code: 0}
+失败:{code: -1任务运行中,-2商务通错误,-3百度数据错误,-4报文错误}
+
+获取任务
+http://192.168.10.150:8000/task/get
+&sem_id_size&sem_id
+&find_word_size&find_word
+&start_time_size&start_time
+&end_time_size&end_time
+&index_start_size&index_start
+&index_count_size&index_count
+成功:{"list": [
+	{
+	"task_id": XX,
+	"task_name": "XXX",
+	"create_time": "0000-00-00 00:00:00",
+	"completion_time": "0000-00-00 00:00:00",
+	"status": 0
+	},
+	...
+]}
+失败:{"list": []}
+
+删除任务
+http://192.168.10.150:8000/task/del
+&sem_id_size&sem_id
+&task_id_size&task_id
+成功:{code: 0}
+失败:{code: -1}
+
+独立部署版百度验证保存
+http://192.168.10.150:8000/baidu/user/save
+&sem_id_size&sem_id
+&baidu_id_size&baidu_id
+&baidu_password_size&badu_password_str
+&baidu_token_size&baidu_token
+成功:{code: 0}
+失败:{code: >0百度错误码, -1百度用户未注册,-2密码修改过于频繁, -3其他错误/网络异常, -4报文错误}
+
+
+百度验证
+http://192.168.10.150:8000/baidu/user/check
+&sem_id_size&sem_id
+&baidu_id_size&baidu_id
+&baidu_account_size&baidu_account_str
+&baidu_password_size&badu_password_str
+&baidu_token_size&baidu_token
+成功:{code: 0, "baidu_domain":"XXX"}
+失败:{code: >0百度错误码, -1百度用户未注册,-2密码修改过于频繁, -3其他错误/网络异常, -4报文错误, -5绑定其他SEM用户}
+
+添加百度
+http://192.168.10.150:8000/baidu/user/add/
+&sem_id_size&sem_id_str
+&baidu_account_size&baidu_account_str
+&baidu_password_size&badu_password_str
+&baidu_web_name_size&baidu_web_name_size
+&baidu_domain_size&baidu_domain
+&baidu_company_name_size&baidu_company_name
+&baidu_contact_str_size&baidu_contact_str
+&baidu_contact_tel_size&baidu_contact_tel
+&baidu_token_size&baidu_token
+成功:{code: 0}
+失败:{code: -1信息不完整, -4报文错误/网络异常, -5这个百度账户已被绑定给其他SEM用户
+
+修改百度
+http://192.168.10.150:8000/baidu/user/mod
+&sem_id_size&sem_id_str
+&baidu_id_size&baidu_id
+&baidu_password_size&badu_password_str
+&baidu_web_name_size&baidu_web_name_size
+&baidu_company_name_size&baidu_company_name
+&baidu_contact_str_size&baidu_contact_str
+&baidu_contact_tel_size&baidu_contact_tel
+&baidu_token_size&baidu_token
+成功:{code: 0}
+失败:{code: -1}
+
+删除百度
+http://192.168.10.150:8000/baidu/user/mod
+&sem_id_size&sem_id_str
+&baidu_id_size&baidu_id
+成功:{code: 0}
+失败:{code: -1}
+
+获取百度
+http://192.168.10.150:8000/baidu/user/get&sem_id_size&sem_id
+成功:{"list": [
+	{
+	"baidu_id": XXX,
+	"baidu_account": "XXX",
+	"baidu_token": "XXX",
+	"baidu_web_name":"XXX",
+	"baidu_domain":"XXX",
+	"baidu_company_name":"XXX",
+	"baidu_contact_str":"XXX",
+	"baidu_contact_tel":"XXX",
+	"baidu_last_time": "0000-00-00 00:00:00",
+	"baidu_stop_marker":"0",
+	"baidu_status":0 0正常 >0百度错误 -1账户禁用
+	},
+	...
+]}
+失败:{"list": []}
+
+获取百度错误状态-不包括禁用
+http://192.168.10.150:8000/baidu/user/status&sem_id_size&sem_id
+成功:number
+失败:-1
+
+百度日历
+http://192.168.10.150:8000/calendar/baidu/get&sem_id_size&sem_id
+<day>XXX</day>
+<day>XXX</day>
+...
+
+商务通日历
+http://192.168.10.150:8000/calendar/zoosnet/get&sem_id_size&sem_id
+<day>XXX</day>
+<day>XXX</day>
+...
+

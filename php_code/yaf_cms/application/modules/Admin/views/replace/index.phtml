@@ -1,0 +1,87 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：关键词管理
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="新建关键词" href="/admin/replace/create" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>新建关键词</span></a>
+        </div>
+    </div>
+</div>
+<div class="dashboard row">
+    <div class="col-sm-12 column">
+
+        <!--文档筛选-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">关键词查询</h3></div>
+            <div class="panel-body " >
+                <div style="padding:10px">
+                    <form action="" method="get">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td style='width:30%;'>
+                                    关键词：<input type='text' value="<?php echo isset($cond['keywords']) ? $cond['keywords'] : "" ?>" name="keywords" class = "text-field admintextinputwidget form-control" maxlength = "50" type = "text">
+                                </td>
+                                <td>
+                                    <input name='dosubmit' style="position:relative;top:22px;" type="submit" value="查询关键词" class="btn btn-primary btn-sm" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--单页列表-->
+        </form>
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title"> 单关键词列表</h3></div>
+            <div class="panel-body results" >
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th width="5%">ID</th>
+                        <th width="20%">描述</th>
+                        <th width="25%">关键词</th>
+                        <th width="25%">替换内容</th>
+                        <th width="15%">操作</th>
+                    </tr>
+                    <?php
+                    if ($data['data']) {
+                        foreach ($data['data'] as $key => $page) {
+                            ?>                                   
+                            <tr>
+                                <td><?= $page['id']; ?></td>
+                                <td><?= mb_substr(htmlspecialchars($page['description']), 0, 50, 'UTF-8')?></td>
+                                <td><a href="/admin/replace/update?id=<?= $page['id'] ?>" target="_blank"><?= mb_substr(htmlspecialchars($page['keywords']), 0, 50, 'UTF-8') ?></a></td>
+                                <td><?= mb_substr(htmlspecialchars($page['replace_words']), 0, 50, 'UTF-8') ?></td>
+                                <td>
+                                    <a href='/admin/replace/update?id=<?php echo $page['id'] ?>'>编辑</a>
+                                    <a href='/admin/replace/deletePage?id=<?php echo $page['id'] ?>' onclick="javascript:return confirm('确定要删除吗？')">删除</a>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+                </table>
+            </div>
+        </div>
+
+
+        
+        <?php echo isset($data['page']) ? $data['page'] : ''; ?>
+
+    </div>
+    <input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+    
+   <script type="text/javascript">var _actions_icnt="<?=$data['offset'] ?>";</script>
+    
+    <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>
+ 

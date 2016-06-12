@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone
+END
+LzmaAlone.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone/LzmaAlone.cpp
+END
+LzmaBench.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone/LzmaBench.cpp
+END
+LzmaBenchCon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone/LzmaBenchCon.cpp
+END
+LzmaBench.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone/LzmaBench.h
+END
+LzmaBenchCon.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone/LzmaBenchCon.h
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Compress/LZMA_Alone/makefile
+END

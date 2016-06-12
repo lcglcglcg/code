@@ -1,0 +1,14 @@
+<div class="b_rg rg">
+显示 <s class="red">1-10</s> 条 共 25 条 3 页  <a href="#">首页</a>  <a href="#">上页</a> <a href="#">下页</a> <a href="#">末页</a>　
+<select name="page" class="padt">
+  <option value="1">每页10条</option>
+  <option value="2">每页30条</option>
+  <option value="2">每页50条</option>
+  <option value="2">每页100条</option>
+</select>
+<select name="each" class="padt">
+  <option value="1">第1页</option>
+  <option value="2">第2页</option>
+  <option value="3">第3页</option>
+</select>
+</div>

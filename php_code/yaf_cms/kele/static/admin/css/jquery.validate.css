@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-12-2, 10:08:34
+    Author     : yangguofeng
+*/
+
+textarea.error,select.error,input.error { 
+    border: 1px solid red;
+}
+label.error {
+    padding-left: 16px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    color: #EA5200;
+}

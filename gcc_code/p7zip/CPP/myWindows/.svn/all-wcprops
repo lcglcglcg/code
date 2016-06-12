@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows
+END
+StdAfx.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/StdAfx.h
+END
+wine_date_and_time.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/wine_date_and_time.cpp
+END
+initguid.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/initguid.h
+END
+test_emul.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/test_emul.cpp
+END
+myPrivate.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/myPrivate.h
+END
+makefile.list
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/makefile.list
+END
+mySplitCommandLine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/mySplitCommandLine.cpp
+END
+myGetTickCount.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/myGetTickCount.cpp
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/config.h
+END
+makefile.depend
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/makefile.depend
+END
+myAddExeFlag.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/myAddExeFlag.cpp
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/makefile
+END
+wine_GetXXXDefaultLangID.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/CodeLib/!svn/ver/42/C/p7zip/CPP/myWindows/wine_GetXXXDefaultLangID.cpp
+END

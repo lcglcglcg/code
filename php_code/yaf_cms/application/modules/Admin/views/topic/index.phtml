@@ -1,0 +1,76 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：专题管理
+        </a>
+    </div>
+    
+    <div class="navbar-collapse collapse">
+        <div class="navbar-btn navbar-right hide-xs">
+            <?php if($is_admin == "true"){ ?>
+            <a title="新建专题" href="/admin/topic/add/" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>新建专题</span>
+            </a>
+            <?php }else{ ?>
+            <a title="新建专题文章" href="/admin/topicdata/add" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>新建专题文章</span>
+            </a>
+            <?php }?>
+        </div>
+    </div>
+    
+</div>
+<div class="dashboard row">
+    <div class="col-sm-12 column">
+        <!--频道列表-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">专题列表 </h3></div>
+            <div class="panel-body " >
+                <table class="table table-hover table-striped">
+                    <tr>
+                        <th width="5%">专题ID</th>
+                        <th width="10%">专题名</th>
+                        <th width="5%">path</th>
+                        <th width="25%">描述</th>
+                        <th width="10%">文章限制</th>
+                        <th width="10%">本月已发</th>
+                        <th width="5%">所属用户</th>
+                        <th width="5%">状态</th>
+                        <th width="35%">操作</th>
+                    </tr>
+                    <?php
+                    foreach ($data['data'] as $value) {
+                        ?>
+                        <tr>
+                            <td><?=$value['topic_id']; ?></td>
+                            <td><?=$value['topic_name'];?></td>
+                            <td><?=$value['topic_path']; ?></td>
+                            <td><?=$value['topic_description']; ?></td>
+                            <td><?=$value['max_post']?></td>
+                            <td><?=$value['monthcount']?></td>
+                            <td><?=$value['topic_username']; ?></td>
+                            <td><?=$value['is_show'] ? '开放' : '暂停'; ?></td>
+                            <td>
+                                <a href='/admin/topic/edit?tid=<?=$value['topic_id']; ?>'>编辑</a>
+                                <a href='/admin/topicsubclass/index?tid=<?=$value['topic_id']; ?>'>管理子类</a>
+                                <a href='/admin/topic/showdata?tid=<?=$value['topic_id']; ?>'>数据管理</a>
+                                <a href='/admin/topic/delete?tid=<?=$value['topic_id'] ?>' onclick="javascript:return confirm('确定要删除该专题吗？')">删除</a>
+                                <?=$value['is_show'] ? "<a href='/admin/topic/changeTopicStatus?tid=".$value['topic_id']."&isshow=0'>暂停</a>" : "<a href='/admin/topic/changeTopicStatus?tid=".$value['topic_id']."&isshow=1'>开放</a>"; ?>
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                    <tr>
+                        <td colspan=9 style='text-align:right;'><?php echo isset($data['page']) ? $data['page']:''; ?> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<input type='hidden' id='_portal_key' value='dashboard:home:pos' />
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

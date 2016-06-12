@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* add by WangZhe for page css 页尾的翻页 */
+.s_bottom .b_rg{ width:560px; height:39px;_height:31px; line-height:39px; _padding-top:8px; text-align:right; padding-right:10px;}
+.s_bottom .b_rg a:link,.s_bottom .b_rg a:visited{ color:#00F;}
+.s_bottom .b_rg a:hover{ text-decoration:underline;}

@@ -1,0 +1,20 @@
+lg_list.lo: /make/php_module/site_builder/lg_list.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/lg_list.c -o lg_list.lo 
+async.lo: /make/php_module/site_builder/async.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/async.c -o async.lo 
+hiredis.lo: /make/php_module/site_builder/hiredis.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/hiredis.c -o hiredis.lo 
+lg_redis.lo: /make/php_module/site_builder/lg_redis.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/lg_redis.c -o lg_redis.lo 
+net.lo: /make/php_module/site_builder/net.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/net.c -o net.lo 
+sds.lo: /make/php_module/site_builder/sds.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/sds.c -o sds.lo 
+site_builder.lo: /make/php_module/site_builder/site_builder.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/make/php_module/site_builder $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /make/php_module/site_builder/site_builder.c -o site_builder.lo 
+$(phplibdir)/site_builder.la: ./site_builder.la
+	$(LIBTOOL) --mode=install cp ./site_builder.la $(phplibdir)
+
+./site_builder.la: $(shared_objects_site_builder) $(SITE_BUILDER_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_site_builder) $(SITE_BUILDER_SHARED_LIBADD)
+

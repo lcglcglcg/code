@@ -1,0 +1,72 @@
+<div class="report_box" id="create_report" style="display:none;">
+  <div class="report_title"><b>创建报告</b><span><input name="close_bnt" type="image" src="/static/sem_web_1.0/web/images/view_close.gif" onClick="$UE.close('create_report');" style="cursor:pointer;"></span></div>
+  <div class="report_main">
+  	<div class="report_cont">
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20"><span class="red">*</span> 报告名称：</li>
+        	<li class="h20"><span class="red">*</span> 选择创建报告的方式：</li>
+        </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+            <li class="h20"><input name="time3" type="text" class="input_text" value="对话报告_2013年03月25日10点40分01秒"></li>
+            <li class="h20">
+            	<select name="ss2" class="select_text"  id="madeType" onchange="$UE.selectChoosedDo({id:'madeType',callbackMap:{'1':'$UE.display(\'d1\',\'block\');$UE.display(\'d2\',\'none\')','2':'$UE.display(\'d1\',\'none\');$UE.display(\'d2\',\'block\')'} });">
+            	  <option value="1" selected="selected" >上传最新的对话记录</option>
+            	  <option value="2" >使用已上传的对话记录</option>
+            	</select>
+       	               </li>
+	    </ol>
+      </div>
+    </div>
+  	<div class="report_cont" id="d1">
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20"><span class="red">*</span> 选择对话咨询系统：</li>
+        	<li class="h20"><span class="red">*</span> 选择对话记录文件：</li>
+        	<li class="h20">选择预约标识列：</li>
+        	<li class="h20">对话预约标识：</li>
+        	<li class="h16"></li>
+        </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+            <li class="h20">
+            	<select name="ss1" class="noselect_text" disabled=true>
+            	  <option value="1">商务通</option>
+            	</select>
+           </li>
+            <li class="h20"><input name="time1" type="text" class="input_text" value=""><input name="" type="image" src="/static/sem_web_1.0/web/images/shangc.jpg"  class="input_img"/></li>
+            <li class="h20">
+            	<select name="ss" class="select_text">
+            	  <option value="1">选择包含预约标识字符的数据列</option>
+            	  <option value="2">访客名称</option>
+            	  <option value="3">访客备注</option>
+            	  <option value="4">访客分类</option>
+            	</select>
+           </li>
+            <li class="h20"><input name="time3" type="text" class="input_text" ></li>
+            <li class="h16"><span class="red">(多个标识之间用英文逗号分隔)</span></li>
+	    </ol>
+      </div>
+    </div>
+    
+  	<div class="report_cont" style="display:none;" id="d2" >
+      <div class="cont_lf">
+      	<ul>
+        	<li class="h20"><span class="red">*</span> 选择时间范围：</li>
+        </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+            <li class="h20"><form action="" method="get"><input name="time1" type="text" class="times" value="2013-03-01/2013-03-31"></form></li>
+	    </ol>
+      </div>
+      <div class="select_times"><img src="/static/sem_web_1.0/web/images/time1.jpg"/></div>
+      <div class="report_tishi red">提示：粉色字体，表示对话数据已上传；紫色背景，表示百度数据已下载。</div>
+    </div>
+  	</div>
+<div class="report_btn" align="center"><ol><li><a onClick="$UE.open('progress');$UE.close('create_report');">确定</a><a onClick="$UE.close('create_report');">取消</a></li></ol></div>
+  </div>
+</div>

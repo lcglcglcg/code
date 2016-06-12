@@ -1,0 +1,47 @@
+<div class="account_box" id="account_view" style="display:none;">
+  <div class="account_title"><b>百度账户信息</b><span><input name="close_bnt" type="image" src="/static/sem_web_1.0/web/images/view_close.gif" onClick="$UE.close('account_view');" style="cursor:pointer;"></span></div>
+  <div class="account_main">
+  	<div class="account_cont">
+      <div class="cont_lf">
+      	<ul>	
+        	<li class="h20"><s class="red">*</s> 百度用户名：</li>
+        	<li class="h20"><s class="red">*</s> 百度密码：</li>
+        	<li class="h20"><s class="red">*</s> 网站URL：</li>
+        	<li class="h20"><s class="red">*</s> 网站名：</li>
+         	<li class="h20"><s class="red">*</s> 公司名：</li>
+         	<li class="h20">推广顾问：</li>
+        	<li class="h20">推广顾问联系电话：</li>
+        	<li class="h20"><s class="red">*</s> 所在省市：</li>
+        	<li class="h28"><s class="red">*</s> 通信地址：</li>
+        	<li class="h16">邮政编码：</li>
+        	<li class="h20"><s class="red">*</s> 联系人：</li>
+        	<li class="h20"><s class="red">*</s> 固定电话(固话)：</li>
+        	<li class="h20">联系电话(手机)：</li>
+        	<li class="h20">传真：</li>
+        	<li class="h20"><s class="red">*</s> Email：</li>
+        	<li class="h8"></li>
+      </ul>
+      </div>
+      <div class="cont_rg">
+      	<ol>
+        	<li class="h20">bj_ufstone</li>
+       	    <li class="h20">123456</li>
+        	<li class="h20">http://www.ufstone.com/</li>
+        	<li class="h20">探网科技</li>
+        	<li class="h20">北京探网科技发展有限公司</li>
+        	<li class="h20">李秀玲</li>
+        	<li class="h20">010-57936482</li>
+        	<li class="h20">北京市朝阳区</li>
+        	<li class="h28">酒仙桥东路9号院A2号写字楼四三层</li>
+        	<li class="h16">100013</li>
+        	<li class="h20">杨振国</li>
+        	<li class="h20">010-58238962</li>
+        	<li class="h20">010-58238816转11</li>
+        	<li class="h20">18611369488</li>
+         	<li class="h20">pablo3518@163.com</li>
+	       </ol>
+      </div>
+  	</div>
+<div class="c_btn" align="center"><ul><li><a href="javascript:$UE.close('account_view');">关闭</a></li></ul></div>
+  </div>
+</div>

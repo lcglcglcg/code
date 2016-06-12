@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("site_builder", "for site_builder support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("site_builder", "enable site_builder support", "no");
+
+if (PHP_SITE_BUILDER != "no") {
+	EXTENSION("site_builder", "site_builder.c");
+}
+

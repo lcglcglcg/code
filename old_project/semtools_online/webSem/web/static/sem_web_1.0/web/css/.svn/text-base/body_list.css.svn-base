@@ -1,0 +1,68 @@
+/* CSS Document */
+h1,h2,h3,h4,h5,h6{ font-size:12px; font-weight:normal; display:inline;}
+s{ text-decoration:none;}
+.times{ width:150px; float:left; height:16px; margin-top:1px;}
+.calendar{ border:1px solid #7F9DB9; border-left:none; _margin-left:-3px; margin-top:1px;}
+/* s_conditions 状态 start */
+option{ border:none;}
+.conditions{width:960px; background:#FFF; padding:10px 15px 0 15px;}
+.conditions ol{ height:24px; overflow:hidden; padding-bottom:5px;}
+.conditions ol li{ display:block; height:22px; line-height:22px; float:left;}
+.conditions ol li span{ display:block; float:left; width:60px;}
+.conditions ol li .w40{ width:40px;}
+.conditions ol li.padl{ margin-left:51px;_margin-left:31px;}
+.conditions ol li.padl1{ margin-left:21px; }
+.conditions ol li.padl2{ margin-left:30px;_margin-left:10px;}
+.conditions ol li.padl4{ margin-left:30px;}
+.conditions ol li .order{ width:128px;}
+.conditions ol li a:link,.conditions ol li a:visited{ display:block; width:62px; height:19px; text-align:center; line-height:20px; color:#000; font-weight:bold; background:url(../images/icon.gif) no-repeat 0 -150px; text-decoration:none;}
+.conditions ol li a:hover{ color:#ab0000; font-weight:bold; text-decoration:none;}
+/* conditions 状态 end */
+/* s_content 内容 start */
+.s_content{ width:978px; background:#E8F4FA; border:1px solid #ABE4FE; border-bottom:none; overflow:hidden; margin:5px 5px 0px 5px !important;min-height:250px;height:auto;}
+.s_content ul{ height:28px;}
+.s_content .hover_bg{background:#FAEDA1;}
+.s_content ul.b_line{border-bottom:1px solid #ABE4FE; height:28px; }
+.s_content ul li{ display:block; float:left; height:28px; line-height:28px;}
+.s_content ul li.f_bold{ font-weight:bold; text-align:center; padding-left:-10px;}
+.s_content ul li.f_center{ text-align:center;}
+.s_content ul li.pad10{ padding-left:10px;}
+.s_content ul li.w80{ width:70px; border-left:1px solid #ABE4FE; padding: 0 5px;overflow: hidden;}
+
+.s_content ul li.w110{ width:90px; border-left:1px solid #ABE4FE; padding: 0 5px;overflow: hidden;}
+.s_content ul li.w100{ width:89px; border-left:1px solid #ABE4FE; padding: 0 5px; overflow: hidden; word-break: break-all; }
+.s_content ul li.w100 a{ display:block;color:#00F;}
+.s_content ul li.w100 a:hover{ color:#00F; background:#BAE6FC;text-decoration:none;overflow: hidden;}
+.s_content ul li.w150{ width:140px; border-left:1px solid #ABE4FE; padding: 0 5px; overflow: hidden; word-break: break-all; }
+.s_content ul li.w200{ width:110px; border-left:1px solid #ABE4FE; padding: 0 5px; overflow: hidden; word-break: break-all; }
+.s_content ul li.w220{ width:200px;border-left:1px solid #ABE4FE; padding: 0 10px; overflow: hidden;word-break: break-all;}
+.s_content ul li.w234{ width:224px;border-left:1px solid #ABE4FE; padding: 0 5px; overflow: hidden;word-break: break-all;}
+
+.s_content ul li.w140{ width:100px;border-left:1px solid #ABE4FE; padding: 0 20px; overflow: hidden;word-break: break-all;}
+.s_content ul li.w140 a,.s_content ul li.w140 a:link,.s_content ul li.w140 a:visited{ float:left; width:50px; text-align:center;color:#0000cc;text-decoration:none;overflow: hidden;}
+.s_content ul li.w140 a:hover{color:#0000cc; font-weight:bold; background:#BAE6FC;text-decoration:none;overflow: hidden;}
+.s_content ul li.w140 span{ width:50px; float:left; color:#C3C3C3;}
+
+.s_content ul li.w200{ width:180px; border-left:1px solid #ABE4FE; padding: 0 10px;overflow: hidden;}
+.s_content ul li.w430{ width:410px; border-left:1px solid #ABE4FE; padding: 0 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.s_content ul li.w430 a{ color:#00F;}
+.s_content ul li.w430 a:hover{ color:#00F; text-decoration:underline;}
+
+.s_content ul.t_line{border-top:1px solid #ABE4FE; height:24px; }
+.s_content ul.bottom_line{border-top:1px solid #ABE4FE; height:0px; }
+.kong_bottom{border-top:1px solid #ABE4FE; height:0px; }
+/* s_content  内容 end */
+/* s_bottom 页尾的按钮 start */
+.s_bottom{ width:978px; background:#E8F4FA; border:1px solid #ABE4FE; height:39px; margin:0 auto; padding:0; margin-bottom:}
+.s_bottom .b_lf{ width:370px; height:40px; }
+.s_bottom .b_lf ol{ height:32px; padding: 10px 0 0 15px;}
+.s_bottom .b_lf ol li{ display:inline;}
+.s_bottom .b_lf ol li a{ display:block; width:63px; height:22px; line-height:20px; float:left; text-align:center;background:url(../images/icon.gif) no-repeat 0 -150px; margin-right:15px;font-weight:bold; color:#000;}
+.s_bottom .b_lf ol li a:link,.s_bottom .b_lf ol li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.s_bottom .b_lf ol li a:hover{  background:url(../images/icon.gif) no-repeat 0 -350px; color:#FFF; text-decoration:none;}
+/* s_bottom 页尾的按钮 end */
+/* input 宽度  */
+.input01{ width:260px; margin-top:1px; height:15px;font-size:12px;}
+.input02{ width:260px; margin-top:1px;font-size:12px;float:left;}
+.input03{ width:200px; margin-top:1px;font-size:12px; float:left;}
+.input04{ width:120px; margin-bottom:-1px;font-size:12px; float:left;}

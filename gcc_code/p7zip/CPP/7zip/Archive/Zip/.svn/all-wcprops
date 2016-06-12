@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip
+END
+ZipIn.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipIn.h
+END
+ZipCompressionMode.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipCompressionMode.h
+END
+ZipOut.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipOut.h
+END
+ZipHandler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipHandler.cpp
+END
+ZipHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipHandler.h
+END
+ZipUpdate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipUpdate.cpp
+END
+ZipRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipRegister.cpp
+END
+ZipUpdate.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipUpdate.h
+END
+ZipHeader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipHeader.cpp
+END
+ZipHeader.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipHeader.h
+END
+ZipItem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipItem.cpp
+END
+ZipItemEx.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipItemEx.h
+END
+ZipAddCommon.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipAddCommon.cpp
+END
+ZipItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipItem.h
+END
+ZipHandlerOut.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipHandlerOut.cpp
+END
+ZipIn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipIn.cpp
+END
+ZipAddCommon.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipAddCommon.h
+END
+ZipOut.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/CPP/7zip/Archive/Zip/ZipOut.cpp
+END

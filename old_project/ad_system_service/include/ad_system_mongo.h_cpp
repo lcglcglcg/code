@@ -1,0 +1,102 @@
+
+#ifndef	__AD_SYSTEM_MONGO_H__
+#define	__AD_SYSTEM_MONGO_H__
+
+#include "lg_list.h"
+
+#define	MONGO_TABLE_SHOW "adx.log.show"
+#define	MONGO_TABLE_CLICK "adx.log.click"
+#define MONGO_TABLE_TEMP "adx.log.temp.bak"
+#define MONGO_TABLE_DATA "adx.log.data"
+#define	MONGO_REPORT_LIST "adx.log.report_list"
+#define	MONGO_DELIVERY_CENTER_LIST "adx.log.delivery_center_list"
+
+#define MONGO_DISPLAY_ALL	0
+#define MONGO_DISPLAY_IMG	1
+#define MONGO_DISPLAY_TEXT	2
+
+#ifdef __cplusplus
+extern "C" { 
+#endif
+
+    //初始化
+    extern int ad_system_mongo_init(lg_list_t *config_file_head);
+
+    /* report list */
+    typedef struct {
+
+	lg_list_t list;
+	char report_id[64];
+	char report_name[256];
+	int report_type;
+	char range_time[128];
+	char create_time[128];
+	int status;
+	char path[1024];
+
+    } ad_system_mongo_report_list_t;
+
+    extern int ad_system_mongo_report_list_add(const char *account_id,
+	    const char *report_id, 
+	    const char *report_name, 
+	    int report_type, 
+	    int text_or_img, 
+	    const char *time_range, 
+	    const char *path);
+    extern int ad_system_mongo_report_list_set(char *account_id, char *report_id, int status);
+    extern int ad_system_mongo_report_list_get(char *account_id, int report_belong, lg_list_t *head);
+    extern int ad_system_mongo_report_list_del(char *account_id, const char *report_id);
+
+    /* stat trend load */
+    extern int ad_system_mongo_this_day_load(char *account_id, char *table, lg_list_t *head, int mode);
+    extern int ad_system_mongo_last_day_load(char *account_id, char *table, lg_list_t *head, int mode);
+    extern int ad_system_mongo_seven_day_load(char *account_id, char *table, lg_list_t *head, int mode);
+
+    /* money trend load */
+    typedef struct {
+
+	lg_list_t list;
+	char date[20];
+	double cost;
+
+    } ad_system_mongo_money_trend_t;
+    extern int ad_system_mongo_money_trend_load(char *account_id, lg_list_t *year_head, lg_list_t *month_head);
+
+    //后台->投放中心
+    extern int ad_system_mongo_delivery_center_find(const char *key, char *account_id_str);
+
+    //首页->曲线图
+    extern int ad_system_mongo_stat_trend_seven_day_load(char *account_id, char *table, lg_list_t *head, int display_style);
+
+
+    //标准报告
+    extern int ad_system_mongo_report_standard_load(lg_list_t *head,
+	    const char *table,
+	    const char *account_id_str, 
+	    const char *date_s_str, 
+	    const char *date_e_str, 
+	    int date_type,
+	    int display_style,
+	    int bidding_model);
+
+    //综合报告
+    extern int ad_system_mongo_report_complex_load(lg_list_t *head,
+	    const char *table,
+	    const char *account_id_str, 
+	    const char *date_s_str, 
+	    const char *date_e_str, 
+	    int date_type,
+	    int display_style,
+	    int bidding_model);
+
+    extern void ad_system_mongo_list_free(lg_list_t *head);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+
+
+

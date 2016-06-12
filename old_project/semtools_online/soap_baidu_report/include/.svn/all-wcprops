@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/125/C/semtools_online/soap_baidu_report/include
+END
+soapH.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/CodeLib/!svn/ver/125/C/semtools_online/soap_baidu_report/include/soapH.h
+END
+baidu_download.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CodeLib/!svn/ver/125/C/semtools_online/soap_baidu_report/include/baidu_download.h
+END
+stdsoap2.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CodeLib/!svn/ver/125/C/semtools_online/soap_baidu_report/include/stdsoap2.h
+END
+soapStub.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CodeLib/!svn/ver/125/C/semtools_online/soap_baidu_report/include/soapStub.h
+END

@@ -1,0 +1,138 @@
+
+#define	PACKET_CODE_OK					0//成功
+#define	PACKET_CODE_USER_LOGIN_CHECK_OK			1000//用户已登录
+#define	PACKET_CODE_USER_LOGIN_CHECK_ERR		1001//用户未登录
+#define	PACKET_CODE_USER_LOGIN_ERR			1002//用户名/密码/验证码 错误
+
+#define	PACKET_CODE_ERR					9999//服务器内部错误
+#define	PACKET_CODE_FORMAT_ERR				9998//报文格式错误
+#define	PACKET_CODE_PARAMETER_ERR			9997//报文参数错误
+#define	PACKET_CODE_NOT_DATA				9996//没有数据
+#define PACKET_CODE_NOT_KEY                             9995//没有这个ID
+#define PACKET_CODE_REPEAT_ERR				9994//重复
+
+
+//判断是否登录(POST)
+{
+	PACKET_TYPE: LOGIN_CHECK
+}
+{
+	CODE: 1000
+}
+
+//获取验证码png (GET)
+{
+	PACKET_TYPE: GET_CAPTCHA
+}
+
+	return png image
+
+//登录 (POST)
+{
+	PACKET_TYPE: LOGIN
+	ACCOUNT_NAME			//用户名
+	PASSWORD			//密码MD5
+	VAR_CODE			//验证码
+}
+{
+	CODE: 0
+}
+
+//退出登录 (POST)
+{
+	PACKET_TYPE: LOGOUT
+}
+{
+	CODE: 0
+}
+
+//获取区域CODE (POST)
+{
+	PACKET_TYPE: GET_REGION_CODE
+}
+{
+	 "九龙坡区":"1000400014", ... "江津区":"1000400013"
+}
+
+//获取科室病种CODE (POST)
+{
+	PACKET_TYPE: GET_DISEASE_CODE
+}
+{
+	""男科":"101000000000000000000",... "弱精症":"123011000000000000000"
+}
+
+
+//用户信息->获取用户信息 (POST)
+{
+	PACKET_TYPE: GET_ACCOUNT_INFO
+}
+{
+	ACCOUNT_NAME 			//用户名
+	COMPANY_NAME 			//公司名称
+(暂无)	DOMAIN				//公司域名	
+(暂无)	POSTCODE 			//邮编
+(暂无)	CONTACT 			//联系人
+(暂无)	TELEPHONE		 	//电话
+(暂无)	FAX 				//传真
+(暂无)	MOBILE 				//移动电话
+(暂无)	EMAIL 				//电子邮件
+	LATE_LOGIN_TIME 		//最后登录时间
+(暂无)	LATE_LOGIN_IP 			//最后登录IP
+		
+	WANGMENG_TYPE			//网盟状态:1开通 2未开通  网盟状态
+	WANGMENG_BALANCE		//网盟余额
+	RUANWEN_TYPE			//软文状态:1开通 2未开通
+	RUANWEN_SURPLUS_ARTICLES	//软文剩余篇数
+}
+
+//用户信息->修改用户信息 (POST)
+{
+	PACKET_TYPE: SET_ACCOUNT_INFO
+}
+{
+	PASS_OLD	 		//原密码MD5
+	PASS_NEW 			//新密码明文
+}
+
+//投放中心->绑定网盟用户 (POST)
+{
+	PACKET_TYPE: BIND_WANGMENG_ACCOUNT
+	ACCOUNT_NAME		//用户名
+	PASSWORD		//密码MD5
+}
+{
+	CODE: 0		
+}
+
+//投放中心->绑定软文用户 (POST)
+{
+	PACKET_TYPE: BIND_RUANWEN_ACCOUNT
+	ACCOUNT_NAME		//用户名
+	PASSWORD		//密码MD5
+}
+{
+	CODE: 0		
+}
+
+//投放中心->访问网盟 (POST)
+{
+
+	PACKET_TYPE: LOGIN_WANGMENG
+}
+{
+	URL:			//网盟登录URL (GET)
+}
+
+//投放中心->访问软文(POST)
+{
+
+	PACKET_TYPE: LOGIN_RUANWEN
+}
+{
+
+	URL:			//软文登录URL (GET)
+}
+
+
+

@@ -1,0 +1,46 @@
++---------------+---------------------------------------
+|ACCES		|意义
++---------------+---------------------------------------
+|O_RDONLY	|读
+|O_WRONLY	|写
+|O_RDWR		|读写
+|O_NDELAY	|未用UNIX兼容
+|O_APPEND	|读写追加
+|O_CREAT	|若文件存在,此标志无用,若不存在创建文件
+|O_TRUNC	|若文件存在,长度被截为0,属性不变
+|O_EXCL		|未用UNIX兼容
+|O_BINARY	|以二进制方式打开文件
+|O_TEXT		|以文本方式打开文件
++---------------+---------------------------------------
+
+strerror(errno)); 错误信息:
+只读方式打开文件,文件不存在
+int fb = open("text", O_RDONLY);
+No such file or directory
+
+只写方式打开目录
+int fb = open("texts/", O_WRONLY);
+Is a directory
+
+read
+STDIN_FILE
+STDOUT_FILE
+STDERR_FILE
+
+write
+复制用户空间数据到内核空间并不写入文件
+cat	|命令层
+fgets	|标准库
+read	|系统调用
+驱动	|内核
+
+重定向
+$a.out > out		输出重定位到out
+$a.out < out		输入重定位到out
+$a.out >> out		追加重定位到out
+$a.out 2> out		stderr重定向到out
+$a.out 2 > out		第二个参数重定向到out
+$a.out 5<> out  	读写方式打开out 并且写到5号文件描述符
+$a.out > a.out 2>&1 	2号文件描述符，重定向到1号文件描述符，全部重定向到out
+
+

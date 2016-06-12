@@ -1,0 +1,16 @@
+code_parse.lo: /back/make/php-5.5.25/ext/code_parse/code_parse.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/back/make/php-5.5.25/ext/code_parse $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /back/make/php-5.5.25/ext/code_parse/code_parse.c -o code_parse.lo 
+lg_list.lo: /back/make/php-5.5.25/ext/code_parse/lg_list.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/back/make/php-5.5.25/ext/code_parse $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /back/make/php-5.5.25/ext/code_parse/lg_list.c -o lg_list.lo 
+bmp_code.lo: /back/make/php-5.5.25/ext/code_parse/bmp_code.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/back/make/php-5.5.25/ext/code_parse $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /back/make/php-5.5.25/ext/code_parse/bmp_code.c -o bmp_code.lo 
+font_code.lo: /back/make/php-5.5.25/ext/code_parse/font_code.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/back/make/php-5.5.25/ext/code_parse $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /back/make/php-5.5.25/ext/code_parse/font_code.c -o font_code.lo 
+parse_code.lo: /back/make/php-5.5.25/ext/code_parse/parse_code.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/back/make/php-5.5.25/ext/code_parse $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /back/make/php-5.5.25/ext/code_parse/parse_code.c -o parse_code.lo 
+$(phplibdir)/code_parse.la: ./code_parse.la
+	$(LIBTOOL) --mode=install cp ./code_parse.la $(phplibdir)
+
+./code_parse.la: $(shared_objects_code_parse) $(CODE_PARSE_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_code_parse) $(CODE_PARSE_SHARED_LIBADD)
+

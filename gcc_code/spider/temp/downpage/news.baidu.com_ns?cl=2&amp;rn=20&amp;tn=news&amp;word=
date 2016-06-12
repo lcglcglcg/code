@@ -1,0 +1,32 @@
+HTTP/1.0 302 Found
+Content-Length: 160
+Content-Type: text/html
+Date: Sat, 07 Nov 2015 04:40:52 GMT
+Location: http://news.baidu.com/
+P3p: CP=" OTI DSP COR IVA OUR IND COM "
+Server: Apache
+Set-Cookie: BAIDUID=C1DDE4E7BDD10FBD965D934AB6097A18:FG=1; expires=Sun, 06-Nov-16 04:40:52 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx/1.2.4</center>
+</body>
+</html>
+HTTP/1.0 302 Found
+Content-Length: 160
+Content-Type: text/html
+Date: Sat, 07 Nov 2015 05:00:10 GMT
+Location: http://news.baidu.com/
+P3p: CP=" OTI DSP COR IVA OUR IND COM "
+Server: Apache
+Set-Cookie: BAIDUID=1F389911223EC1AAD41E53EA92E5BB08:FG=1; expires=Sun, 06-Nov-16 05:00:10 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx/1.2.4</center>
+</body>
+</html>

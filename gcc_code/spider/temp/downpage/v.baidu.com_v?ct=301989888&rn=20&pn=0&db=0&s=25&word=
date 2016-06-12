@@ -1,0 +1,10 @@
+HTTP/1.0 302 Found
+Content-Type: text/html
+Date: Sat, 07 Nov 2015 04:40:52 GMT
+Location: /
+P3p: CP=" OTI DSP COR IVA OUR IND COM "
+Server: apache
+Set-Cookie: BAIDUID=F98A7D3F0BFAA335A9E96723B956A775:FG=1; max-age=31536000; expires=Sun, 06-Nov-16 04:40:52 GMT; domain=.baidu.com; path=/; version=1
+X-Powered-By: PHP/5.2.10
+Content-Length: 0
+

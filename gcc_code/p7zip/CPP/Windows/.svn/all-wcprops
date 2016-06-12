@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows
+END
+PropVariantConversions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/PropVariantConversions.cpp
+END
+Error.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Error.h
+END
+Time.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Time.h
+END
+Clipboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Clipboard.h
+END
+Synchronization.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Synchronization.h
+END
+Registry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Registry.cpp
+END
+Menu.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Menu.h
+END
+PropVariant.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/PropVariant.h
+END
+DLL.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/DLL.cpp
+END
+Shell.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Shell.h
+END
+FileIO.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileIO.h
+END
+Thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Thread.h
+END
+Window.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Window.h
+END
+FileName.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileName.cpp
+END
+COM.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/COM.h
+END
+FileDir.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileDir.h
+END
+ResourceString.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/ResourceString.h
+END
+NtCheck.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/NtCheck.h
+END
+System.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/System.cpp
+END
+FileFind.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileFind.h
+END
+Defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Defs.h
+END
+Error.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Error.cpp
+END
+PropVariantUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/PropVariantUtils.h
+END
+Time.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Time.cpp
+END
+Clipboard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Clipboard.cpp
+END
+Synchronization.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Synchronization.cpp
+END
+PropVariantConversions.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/PropVariantConversions.h
+END
+PropVariant.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/PropVariant.cpp
+END
+FileIO.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileIO.cpp
+END
+Window.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Window.cpp
+END
+CommonDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/CommonDialog.h
+END
+Registry.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Registry.h
+END
+COM.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/COM.cpp
+END
+FileDir.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileDir.cpp
+END
+DLL.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/DLL.h
+END
+FileFind.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileFind.cpp
+END
+FileName.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/FileName.h
+END
+PropVariantUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/PropVariantUtils.cpp
+END
+Synchronization2.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/Synchronization2.h
+END
+System.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Windows/System.h
+END

@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/CodeLib/!svn/ver/42/C/p7zip
+END
+install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/CodeLib/!svn/ver/42/C/p7zip/install.sh
+END
+install_local_context_menu.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/CodeLib/!svn/ver/42/C/p7zip/install_local_context_menu.sh
+END
+makefile.linux_s390x
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_s390x
+END
+makefile.linux_amd64_asm_icc
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_amd64_asm_icc
+END
+makefile.netware_asm_gcc_3.X
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/makefile.netware_asm_gcc_3.X
+END
+makefile.oldmake
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/CodeLib/!svn/ver/42/C/p7zip/makefile.oldmake
+END
+integration_context_menu.txt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/integration_context_menu.txt
+END
+makefile.netbsd
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/CodeLib/!svn/ver/42/C/p7zip/makefile.netbsd
+END
+makefile.macosx_32bits
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/makefile.macosx_32bits
+END
+makefile.hpux-acc_64
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/makefile.hpux-acc_64
+END
+makefile.linux_x86_asm_gcc_mudflap_4.X
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_x86_asm_gcc_mudflap_4.X
+END
+makefile.solaris_sparc_CC_64
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/makefile.solaris_sparc_CC_64
+END
+makefile.macosx_32bits_ppc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/makefile.macosx_32bits_ppc
+END
+makefile.linux_x86_icc
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_x86_icc
+END
+makefile.linux_gcc_2.95_no_need_for_libstdc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_gcc_2.95_no_need_for_libstdc
+END
+makefile.linux_amd64
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_amd64
+END
+makefile.openbsd_no_port
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/makefile.openbsd_no_port
+END
+makefile.rules
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/CodeLib/!svn/ver/42/C/p7zip/makefile.rules
+END
+makefile.aix_gcc
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/CodeLib/!svn/ver/42/C/p7zip/makefile.aix_gcc
+END
+makefile.linux_clang_amd64
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_clang_amd64
+END
+makefile.freebsd5
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/makefile.freebsd5
+END
+makefile.freebsd6
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/makefile.freebsd6
+END
+makefile.cygwin
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/CodeLib/!svn/ver/42/C/p7zip/makefile.cygwin
+END
+makefile.linux_other
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_other
+END
+makefile.djgpp_watt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/makefile.djgpp_watt
+END
+makefile.qnx_shared.bin
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/makefile.qnx_shared.bin
+END
+makefile.machine
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/CodeLib/!svn/ver/42/C/p7zip/makefile.machine
+END
+makefile.glb
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/CodeLib/!svn/ver/42/C/p7zip/makefile.glb
+END
+makefile.linux_cross_arm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_cross_arm
+END
+makefile.hpux-acc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/makefile.hpux-acc
+END
+makefile.linux_x86_asm_gcc_4.X
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_x86_asm_gcc_4.X
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/CodeLib/!svn/ver/42/C/p7zip/ChangeLog
+END
+makefile.crc32
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/CodeLib/!svn/ver/42/C/p7zip/makefile.crc32
+END
+makefile.linux_any_cpu
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_any_cpu
+END
+makefile.gprof
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/CodeLib/!svn/ver/42/C/p7zip/makefile.gprof
+END
+makefile.qnx_static
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/makefile.qnx_static
+END
+makefile.solaris_sparc_CC_32
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/makefile.solaris_sparc_CC_32
+END
+makefile.hpux-gcc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/makefile.hpux-gcc
+END
+makefile.macosx_llvm_64bits
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/makefile.macosx_llvm_64bits
+END
+makefile.macosx_32bits_asm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/makefile.macosx_32bits_asm
+END
+makefile.solaris_sparc_gcc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/makefile.solaris_sparc_gcc
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/CodeLib/!svn/ver/42/C/p7zip/README
+END
+makefile.solaris_x86
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/makefile.solaris_x86
+END
+makefile.linux_any_cpu_gcc_4.X
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_any_cpu_gcc_4.X
+END
+makefile.linux_x86_asm_icc
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_x86_asm_icc
+END
+makefile.tru64
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/CodeLib/!svn/ver/42/C/p7zip/makefile.tru64
+END
+makefile.macosx_64bits
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/makefile.macosx_64bits
+END
+makefile.beos
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/CodeLib/!svn/ver/42/C/p7zip/makefile.beos
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/CodeLib/!svn/ver/42/C/p7zip/TODO
+END
+makefile.linux_x86_asm_gcc_4.X_fltk
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_x86_asm_gcc_4.X_fltk
+END
+makefile.linux_amd64_asm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/makefile.linux_amd64_asm
+END
+makefile.openbsd
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/CodeLib/!svn/ver/42/C/p7zip/makefile.openbsd
+END
+makefile.cygwin_asm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/makefile.cygwin_asm
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/CodeLib/!svn/ver/42/C/p7zip/makefile
+END
+makefile.djgpp_old
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/makefile.djgpp_old
+END

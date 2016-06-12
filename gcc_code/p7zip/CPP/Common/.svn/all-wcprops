@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common
+END
+StdOutStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StdOutStream.cpp
+END
+Wildcard.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Wildcard.h
+END
+UTFConvert.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/UTFConvert.cpp
+END
+MyWindows.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyWindows.cpp
+END
+StdInStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StdInStream.h
+END
+CommandLineParser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/CommandLineParser.cpp
+END
+CRC.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/CRC.cpp
+END
+MyVector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyVector.cpp
+END
+MyUnknown.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyUnknown.h
+END
+MyXml.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyXml.h
+END
+StringConvert.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StringConvert.h
+END
+Buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Buffer.h
+END
+C_FileIO.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/C_FileIO.h
+END
+TextConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/TextConfig.h
+END
+MyString.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyString.h
+END
+MyGuidDef.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyGuidDef.h
+END
+MyMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyMap.cpp
+END
+Defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Defs.h
+END
+Lang.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Lang.h
+END
+MyInitGuid.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyInitGuid.h
+END
+IntToString.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/IntToString.h
+END
+StringToInt.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StringToInt.h
+END
+Wildcard.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Wildcard.cpp
+END
+NewHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/NewHandler.h
+END
+StdInStream.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StdInStream.cpp
+END
+ListFileUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/ListFileUtils.h
+END
+AutoPtr.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/AutoPtr.h
+END
+StdOutStream.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StdOutStream.h
+END
+UTFConvert.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/UTFConvert.h
+END
+MyWindows.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyWindows.h
+END
+MyXml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyXml.cpp
+END
+StringConvert.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StringConvert.cpp
+END
+CommandLineParser.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/CommandLineParser.h
+END
+MyException.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyException.h
+END
+C_FileIO.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/C_FileIO.cpp
+END
+Types.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Types.h
+END
+TextConfig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/TextConfig.cpp
+END
+MyString.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyString.cpp
+END
+MyVector.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyVector.h
+END
+Lang.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/Lang.cpp
+END
+ComTry.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/ComTry.h
+END
+DynamicBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/DynamicBuffer.h
+END
+IntToString.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/IntToString.cpp
+END
+StringToInt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/StringToInt.cpp
+END
+MyMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyMap.h
+END
+MyCom.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/MyCom.h
+END
+ListFileUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/CodeLib/!svn/ver/42/C/p7zip/CPP/Common/ListFileUtils.cpp
+END

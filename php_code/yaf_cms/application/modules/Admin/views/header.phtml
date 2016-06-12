@@ -1,0 +1,85 @@
+<div id="top-nav" class="navbar navbar-xs navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/admin/index/index/">联创CMS</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+
+
+
+            <li class="dropdown g-add">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                    <i class="icon-plus icon-white"></i> <span class="hide-sm">新建 <i class="caret"></i></span></a>
+                <ul id="g-add-menu" class="dropdown-menu" role="menu">
+                    <li><a href="/admin/category/index/"><i class="icon-plus"></i> 新建 栏目</a></li>
+                    <li><a href="/host/host/add/"><i class="icon-plus"></i> 新建 管理员</a></li>
+                </ul>
+            </li>
+
+
+
+
+            <script type="text/javascript">
+                $(function () {
+                    $('#g-setlang-menu a').click(function (e) {
+                        var lang = $(this).data('lang');
+                        $('#setlang-form #setlang-id_language').attr('value', lang);
+                        $('#setlang-form').submit();
+
+                        var topmenu = $('#top-nav .navbar-collapse');
+                        if (topmenu.data('bs.collapse'))
+                            topmenu.collapse('hide');
+                    })
+                })
+            </script>
+
+
+            <li class="dropdown">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                    <strong>欢迎， <?php echo $user_profile['username']; ?></strong> <span class="caret"></span></a>
+                <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                    <li><a href="/admin/user/changePassword/"><i class="icon-key"></i>修改密码</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/admin/user/dealLogout/"><i class="show-sm icon-signout"></i><span class="hide-sm">注销</span></a></li>
+        </ul>
+
+
+        <form method="get" class="top-search-form navbar-form navbar-left" id="g-search">
+            <div class="input-group">
+                <input name="_q_" class="form-control" type="text">
+                <span class="input-group-btn">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-search"></i> 搜索 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+
+                        <li><a data-action="/host/host/"><i class="icon-search"></i> 搜索Host</a></li>
+
+                        <li><a data-action="/comments/comment/"><i class="icon-search"></i> 搜索评论</a></li>
+
+                        <li><a data-action="/app/country/"><i class="icon-search"></i> 搜索Countries</a></li>
+
+                        <li><a data-action="/app/kitchensink/"><i class="icon-search"></i> 搜索Kitchen sinks</a></li>
+
+                        <li><a data-action="/host/idc/"><i class="icon-search"></i> 搜索IDC</a></li>
+
+                        <li><a data-action="/auth/group/"><i class="icon-search"></i> 搜索组</a></li>
+
+                        <li><a data-action="/auth/user/"><i class="icon-search"></i> 搜索用户</a></li>
+
+                        <li><a data-action="/host/maintainlog/"><i class="icon-search"></i> 搜索Maintain Log</a></li>
+
+                        <li><a data-action="/app/continent/"><i class="icon-search"></i> 搜索Continents</a></li>
+
+                        <li><a data-action="/host/hostgroup/"><i class="icon-search"></i> 搜索Host Group</a></li>
+
+                    </ul>
+                </span>
+            </div>
+        </form>
+
+
+    </div>
+</div>

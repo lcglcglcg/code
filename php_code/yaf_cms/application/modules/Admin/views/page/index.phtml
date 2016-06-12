@@ -1,0 +1,27 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>网页标题</title>
+    <meta name="keywords" content="关键字列表" />
+    <meta name="description" content="网页描述" />
+    <link rel="stylesheet" type="text/css" href="" />
+    <style type="text/css"></style>
+    <script type="text/javascript"></script>
+</head>
+<body>
+<h1><center>模板编辑</center></h1>
+<hr size="2" width="90%">
+<form method="post" action="">
+    <h2>首页模板</h2>
+    <textarea name="index" rows="25" cols="120"><?php echo htmlspecialchars($data['index']);?></textarea>
+    <h2>列表页模板</h2>
+    <textarea name="list" rows="25" cols="120"><?php echo htmlspecialchars($data['list']);?></textarea>
+    <h2>详情页模板</h2>
+    <textarea name="article" rows="25" cols="120"><?php echo htmlspecialchars($data['article']);?></textarea>
+    <hr/>
+    <input type="submit">
+</form>
+</body>
+    
+    <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>
+ 

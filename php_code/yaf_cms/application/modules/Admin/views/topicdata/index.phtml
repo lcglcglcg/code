@@ -1,0 +1,160 @@
+
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：专题文章管理
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="新建专题文章" href="/admin/topicdata/add" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>新建专题文章</span></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-sm-12 column">
+
+        <!--文档筛选-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title">专题文章筛选</h3></div>
+            <div class="panel-body " >
+                <div style="padding:10px">
+                    <form id ="search_news" action="" method="get">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td>
+                                    <select id="doc_cate" class="form-control" name="tid">
+                                            <option value=''>请选择专题</option>
+                                            <?php
+                                            if ($topic_list) {
+                                                foreach ($topic_list as $key=>$value) {
+                                                    ?>
+                                                    <option value='<?=$value['topic_id'] ?>' <?=$tid && $tid== $value['topic_id'] ? 'selected=true' : '' ?>><?=$value['topic_name']?></option>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                    </select>
+                                </td>
+
+                                <td>
+                                    <select id="doc_cate" class="form-control" name="sid">
+                                            <option value=''>请选择栏目</option>
+                                            <?php
+                                            if ($subclass_list) {
+                                                foreach ($subclass_list as $key=>$value) {
+                                                    ?>
+                                                    <option value='<?=$value['id'] ?>' <?=isset($sid) && $sid==$value['id'] ? 'selected="true"': ''?>><?=$value['title']?></option>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                    </select>
+                                </td>
+                               <td style='width:200px;'>
+                                    <input type='text' value="<?php echo isset($id) && $id ? $id : "" ?>" name="id" class = "text-field admintextinputwidget form-control" maxlength = "50" placeholder="文章ID">
+                                </td>
+                                <td style='width:200px;'>
+                                    <input type='text' value="<?php echo isset($title) ? $title : "" ?>" name="title" class = "text-field admintextinputwidget form-control" maxlength = "50" placeholder="文章标题">
+                                </td>
+                                <td>
+                                    <input name='dosubmit' style="position:relative;" type="submit" value="筛选文档" class="btn btn-primary btn-sm" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--导出文章-->
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="899" >
+            <div class="panel-heading"><i class='icon chevron icon-chevron-up'></i><h3 class="panel-title">导出专题文章</h3></div>
+            <div class="panel-body" style="display: none;">
+                <div style="padding:10px">
+                    <form id ="search_news" action="/admin/topicdata/export2excel" method="get">
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <td>
+                                    <select id="doc_cate" class="form-control" name="tid">
+                                            <option value=''>请先选择专题</option>
+                                            <?php
+                                            if ($topic_list) {
+                                                foreach ($topic_list as $key=>$value) {
+                                                    ?>
+                                                    <option value='<?=$value['topic_id'] ?>'><?=$value['topic_name']?></option>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                    </select>
+                                </td>
+                                <td style='width:200px;'>
+                                    <input type='text' name="starttime" class = "text-field admintextinputwidget form-control" maxlength = "50" placeholder="开始时间如:<?=date('Ymd')?>">
+                                </td>
+                                <td style='width:200px;'>
+                                    <input type='text' name="endtime" class = "text-field admintextinputwidget form-control" maxlength = "50" placeholder="结束时间如:<?=date('Ymd')?>">
+                                </td>
+                                <td>
+                                    <input name='dosubmit' style="position:relative;" type="submit" value="导出数据" class="btn btn-primary btn-sm" />
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--导出文章 end-->
+        <!--文档列表-->
+        
+        <?php if($tid){ ?>
+        <div class="panel panel-default widget addform form-horizontal short_label fieldset" id="88">
+            <div class="panel-heading"><i class='icon icon-chevron-up chevron'></i><h3 class="panel-title"> 专题文章列表</h3></div>
+            <div class="panel-body results" >
+                <form id="changelist-form" action="" method="post">
+                    <table class="table table-hover table-striped">
+                        <tr>
+                            <th width="2%" scope="col" class="action-checkbox-column"><input type="checkbox" id="action-toggle" /></th>
+                            <th width="10%">文档ID</th>
+                            <th width="40%">标题</th>
+                            <th width="5%">推荐 / 精华</th>
+                            <th width="5%">状态</th>
+                            <th width="15%">录入时间</th>
+                            <th width="15%">操作</th>
+                        </tr>
+
+                        <?php
+                        if ( $data['data'] ) {
+                            foreach ($data['data'] as $key => $val) {
+                                ?>                                   
+                                <tr>
+                                    <td  class="action-checkbox"><input class="action-select" name="id[]" type="checkbox" value="<?= $val['id'] ?>"/></td>
+                                    <td><a href="/<?=SITEDIR?>/<?=$val['topic_path']?>/<?=$subclass[$val['sid']]['path']?>/<?=$val['id']?>.html"><?=$val['id'];?></a></td>
+                                    <td><a href="/<?=SITEDIR?>/<?=$val['topic_path']?>/<?=$subclass[$val['sid']]['path']?>/<?=$val['id']?>.html" target="_blank"><?= mb_substr($val['title'], 0, 100, 'UTF-8') ?></a></td>
+                                    <td><?= $val['attribute'] == 1 ? '推荐' : ($val['attribute'] == 2 ? '精华' : ''); ?></td>
+                                    <td><?=$val['status'] ? '√' : 'X'; ?></td>
+                                    <td><?= date('Y-m-d H:i:s', $val['inputtime']); ?></td>
+                                    <td>
+                                        <a href='/admin/topicdata/edit?tid=<?=$val['tid']?>&id=<?=$val['id'] ?>'>编辑</a>
+                                        <a href='/admin/topicdata/trash?tid=<?=$val['tid']?>&id=<?=$val['id'] ?>' onclick="javascript:return confirm('确定要删除吗？')">删除</a>
+                                    </td>
+                                </tr>
+                                <?php
+                            }
+                        }
+                        ?>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <?php } ?>
+
+        <?php echo isset($data['page']) && $tid ? $data['page'] : ''; ?>
+
+    </div>
+    <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>

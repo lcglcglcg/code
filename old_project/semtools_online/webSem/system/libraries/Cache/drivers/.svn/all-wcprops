@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/libraries/Cache/drivers
+END
+Cache_memcached.php
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/libraries/Cache/drivers/Cache_memcached.php
+END
+Cache_dummy.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/libraries/Cache/drivers/Cache_dummy.php
+END
+Cache_file.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/libraries/Cache/drivers/Cache_file.php
+END
+Cache_apc.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CodeLib/!svn/ver/167/C/semtools_online/webSem/system/libraries/Cache/drivers/Cache_apc.php
+END

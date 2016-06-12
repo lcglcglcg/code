@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="robots" content="NONE,NOARCHIVE" />
+        <title>联创CMS</title>
+        <link href="/static/admin/css/bootstrap.css" type="text/css" media="screen" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" id="site-theme" href="/static/admin/css/bootstrap-xadmin.css" />
+        <link href="/static/admin/css/font-awesome.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.main.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.plugins.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.responsive.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.page.dashboard.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/datepicker.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/xadmin.form.css" type="text/css" media="screen" rel="stylesheet" />
+        <link href="/static/admin/css/jquery.validate.css" type="text/css" media="screen" rel="stylesheet" />
+        <link rel='stylesheet' type='text/css' href='/static/admin/css/customer.css' />
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/admin/css/bootstrap-datetimepicker.min.css">
+        <script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+        <script type="text/javascript">
+            window.__admin_media_prefix__ = "/static/xadmin/";
+            window.__admin_path_prefix__ = "/";
+        </script>
+        <script type="text/javascript" src="/jsi18n/"></script>
+    </head>
+    <body class="dashboard">
+        <!-- Header -->
+        <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/header.phtml'); ?>
+
+        <div id="body-content" class="clearfix row" style='min-height:700px;'>
+            <div id="left-side" class="col-sm-1 col-md-2">
+                <!-- menu -->
+                <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/menu.phtml'); ?>
+                <ul class="well nav nav-list nav-sitemenu show-sm">
+                    <li class="app_menu">
+                        <a href="/"><i class="icon-fixed-width icon-home"></i></a><hr/>
+                    </li>
+
+                    <li class="app_menu dropdown-submenu ">
+                        <a href="#" class="section">
+                            <i class="icon-flag"></i>
+                        </a><hr/>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="/app/continent/">
+                                    <i class="icon-fixed-width icon-globe"></i>
+                                    Continents</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/app/country/">
+                                    <i class="icon-fixed-width icon-flag"></i>
+                                    Countries</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/app/kitchensink/">
+                                    <i class="icon-fixed-width icon-briefcase"></i>
+                                    Kitchen sinks</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="app_menu dropdown-submenu ">
+                        <a href="#" class="section">
+                            <i class="icon-lock"></i>
+
+                        </a><hr/>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="/auth/group/">
+                                    <i class="icon-fixed-width icon-group"></i>
+                                    组</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/auth/permission/">
+                                    <i class="icon-fixed-width icon-lock"></i>
+                                    权限</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/auth/user/">
+                                    <i class="icon-fixed-width icon-user"></i>
+                                    用户</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="app_menu dropdown-submenu ">
+                        <a href="#" class="section">
+                            <i class="icon-comment"></i>
+
+                        </a><hr/>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="/comments/comment/">
+                                    <i class="icon-fixed-width icon-comment"></i>
+                                    评论</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="app_menu dropdown-submenu ">
+                        <a href="#" class="section">
+                            <i class="icon-exclamation-sign"></i>
+                        </a><hr/>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="/host/host/">
+                                    <i class="icon-fixed-width icon-exclamation-sign"></i>
+                                    Host</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/host/hostgroup/">
+                                    <i class="icon-fixed-width icon-exclamation-sign"></i>
+                                    Host Group</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/host/maintainlog/">
+                                    <i class="icon-fixed-width icon-exclamation-sign"></i>
+                                    Maintain Log</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/host/idc/">
+                                    <i class="icon-fixed-width icon-exclamation-sign"></i>
+                                    IDC</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/host/accessrecord/">
+                                    <i class="icon-fixed-width icon-exclamation-sign"></i>
+                                    Access Record</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="app_menu dropdown-submenu ">
+                        <a href="#" class="section">
+                            <i class="icon-file"></i>
+
+                        </a><hr/>
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a href="/reversion/revision/">
+                                    <i class="icon-fixed-width icon-exchange"></i>
+                                    Revisions</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/reversion/version/">
+                                    <i class="icon-fixed-width icon-file"></i>
+                                    Versions</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="content-block" class="col-sm-11 col-md-10">
+
+                <div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+                     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+                     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle pull-left" data-toggle="class" data-target="#body-content" data-class-name="show_menu">
+                            <i class="icon-list"></i>
+                        </button>
+
+                        <a title="添加小组件" href="/xadmin/userwidget/add/?user=1&amp;page_id=home&amp;_redirect=/" class="navbar-toggle pull-right">
+                            <i class="icon-plus icon-white"></i></a>
+                        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+
+                            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：添加会员
+
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">   
+                        </ul>
+                        <div class="navbar-btn navbar-right hide-xs">
+                            <a title="添加用户" href="/admin/managemember/index/" class="btn btn-primary">
+                                <i class="icon-plus icon-white"></i> <span>返回列表</span></a>
+                        </div>
+                    </div>
+                </div>    
+
+                <?php
+                $alerts = Alert::get();
+                if ($alerts) {
+                    foreach ($alerts as $type => $alert) {
+                        ?>
+                        <div class="alert alert-<?php echo $type; ?> alert-dismissable">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <?php echo $alert; ?>
+                        </div>
+                        <?php
+                    }
+                }
+                ?>
+
+                <form id="managememberFrom" class = "exform rended" enctype = "multipart/form-data" action = "/admin/managemember/edit/" method = "post" >
+                    <input type = "hidden" value = "<?php echo $data['id'] ?>" name = "id">
+                    <input type = "hidden" value = "<?php echo $data['referer'] ?>" name = "referer">
+                    <div class = "form-container row clearfix">
+                        <div id = "column-0" class = "column form-column main col col-sm-9 form-horizontal ui-sortable">
+
+                            <div class = "panel panel-default fieldset" id = "box-1">
+                                <div class = "panel-heading"><i class = "icon icon-chevron-up chevron"></i><h3 class = "panel-title">编辑会员</h3></div>
+                                <div class = "panel-body ">
+
+                                    <div id = "username" class = "form-group">
+                                        <label class = "control-label ">用户名</label>
+                                        <div class = "controls ">
+                                            <input required minlength="5" maxlength="50" value="<?php echo $data['username'] ?>" class = "text-field admintextinputwidget form-control" id = "id_user_name" maxlength = "50" name = "username" type = "text">
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label class = "control-label ">姓名</label>
+                                        <div class = "controls ">
+                                            <input  value="<?php echo $data['name'] ?>" class = "text-field admintextinputwidget form-control" maxlength = "50" name = "name" type = "text">
+                                        </div>
+                                    </div>
+                                    <div id="nickname" class = "form-group">
+                                        <label class = "control-label ">昵称</label>
+                                        <div class = "controls ">
+                                            <input value="<?php echo $data['nickname'] ?>" class = "text-field admintextinputwidget form-control {required:true}" maxlength = "50" name = "nickname" type = "text">
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label class = "control-label ">性别</label>
+                                        <div class = "controls ">
+                                            <select name="gender" class = "text-field admintextinputwidget form-control" >
+                                                <option value="2" <?php if ($data['gender'] == 2) { ?> selected="selected" <?php } ?> >保密</option>
+                                                <option value="0" <?php if ($data['gender'] == 0) { ?> selected="selected" <?php } ?> >男</option>
+                                                <option value="1" <?php if ($data['gender'] == 1) { ?> selected="selected" <?php } ?> >女</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label class = "control-label ">电话号码</label>
+                                        <div class = "controls ">
+                                            <input value="<?php echo $data['phone'] ?>" class = "text-field admintextinputwidget form-control" maxlength = "50" name = "phone" type = "text">
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label class = "control-label ">email</label>
+                                        <div class = "controls ">
+                                            <input value="<?php echo $data['email'] ?>" class = "text-field admintextinputwidget form-control" maxlength = "50" name = "email" type = "text">
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label class = "control-label ">状态</label>
+                                        <div class = "controls ">
+                                            <select name="status" class = "text-field admintextinputwidget form-control" >
+                                                <option value="0" <?php if ($data['gender'] == 0) { ?> selected="selected" <?php } ?>>禁用</option>
+                                                <option value="1" <?php if ($data['gender'] == 1) { ?> selected="selected" <?php } ?>  >启用</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class = "form-group">
+                                        <label class = "control-label ">生日</label>
+                                        <div class = "controls ">
+                                            <input name="birthday"  id='birthday'  value="<?php echo date('Y-m-d', $data['birthday']) ?>" readonly class = "text-field admintextinputwidget form-control" maxlength = "50" type = "text">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div id = "column-1" class = "column form-column sidebar col col-sm-3 ui-sortable"></div>
+                        </div>
+
+                        <div class = "form-actions well well-sm clearfix">
+                            <button type = "submit" class = "default btn btn-primary hide-xs" name = "_save" data-loading-text = "保存中.."><i class = "icon-save"></i> 保存</button>
+                        </div>
+                </form>
+                <script type="text/javascript">
+            $(function () {
+                //时间
+                $("#birthday").datetimepicker({
+                    format: 'yyyy-mm-dd',
+                    language: 'zh-CN',
+                });
+
+                //验证
+                $("#managememberFrom").validate({
+                    rules: {
+                        username: {
+                            required: true,
+                            minlength: 5,
+                            maxlength: 50
+                        },
+                    }
+                });
+
+
+            });
+                </script>
+
+                <input type = 'hidden' id = '_portal_key' value = 'dashboard:home:pos' />
+            </div>
+        </div>
+
+        <!--footer-->
+        <?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/footer.phtml');
+        ?>
+        <script type="text/javascript" src="/static/admin/js/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="/static/admin/js/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="/static/admin/js/jquery.ui.mouse.js"></script>
+        <script type="text/javascript" src="/static/admin/js/jquery.ui.sortable.js"></script>
+        <script type="text/javascript" src="/static/admin/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.main.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.responsive.js"></script>
+        <script type="text/javascript" src="/static/admin/js/jquery.ui.effect.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.plugin.themes.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.page.dashboard.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.plugin.portal.js"></script>
+        <script type="text/javascript" src="/static/admin/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.widget.datetime.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.page.form.js"></script>
+        <script type="text/javascript" src="/static/admin/js/xadmin.plugin.quick-form.js"></script>
+        <!--验证-->
+        <script type="text/javascript" src="/static/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/static/admin/js/jquery.validate.messages.cn.js"></script>
+        <!--时间插件-->
+        <script type="text/javascript" src="/static/admin/js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="/static/admin/js/bootstrap-datetimepicker.zh-CN.js"  charset="UTF-8"></script>
+    </body>
+</html>

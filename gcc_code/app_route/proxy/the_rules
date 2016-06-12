@@ -1,0 +1,5 @@
+ iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp -s 172.16.65.0/24 -j REDIRECT --to-ports 9877
+ //iptables -t nat -A OUTPUT -o eth0 -p tcp -m tcp -s 59.78.38.0/24 -j REDIRECT --to-ports 9877
+ echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp -j REDIRECT --to-ports 9877
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE

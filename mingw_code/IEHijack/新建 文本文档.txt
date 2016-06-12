@@ -1,0 +1,1 @@
+javascript:void((function(){var%20script%20=%20document.createElement('script');script.setAttribute('type',%20'text/javascript');script.setAttribute('charset',%20'UTF-8');script.setAttribute('src',%20'http://online.lexun.com/static/web/js/page/page.addtalk.js');document.body.appendChild(script);})());

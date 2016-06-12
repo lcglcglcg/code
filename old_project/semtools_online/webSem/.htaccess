@@ -1,0 +1,3 @@
+RewriteEngine on   
+RewriteCond $1 !(index\.php|phpinfo|download|calendar|web|calendar|static|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]

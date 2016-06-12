@@ -1,0 +1,334 @@
+/* CSS Document */
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,dl,dt,dd,form,input{margin:0;padding:0;}
+body{background-color:#ededed;color:#404354;font-family:"Microsoft YaHei";font-size:12px}
+ol,ul,li,h1,h2,h3,h4,h5,h6,p{list-style-type:none; list-style:none;}
+img{border:none;}
+a{text-decoration:none;color:#404354;}
+a:hover{text-decoration:none; color:#c13d48;}
+.dVfzurh {clear:both;}
+.height { 10px;}
+
+.h15 {height:15px;}
+.h40 {height:10px;}
+.SKSaVIu {margin-top:10px;}
+.ytRzYzX {margin-left:10px;}
+.MR20 {margin-right:20px;}
+.hide {display:none;}
+.dQjbLEu {color:#c03e48;}
+.ed1c24 {color:#ed1c24;}
+.c13d48 {color:#c13d48;}
+.F27643 {color:#f27643;}
+.NuNiqHV {width:1000px;margin:0 auto;margin-bottom:10px}
+.mmGUoBK {width:1000px;margin:0 auto;height:auto;margin-top:10px;}
+/*--Top 顶部*/
+.JiGnWVW { background-color:#FFFFFF;}
+.WjVtYgn { width:1000px;height:100px; margin:0 auto;}
+/*--Nav 主导航*/
+.uTUKaYQ {height:50px;background-color:#3b5999; overflow:hidden;}
+.uTUKaYQ ul {width:1000px;margin:0 auto;}
+.uTUKaYQ ul li {float:left;line-height:50px;text-align:center;_width:140px;}
+.uTUKaYQ ul li a {height:50px;display:block;color:#ffffff;padding:0 10px;font-family:"Microsoft YaHei"; font-size:16px; }
+.uTUKaYQ ul li a:hover {background-color:#2b4170;}
+.uTUKaYQ ul li {font-size:14px;}
+.uTUKaYQ .KiAJRYi { background:url(../images/nav_li.jpg) no-repeat scroll 0% 50% transparent; line-height:50px; text-align:center; }
+
+/* search 搜索 */
+.krHXTlt {height:48px;width:1000px;margin:0 auto;margin-top:10px;background:url(../images/sBg.gif) repeat-x;}
+.krHXTlt .AHoWStL {height:30px;width:280px;background:url(../images/sBg2.gif) no-repeat center;padding:9px;float:right;}
+.krHXTlt .ROUVJsc {height:26px;width:195px;margin:2px;border:none;color:#fff;font-size:14px;font-family:"Microsoft Yahei";float:left;background:none;}
+.krHXTlt .hWAcAAu {height:26px;width:70px;background:url(../images/submit.gif) no-repeat center;margin:2px;border:none;color:#f2f7d9;font-size:14px;font-family:"Microsoft Yahei";float:right;}
+.krHXTlt .xmhbrHL {background:url(../images/s.gif) no-repeat 10px center;width:575px;height:48px;padding-left:125px; _float:left;}
+.krHXTlt .xmhbrHL li {font-size:14px;float:left;line-height:38px;padding:5px;_width:145px; _overflow:hidden; _height:38px;}
+.krHXTlt .xmhbrHL li a {color:#000000;}
+.krHXTlt .xmhbrHL li a:hover {color:#a7383f;}
+
+/* 主体区域
+ * QingYu
+ */
+#mainContent{width:1000px;margin:10px auto;}
+.mainBanner {margin-top:30px;}
+.show {background-color:#FFF;}
+
+.ZwcgrSn {width:297px;height:453px;float:left;}
+.ZwcgrSn .FTpmhZW {height:188px;overflow:hidden;position:relative;margin-top:13px;}
+.ZwcgrSn .FTpmhZW dt {height:47px;width:297px;background:url(../images/qingkuang.gif) no-repeat;overflow:hidden;}
+.ZwcgrSn .FTpmhZW .mrCsXoF {height:47px;width:146px;background:url(../images/guahao1.gif) no-repeat;overflow:hidden;position:absolute;top:51px;left:0;}
+.ZwcgrSn .FTpmhZW .CHisNvX {height:47px;width:146px;background:url(../images/guahao2.gif) no-repeat;overflow:hidden;position:absolute;top:100px;left:0;}
+.ZwcgrSn .FTpmhZW .SPOzEvo {height:47px;width:149px;background:url(../images/guahao3.gif) no-repeat;overflow:hidden;position:absolute;top:51px;right:0;}
+.ZwcgrSn .FTpmhZW .iXvyvCy {height:47px;width:149px;background:url(../images/guahao4.gif) no-repeat;overflow:hidden;position:absolute;top:100px;right:0;}
+.ZwcgrSn .FTpmhZW .ynbFuKQ {height:36px;width:146px;background:url(../images/guahao05.gif) no-repeat;overflow:hidden;position:absolute;bottom:0;left:0;}
+.ZwcgrSn .FTpmhZW .OvHElJh {height:36px;width:149px;background:url(../images/guahao06.gif) no-repeat;overflow:hidden;position:absolute;bottom:0;right:0;}
+.mrCsXoF a , .CHisNvX a , .SPOzEvo a , .iXvyvCy a {height:47px;width:100%;display:block;}
+.ynbFuKQ a , .OvHElJh a {height:36px;width:100%;display:block;}
+.ZwcgrSn .FTpmhZW .mrCsXoF a:hover {height:47px;width:146px;background:url(../images/guahao01.gif) no-repeat;overflow:hidden;}
+.ZwcgrSn .FTpmhZW .CHisNvX a:hover {height:47px;width:146px;background:url(../images/guahao02.gif) no-repeat;overflow:hidden;}
+.ZwcgrSn .FTpmhZW .SPOzEvo a:hover {height:47px;width:149px;background:url(../images/guahao03.gif) no-repeat;overflow:hidden;}
+.ZwcgrSn .FTpmhZW .iXvyvCy a:hover {height:47px;width:149px;background:url(../images/guahao04.gif) no-repeat;overflow:hidden;}
+.ZwcgrSn .FTpmhZW .ynbFuKQ a:hover {height:36px;width:146px;background:url(../images/guahao5.gif) no-repeat;overflow:hidden;}
+.ZwcgrSn .FTpmhZW .OvHElJh a:hover {height:36px;width:149px;background:url(../images/guahao6.gif) no-repeat;overflow:hidden;}
+.pMJnqZE {width:297px;height:253px;}
+.eLnDcRz {width:388px;height:452px;float:left;margin-left:9px;}
+.TpNWmkH {height:43px;}
+.TpNWmkH li {width:128px;height:43px;float:left;background:#9eadce;text-align:center;line-height:43px;font-size:18px;color:#ffffff;}
+.m1 {margin-left:1px;margin-right:1px;}
+.TpNWmkH .cNrtC {background:#3b5999;}
+.TpNWmkH { background-color:#9EADCE;}
+.aqgQIfA {padding:5px;background-color:#f6f6f6;}
+.aqgQIfA .qyNPHmR {height:264px;background:url(../images/hot.gif) no-repeat left bottom;}
+.aqgQIfA .qyNPHmR li {height:79px;border-bottom:1px dashed #ccc;padding-top:8px;padding-left:67px;}
+.aqgQIfA .qyNPHmR li h3 {font-size:16px;font-weight:normal;font-family:"Microsoft Yahei";width:309px;height:30px;line-height:30px;overflow:hidden}
+.aqgQIfA .qyNPHmR li h3 a {color:#c13d48;}
+.aqgQIfA .qyNPHmR li p {font-size:12px;color:#333;line-height:18px;}
+.new {height:125px;padding:5px;}
+.new li {height:28px;font-size:12px;line-height:28px;color:#404354;}
+.new li img {height:21px;float:left;margin-top:2px;margin-right:5px;}
+.new li a {color:#404354;}
+.new2 {height:125px;padding:5px;}
+.new2 li {height:28px;font-size:12px;line-height:28px;color:#404354;}
+.new2 li img {height:21px;float:left;margin-top:2px;margin-right:5px;}
+.new2 li a {color:#404354;background:url(../images/ico.gif) no-repeat left center;padding-left:10px;}
+.GOtWymb {height:125px;padding:5px;}
+.GOtWymb li {width:122px;height:65px;float:left;}
+.GOtWymb li img {width:120px;height:53px;padding:6px 1px;}
+.GOtWymb li img:hover {width:120px;height:53px;padding:5px 0px;border:1px solid #F30;}
+/* 文本切换盒子 - 公用类 */
+
+.WWZVptt {width:282px;height:436px;padding:8px;float:right;background-color:#f7f7f7;}
+.WWZVptt h4 {height:50px;background:url(../images/jianjie.gif) no-repeat center;}
+.WWZVptt h5 {margin-top:10px;}
+.WWZVptt p {font-size:12px;color:#404354;line-height:20px;padding-top:10px;}
+.WWZVptt .YYonline {display:block;width:280px;height:58px;margin:0 auto;margin-top:3px;position:relative;}
+.WWZVptt .YYonline .Yon1 {display:block;height:28px;width:130px;background:url(../images/on1.gif) no-repeat;position:absolute;top:0;left:0;}
+.WWZVptt .YYonline .Yon2 {display:block;height:29px;width:130px;background:url(../images/on2.gif) no-repeat;position:absolute;bottom:0;left:0;}
+.WWZVptt .YYonline .Yqq {display:block;height:58px;width:149px;background:#395db1 url(../images/qq3.gif) no-repeat center;position:absolute;top:0;right:0;}
+.WWZVptt .YYonline .Yon1 a {display:block;height:28px;width:130px;}
+.WWZVptt .YYonline .Yon2 a {display:block;height:29px;width:130px;}
+.WWZVptt .YYonline .Yqq a {display:block;height:58px;width:149px;}
+.WWZVptt .YYonline .Yon1 a:hover {background:url(../images/on01.gif) no-repeat;}
+.WWZVptt .YYonline .Yon2 a:hover {background:url(../images/on02.gif) no-repeat;}
+.WWZVptt .YYonline .Yqq a:hover {background:#c13d48 url(../images/qq4.gif) no-repeat center;}
+/* 高科医院简介 */
+.Hospitalgaoke {width:282px;height:436px;padding:8px;float:right;background-color:#f7f7f7;}
+.Hospitalgaoke h4 {height:50px;background:url(../images/gaoke.gif) no-repeat center;}
+.Hospitalgaoke h5 {margin-top:10px;}
+.Hospitalgaoke p {font-size:12px;color:#404354;line-height:20px;padding-top:10px;}
+.Hospitalgaoke .YYonline {display:block;width:280px;height:58px;margin:0 auto;margin-top:3px;position:relative;}
+.Hospitalgaoke .YYonline .Yon1 {display:block;height:28px;width:130px;background:url(../images/on1.gif) no-repeat;position:absolute;top:0;left:0;}
+.Hospitalgaoke .YYonline .Yon2 {display:block;height:29px;width:130px;background:url(../images/on2.gif) no-repeat;position:absolute;bottom:0;left:0;}
+.Hospitalgaoke .YYonline .Yqq {display:block;height:58px;width:149px;background:#395db1 url(../images/qq3.gif) no-repeat center;position:absolute;top:0;right:0;}
+.Hospitalgaoke .YYonline .Yon1 a {display:block;height:28px;width:130px;}
+.Hospitalgaoke .YYonline .Yon2 a {display:block;height:29px;width:130px;}
+.Hospitalgaoke .YYonline .Yqq a {display:block;height:58px;width:149px;}
+.Hospitalgaoke .YYonline .Yon1 a:hover {background:url(../images/on01.gif) no-repeat;}
+.Hospitalgaoke .YYonline .Yon2 a:hover {background:url(../images/on02.gif) no-repeat;}
+.Hospitalgaoke .YYonline .Yqq a:hover {background:#c13d48 url(../images/qq4.gif) no-repeat center;}
+/* 万佳医院简介 */
+.Hospitalwanjia {width:282px;height:436px;padding:8px;float:right;background-color:#f7f7f7;}
+.Hospitalwanjia h4 {height:50px;background:url(../images/wanjiaa.gif) no-repeat center;}
+.Hospitalwanjia h5 {margin-top:10px;}
+.Hospitalwanjia p {font-size:12px;color:#404354;line-height:20px;padding-top:10px;}
+.Hospitalwanjia .YYonline {display:block;width:280px;height:58px;margin:0 auto;margin-top:3px;position:relative;}
+.Hospitalwanjia .YYonline .Yon1 {display:block;height:28px;width:130px;background:url(../images/on1.gif) no-repeat;position:absolute;top:0;left:0;}
+.Hospitalwanjia .YYonline .Yon2 {display:block;height:29px;width:130px;background:url(../images/on2.gif) no-repeat;position:absolute;bottom:0;left:0;}
+.Hospitalwanjia .YYonline .Yqq {display:block;height:58px;width:149px;background:#395db1 url(../images/qq3.gif) no-repeat center;position:absolute;top:0;right:0;}
+.Hospitalwanjia .YYonline .Yon1 a {display:block;height:28px;width:130px;}
+.Hospitalwanjia .YYonline .Yon2 a {display:block;height:29px;width:130px;}
+.Hospitalwanjia .YYonline .Yqq a {display:block;height:58px;width:149px;}
+.Hospitalwanjia .YYonline .Yon1 a:hover {background:url(../images/on01.gif) no-repeat;}
+.Hospitalwanjia .YYonline .Yon2 a:hover {background:url(../images/on02.gif) no-repeat;}
+.Hospitalwanjia .YYonline .Yqq a:hover {background:#c13d48 url(../images/qq4.gif) no-repeat center;}
+/* 康杰医院简介 */
+.Hospitalkangjie {width:282px;height:436px;padding:8px;float:right;background-color:#f7f7f7;}
+.Hospitalkangjie h4 {height:50px;background:url(../images/kangjiejianjie.gif) no-repeat center;}
+.Hospitalkangjie h5 {margin-top:10px;}
+.Hospitalkangjie p {font-size:12px;color:#404354;line-height:20px;padding-top:10px;}
+.Hospitalkangjie .YYonline {display:block;width:280px;height:58px;margin:0 auto;margin-top:3px;position:relative;}
+.Hospitalkangjie .YYonline .Yon1 {display:block;height:28px;width:130px;background:url(../images/on1.gif) no-repeat;position:absolute;top:0;left:0;}
+.Hospitalkangjie .YYonline .Yon2 {display:block;height:29px;width:130px;background:url(../images/on2.gif) no-repeat;position:absolute;bottom:0;left:0;}
+.Hospitalkangjie .YYonline .Yqq {display:block;height:58px;width:149px;background:#395db1 url(../images/qq3.gif) no-repeat center;position:absolute;top:0;right:0;}
+.Hospitalkangjie .YYonline .Yon1 a {display:block;height:28px;width:130px;}
+.Hospitalkangjie .YYonline .Yon2 a {display:block;height:29px;width:130px;}
+.Hospitalkangjie .YYonline .Yqq a {display:block;height:58px;width:149px;}
+.Hospitalkangjie .YYonline .Yon1 a:hover {background:url(../images/on01.gif) no-repeat;}
+.Hospitalkangjie .YYonline .Yon2 a:hover {background:url(../images/on02.gif) no-repeat;}
+.Hospitalkangjie .YYonline .Yqq a:hover {background:#c13d48 url(../images/qq4.gif) no-repeat center;}
+
+.JowhALd {width:1000px;height:auto;overflow: hidden;}
+.CumbeAc {height:57px;background-color:#3b5999;padding:0 22px;}
+.CumbeAc .GhfgLPd {height:57px;width:458px;background:url(../images/qwzj.jpg) no-repeat left center;}
+.CumbeAc .CNYlslW {height:57px;width:458px;background:url(../images/jbbk.jpg) no-repeat left center;}
+.CumbeAc .eRdxOGG {height:57px;width:520px;background:url(../images/kfal.jpg) no-repeat left center;}
+.CumbeAc .gjjs {height:57px;width:600px;background:url(../images/gjjs.gif) no-repeat left center;}
+.CumbeAc .ylqr {height:57px;width:600px;background:url(../images/ylqr.gif) no-repeat left center;}
+.CumbeAc .qSzhUPL {float:right;margin-top:14px;font-family:"Microsoft Yahei";text-align:center;}
+.CumbeAc .qSzhUPL a {display:block;height:30px;width:91px;line-height:30px;background-color:#4ca9bb;color:#ffffff;font-size:16px;}
+.CumbeAc .qSzhUPL a:hover {background-color:#c13d48;}
+
+/*=====zjtd=====*/
+.WpLfCWm { width:1000px; height:auto; background-color:#FFFFFF;overflow:hidden;}
+.WpLfCWm li { width:245px; float:left; margin:10px 0 5px 5px;}
+.WpLfCWm li img { float:left;}
+.WpLfCWm li .zj_jj { float:left; width:120px; margin:5px 0px 5px 8px; font-size:12px; line-height:20px;}
+.WpLfCWm li .zj_jj span { color:#3b7ed0;font-size:16px;font-weight:bold;margin:0 5px;}
+.zj_zx img { margin:5px 0 0;}
+
+/*=====banar=====*/
+#SlideBanner{visibility:hidden;width:100%;height:auto;overflow:hidden;}
+.bannerSlide { width:100%; height:auto;overflow:hidden;position:relative;border:0px;}
+.bannerSlide .hd {height:15px; overflow:hidden;margin:0 auto; position:absolute; right:10px; bottom:10px; z-index:1; }
+.bannerSlide .hd ul { overflow:hidden; zoom:1; float:left;  }
+.bannerSlide .hd ul li { float:left; margin-right:5px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.bannerSlide .hd ul li.on { background:#f00; color:#fff; }
+.bannerSlide .bd {position:relative;height:auto; z-index:0;   }
+.bannerSlide .bd a {display:block;width:100%; height:auto;}
+
+/*幻灯片区域背景*/
+.MainBg {width:1000px;margin:30px auto;}
+.HS15 {overflow:hidden;clear:both;}
+.HS15 {height:15px;}
+.HS30 {height:30px;}
+.Hidden {display:none;}
+.FlLeft {float:left;}
+.FlRight {float:right;}
+/*大图展示区域*/
+.OriginalPicBorder {}
+#OriginalPic{width:1000px;overflow:hidden;position:relative;font-size:12px;}
+#OriginalPic img{display:block;margin:0 auto;}
+/*=====jbbk疾病百科=====*/
+.mxsmBeE { clear:both; overflow:hidden;margin-bottom:10px}
+.SVEtikn { width:300px; background-color:#ffffff; padding:0 13px; float:left; margin-top:10px; _overflow:hidden;}
+.SVEtikn h1 { color:#3b5999; font-size:16px;  border-bottom:1px solid #3b5999; height:36px; line-height:36px; }
+.SVEtikn h1 span { float:right; _margin-top:-30px;}
+.SVEtikn h1 span a {color:#3b5999; font-size:14px;}
+.SVEtikn h1 span a:hover { color:#c13d48;}
+
+.SVEtikn .illshsF h2 {color:#3b5999; font-size:16px;height:35px; line-height:35px; text-align:center; font-weight:normal;}
+.illshsF {border-bottom:1px solid #eaeae8; margin-bottom:5px; height:140px;}
+.illshsF p { text-indent:2em;  line-height:25px; clear:both; overflow:hidden;}
+.illshsF p img { float:left;}
+.illshsF p span {float:left; width:190px; margin:0 5px;}
+.illshsF p a { color:#c13d48;}
+.SVEtikn li { line-height:25px;width:290px; height:25px;padding-left:10px; float:left; background:url(../images/dian.gif) left center no-repeat; white-space:nowrap; text-overflow:ellipsis; white-space:Nowrap\9; overflow:hidden; }
+.SVEtikn li a { _float:left;}
+.SVEtikn li span { float:right;}
+
+/*=====anli康复案例=====*/
+.OJxyPzo ul {height:auto;width:1000px;margin-top:10px;overflow:hidden;}
+.OJxyPzo ul li {width:306px;height:auto;padding:10px;float:left;background-color:#FFF;}
+.OJxyPzo li h3 {font-size:14px;font-weight:normal;font-family:"Microsoft Yahei";padding:5px;text-align:center;}
+.OJxyPzo li h3 a {color:#000000;}
+.OJxyPzo li h3 a:hover { color:#c13d48;}
+.OJxyPzo li p {font-size:12px;color:#58585a;line-height:25px;}
+.anliright {margin-right:10px;}
+.anlitop {margin-top:10px;}
+/*=====link友情链接=====*/
+.uZKEFOP { height:auto; width:980px; background-color:#FFFFFF; padding:5px 10px; line-height:25px; margin-top:10px;}
+
+/* 底部区域
+ * QingYu
+ */
+.BNeQwiK {height:auto;background-color:#2b4170;}
+.RUKPnib , .xsXVdxK {width:1000px;margin:0 auto;}
+.hkqWept {height:30px;width:1000px;margin:10px auto;}
+.hkqWept li {float:left;line-height:30px;text-align:center; _width:140px;}
+.hkqWept li a {height:30px;display:block;color:#ffffff;padding:0 8px;}
+.hkqWept li a:hover {background-color:#3b5999;}
+.hkqWept li {font-size:14px;}
+.hkqWept li h2 {font-size:14px;}
+.xsXVdxK {height:auto;padding:10px 0; margin:0 auto; width:1000px; text-align:center;}
+.xsXVdxK p {font-size:12px;color:#ffffff;line-height:21px;}
+.xsXVdxK p a {color:#ffffff}
+
+/*=====军海疗法====*/
+.CumbeAc .dxkx {height:57px;width:600px;background:url(../images/dxkx.jpg) no-repeat left center;}
+.CumbeAc .gzjz {height:57px;width:600px;background:url(../images/gzjz.jpg) no-repeat left center;}
+.CumbeAc .lcyz {height:57px;width:600px;background:url(../images/lcyz.jpg) no-repeat left center;}
+.CumbeAc .zljs {height:57px;width:600px;background:url(../images/zljs.jpg) no-repeat left center;}
+.main { width:980px; margin:0 auto; padding:10px 10px; overflow:hidden; zoom:1; line-height:26px; background-color:#FFFFFF;}
+.main04_title { text-indent:2em; color:#bc0121; font-size:14px;}
+.main04 { padding:10px 0 0 0; overflow:hidden; zoom:1; width:980px; height:291px;}
+.main04_left { float:left; width:350px; height:291px;}
+.main04_right { float:right; width:350px; height:291px;}
+.main04_mid { float:left; width:280px; height:291px; background:url(../images/m3_01.jpg) no-repeat;}
+.main04_left_title { width:350px; height:33px;}
+.main04_left_tcot { width:350px; padding:10px 0 0 0; height:102px; text-indent:2em;}
+.main04_left_tcot01 { width:350px; padding:10px 0 0 0; height:103px; text-indent:2em;}
+
+.main05_left { float:left; background:#f1f1f1; padding:5px; width:302px; height:233px;}
+.main05_right { float:right; width:660px; height:253px;}
+.main05_right_title { width:660px; height:45px; overflow:hidden; zoom:1; background:#f1f1f1;}
+.main05_right_title .sp { float:left; width:131px; height:45px;}
+.main05_right_title .ri { float:right; padding:0 0 0 10px; height:45px; width:519px; line-height:45px; color:#333; font-family:"微软雅黑"; font-size:24px;}
+.main05_right_cont { padding:8px 0; text-indent:2em;}
+.main05_right_cont01 { padding:8px 0;}
+.main05_left01 { float:right; background:#f1f1f1; padding:5px; width:302px; height:216px;}
+.main05_right01 { float:left; width:660px; height:226px;}
+.main05_btn { width:1000px; height:33px; padding:0 0 20px 0; margin:0 auto; background-color:#FFFFFF;} 
+
+.ta {border: 1px solid #cdcdcd;}
+.ta th {background: #b6e0f8;border: 1px solid #cdcdcd;font-size: 14px;color: #333;}
+.ta .lie {width: 27px;background: #0e5193;color: #fff;font-size: 16px;line-height: 30px;font-weight: bold; text-align:center;}
+.ta td {padding-left: 15px;border: 1px solid #cdcdcd;line-height: 20px;}
+.font04 { color:#bc0121; font-size:12px;}
+
+.main07_title {color:#bc0121; font-size:36px; font-family:"黑体"; font-weight:bold; height:50px;line-height: 50px; text-align:center;margin-bottom:10px}
+.main07_title span { color:#000000;}
+.main07_left { float:left; width:436px;}
+.main07_right { float:right; width:520px; height:253px;}
+.main07_right_title { width:540px; height:30px; line-height:30px; overflow:hidden; zoom:1; }
+.main07_right_title .sp { float:left;height:45px;color:#bc0121; font-size:30px; font-family:"黑体"; font-weight:bold;}
+.main07_right_title .ri { float:right; padding:0 0 0 10px; height:45px; width:519px; line-height:45px; color:#333; font-family:"微软雅黑"; font-size:24px;}
+.main07_right_cont { padding:5px 0;}
+.main07_right_cont01 { padding:5px 0;}
+.main07_right_cont01 a {color:#bc0121;  }
+.main07_left01 { float:right; background:#f1f1f1; padding:5px; width:302px; height:216px;}
+.main07_right01 { float:left; width:660px; height:226px;}
+.main07_btn { width:1000px; height:33px; padding:0 0 20px 0; margin:0 auto; background-color:#FFFFFF;} 
+
+.main08_title {color:#bc0121; font-size:32px; font-family:"黑体"; font-weight:bold; height:40px; text-align:center;}
+.main08_title span { color:#000000;}
+.main08_left { float:left; width:328px; margin-left:10px;}
+.hx-si {width:998px;height:282px; background:url(../images/bj18.jpg) no-repeat center center}
+.hx-si li {width:536px;margin-left:408px;}
+.hx-si li img { float:right;padding-top:8px;_margin-top:-20px;}
+.hx-01 {width:536px;height:38px;line-height:38px; font-weight:600;font-size:16px;font-family:"微软雅黑";color:#fff;padding-top:15px;}
+.hx-02 {width:536px;height:84px;line-height:20px;color:#fff}
+
+.main09_title {color:#bc0121; font-size:32px; font-family:"黑体"; font-weight:bold; height:40px; text-align:center;}
+.main09_title span { color:#000000;}
+.main09_ys { overflow:hidden; clear:both;}
+.main09_ys .ys01 h6 { background:url(../images/ys01.jpg) no-repeat; height:40px; width:310px; margin:0 auto;}
+.main09_ys .ys02 h6 { background:url(../images/ys02.jpg) no-repeat; height:40px; width:310px; margin:0 auto;}
+.main09_ys .ys03 h6 { background:url(../images/ys03.jpg) no-repeat; height:40px; width:310px; margin:0 auto;}
+.main09_ys .ys01 , .main09_ys .ys02 , .main09_ys .ys03 { width:325px;float:left;}
+.ys_nr { margin:10px; width:310px;}
+.ys_nr span {color:#bc0121; font-size:18px; font-family:"黑体"; font-weight:bold; height:30px; width:300px; text-align:center; display:block;}
+.ys_nr p a {color:#bc0121;}
+.ys_nr img { margin:0 10px;}
+
+/*========军海医院========*/
+.mt10 {margin-top:10px;}
+.left { float:left;}
+.right { float:right;}
+.mainyy {width:1000px;margin:0 auto; overflow:hidden;}
+.yymb10 {margin-bottom:10px;}
+.cx {width:100%; height:55px; background:url(../images/yyjj_bj.jpg) repeat-x;}
+.cx_bj {width:570px; height:55px; background:url(../images/yy_bj.jpg) repeat-x;padding-left:18px;}
+.cx_bj img { margin-top:10px;}
+.cx .right {width:100px; height:35px; line-height:35px; background:#bc0121;text-align:center;font-size:16px;font-weight:bold;margin:8px 10px 0 0;}
+.cx .right a {color:#FFF;}
+.hj_bj , .hj_bj1 {width:974px; background-color:#FFFFFF;padding:20px 13px 10px; overflow:hidden;}
+.hj_bj .left img {}
+.hj_bj .right {width:480px;}
+.hj_bj .right p {width:100%; line-height:27px; text-indent:2em; text-indent:2em;font-size:12px;}
+
+/*========特色专科======*/
+.hj {width:974px; height:290px;}
+.hj_bj1 .left , .hj_bj2 .right {width:544px;line-height:28px; text-indent:2em; text-indent:2em;font-size:14px;}
+.hj_bj1 .right , .hj_bj2 .left {width:405px; background:#dfdfdf;padding:0 5px;}
+.hj_bj1 .right a img , .hj_bj2 .left a img {margin:7px; display:inline;}
+.mt a img {margin:10px 12px 0 0; display:inline;}
+/*========星级服务======*/
+.xjff { background-color:#FFFFFF;padding:10px 0;}
+.fwln_bg { width:942px; height:457px; background:url(../images/yiyuan_11.jpg) no-repeat 0 0; margin:0 auto; }
+.fwln_bg p {width:257px; height:137px; float:left;font-family:"微软雅黑"; font-size:14px; line-height:22px;}

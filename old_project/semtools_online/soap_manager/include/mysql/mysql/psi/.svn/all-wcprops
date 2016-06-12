@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/psi
+END
+psi.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/psi/psi.h
+END
+mysql_thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/psi/mysql_thread.h
+END
+psi_abi_v1.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/psi/psi_abi_v1.h
+END
+psi_abi_v2.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/psi/psi_abi_v2.h
+END
+mysql_file.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/CodeLib/!svn/ver/125/C/semtools_online/soap_manager/include/mysql/mysql/psi/mysql_file.h
+END

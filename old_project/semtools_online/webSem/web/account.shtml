@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>百度账户</title>
+<!--#include virtual="/static/sem_web_1.0/web/inc/public.html"-->
+<link rel="stylesheet" type="text/css" href="/static/sem_web_1.0/web/css/body_list.css">
+<link rel="stylesheet" type="text/css" href="/static/sem_web_1.0/web/css/account_alter.css">
+<link rel="stylesheet" type="text/css" href="/static/sem_web_1.0/web/css/input.css">
+<link rel="stylesheet" type="text/css" href="/static/sem_web_1.0/web/css/page.css">
+</head>
+<body>
+<!--#include virtual="/static/sem_web_1.0/web/inc/header.html"-->
+<div class="ad_box">
+  <div class="main">
+  	<div class="curr_position">当前位置：<span>百度账户</span></div>
+<!-- 查询条件s_content start -->
+    <div class="s_content" >
+    	<ul class="b_line">
+            <li class="w220 f_bold">百度APIToken</li>
+            <li class="w200 f_bold">百度用户名</li>
+            <li class="w200 f_bold">密码</li>
+            <li class="w110 f_bold">最终验证时间</li>
+            <li class="w150 f_bold">状态</li>
+            <li class="w100 f_bold">操作</li>
+       </ul>
+    	<ul id="ul_hover1" onMouseOver="ul_show(1)" onMouseOut="ul_hidden(1)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center red" title="Token无效">Token无效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+       </ul>
+    	<ul id="ul_hover2" onMouseOver="ul_show(2)" onMouseOut="ul_hidden(2)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+       </ul>
+    	<ul id="ul_hover3" onMouseOver="ul_show(3)" onMouseOut="ul_hidden(3)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center red" title="密码无效">密码无效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+       </ul>
+    	<ul id="ul_hover4" onMouseOver="ul_show(4)" onMouseOut="ul_hidden(4)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+       </ul>
+    	<ul id="ul_hover5" onMouseOver="ul_show(5)" onMouseOut="ul_hidden(5)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+		</ul>
+    	<ul id="ul_hover6" onMouseOver="ul_show(6)" onMouseOut="ul_hidden(6)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+		</ul>
+    	<ul id="ul_hover7" onMouseOver="ul_show(7)" onMouseOut="ul_hidden(7)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+		</ul>
+    	<ul id="ul_hover8" onMouseOver="ul_show(8)" onMouseOut="ul_hidden(8)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+		</ul>
+    	<ul id="ul_hover9" onMouseOver="ul_show(9)" onMouseOut="ul_hidden(9)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+		</ul>
+    	<ul id="ul_hover10" onMouseOver="ul_show(10)" onMouseOut="ul_hidden(10)">
+            <li class="w220 f_center">cb4f445e21954977b549b657a008df68</li>
+            <li class="w200 f_center" >bj_ufstone</li>
+            <li class="w200 f_center">123456</li>
+            <li class="w110 f_center">2013-03-01</li>
+            <li class="w150 f_center green">有效</li>
+            <li class="w100 f_center"><a onClick="$UE.open('account_alert');">修改信息</a></li>
+		</ul>
+    	<ul class="t_line">
+            <li></li>
+		</ul>
+    </div>
+<!-- 查询条件s_content end -->
+     <div class="kong_bottom">
+      </div>
+
+  </div>
+</div>
+<script language="javascript">
+	nav_hover(2,2);
+</script>
+<!--#include virtual="/static/sem_web_1.0/web/inc/footer.html"-->
+<!--#include virtual="/static/sem_web_1.0/web/inc/inc.shtml"-->
+<!--#include virtual="/static/sem_web_1.0/web/inc/account_alter.html"-->

@@ -1,0 +1,47 @@
+/* CSS Document */
+a{ cursor:pointer;}
+.lf{ float:left;}
+.rg{ float:right;}
+s{ text-decoration:none;}
+p{ display:inline;}
+.lfp{ float:left; margin-left:10px;}
+/* color 颜色 */
+.red{ color:#F00;}
+.green{ color:#07BF0B;}
+.blue{ color:#1a00da;}
+.grey{ color:#B7B7B7;}
+/* title 标题 */
+.report_box{width:448px;background:#FFF; border:1px solid #23b7fa;}
+.report_box .report_title{width:438px;_width:440px; height:31px; line-height:31px; background:url(../images/pub_bg.gif) repeat-x 0 -200px; padding-left:10px;}
+.report_box .report_title b{ float:left;}
+.report_box .report_title span{ float:right; padding:7px 10px 0 0;}
+/* report_cont  */
+.report_box .report_main{ min-height:200px;padding:10px 2px; border:none; background:none;}
+.report_cont .cont_lf{ float:left; width:135px; text-align:right;}
+.report_cont .cont_rg{ float:right; width:306px;}
+.report_cont .cont_rg ol li.h20 ul li{ display:inline; float:left;}
+.report_cont .cont_rg ol li.h20 a{ display:block;float:left; width:50px; height:19px;background:url(../images/shangc.gif) no-repeat;color:#000; font-weight:bold; text-align:center; line-height:20px; text-decoration:none; margin-left:5px;}
+.report_cont .cont_rg ol li.h20 a:hover{ color:#ab0000; font-weight:bold; text-align:center; line-height:20px; text-decoration:none;}
+.report_cont .cont_rg ol li.h20 .input_text{ float:left; height:16px; width:240px;}
+.report_cont .cont_rg ol li.h20 .input_img{ margin-left:5px;}
+.report_cont .cont_rg ol li.h20 .select_text{ float:left; width:244px;}
+.report_cont .cont_rg ol li.h20 .noselect_text{ float:left; width:244px;}
+/* 选择时间范围 select_times  */
+.select_times{ margin:0 auto; clear:both; height:180px; overflow:hidden; width:404px; padding:5px 10px 0 10px;}
+.h16{ height:16px; margin-bottom:8px; margin-top:-8px;}
+.h20{ height:22px; line-height:22px; margin-bottom:8px;}
+
+/* 提示信息 select_times  */
+.report_tishi{width:404px; margin-top:10px;padding:0px 20px;}
+/* report_btn 两个按钮居中 */
+.report_btn{ clear:both; width:446px; height:22px ; padding-top:10px; margin-bottom:10px;}
+.report_btn ol{ width:446px;}
+.report_btn ol li{ width:130px; height:22px;}
+.report_btn ol li a{ display:block; width:50px; height:22px; line-height:22px; float:left; text-align:center; font-weight:bold; background:url(../images/icon.gif) no-repeat 0 -300px; margin-left:10px;}
+.report_btn ol li a:link,.report_btn ol li a:visited{ color:#000; font-weight:bold;text-decoration:none;}
+.report_btn ol li a:hover{ background:url(../images/icon.gif) no-repeat 0 -250px; font-weight:bold;color:#FFF; text-decoration:none;}
+
+
+
+
+

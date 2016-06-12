@@ -1,0 +1,18 @@
+HTTP/1.0 301 Moved Permanently
+Set-Cookie: BAIDUID=6B4255924DCE689552713E453F1FFAD2:FG=1; max-age=946080000; expires=Mon, 30-Oct-45 05:00:10 GMT; domain=.baidu.com; path=/
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Location: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+Content-Length: 0
+Connection: close
+Date: Sat, 07 Nov 2015 05:00:10 GMT
+Server: apache
+
+HTTP/1.0 301 Moved Permanently
+Set-Cookie: BAIDUID=6B4255924DCE6895612EF99660227FE3:FG=1; max-age=946080000; expires=Mon, 30-Oct-45 05:00:10 GMT; domain=.baidu.com; path=/
+P3P: CP=" OTI DSP COR IVA OUR IND COM "
+Location: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+Content-Length: 0
+Connection: close
+Date: Sat, 07 Nov 2015 05:00:10 GMT
+Server: apache
+

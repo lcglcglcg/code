@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登陆界面</title>
+<link rel="stylesheet" type="text/css" href="/static/sem_web_1.0/web/css/login.css">
+</head>
+<body>
+<div class="l_box">
+	<ul>
+    	<li><span>登录名：</span><input name="name" type="text"></li>
+    	<li><span>密　码：</span><input name="password" type="password"></li>
+    	<li><span>验证码：</span><input name="verification-code" type="password" class="v_code"><b><img src="/static/sem_web_1.0/web/images/v_code.gif"></b></li>
+    </ul>
+    <div class="l_btn" align="center"><input name="" type="button" onclick="window.open('report.shtml')"/></div>
+</div>
+</body>
+</html>

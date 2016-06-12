@@ -1,0 +1,9 @@
+
+ngx_addon_name=site_builder_module
+HTTP_MODULES="$HTTP_MODULES site_builder_module"
+
+CORE_INCS="$CORE_INCS src/lg_core"
+CORE_INCS="$CORE_INCS src/lg_ssdb"
+CORE_INCS="$CORE_INCS $ngx_addon_dir/include"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/*.c"
+

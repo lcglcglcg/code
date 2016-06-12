@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><?= isset($title) ? misc::remove_nbsp($title) . '_' . $config['sitename'] : SITENAME ?></title>
+        <base target="_blank" />
+        <meta name="keywords" content="<?= isset($keywords) ? $keywords : (isset($config['keywords']) ? $config['keywords'] : '') ?>" />
+        <meta name="Description" content="<?= isset($description) ? misc::remove_nbsp($description) : (isset($config['description']) ? misc::remove_nbsp($config['description']) : '') ?>" />
+        <link rel="stylesheet" href="<?= IMGURL ?>static/css/index.css"  />
+        <script src="<?=IMGURL?>static/js/jquery-1.4.2.js" language="javascript" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo"></div>
+            <div class="top_img"></div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/hyzx/ssjf/">瘦身减肥</a></li>
+                <li><a href="/hyzx/tszl/">特色诊疗</a></li>
+                <li><a href="/hyzx/bzbj/">不知不觉</a></li>
+                <li><a href="/hyzx/cnly/">长年累月</a></li>
+                <li><a href="/hyzx/myqf/">明月清风</a></li>
+                <li><a href="/hyzx/yszd/">养生之道</a></li>
+                <li><a href="/hyzx/qsjt/">强身健体</a></li>
+                <li><a href="/hyzx/jgyx/">巾帼英雄</a></li>
+                <li><a href="/hyzx/pybm/">疲于奔命</a></li>
+                <li><a href="/hyzx/jkyl/">健康医疗</a></li>
+                <li><a href="/hyzx/jkbj/">健康保健</a></li>
+                <li><a href="/hyzx/jbzd/">疾病诊断</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="contain">
+            <div class="dqwz"><span>你的当前位置：<a href="/<?=SITEDIR?>/">首页</a> >
+                    <a href="/<?= SITEDIR ?>/<?= $category[$data['catid']]['catpath'] ?>/" HtmlUrl_href="/<?= SITEDIR ?>/<?= $category[$data['catid']]['catpath'] ?>/">
+                        <?= $category[$data['catid']]['catname'] ?>
+                    </a> > <?= $data['title'] ?></span></div>
+            <div class="index_r nr_right">
+                <div class="left_lm1 left_lm4 left_lm5">
+                    <div class="name"><a href="">最新文章</a></div>
+                    <div name="yltoplb">
+                        <ul>
+                            <?php foreach ($data['zxwz'] as $k => $v) : ?>
+                            <li><a href="/<?= SITEDIR . '/' . $category[$v['catid']]['catpath'] . '/' . $v['id'] . '.html' ?>"><?= mb_substr($v['title'], 0, 20); ?></a></li>
+                            <?php if ($k > 8) break;endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="left_lm1 left_lm4 left_lm5 nr_rlm">
+                    <div class="name"><a href="">推荐文章</a></div>
+                    <div name="ylbtlb">
+                    <ul>
+                           <?php if ($data['tjwz'] && !empty($data['tjwz'])) :
+                           foreach ($data['tjwz'] as $k=>$v): ?>
+                           <li><a href="/<?= SITEDIR . '/' . $category[$v['catid']]['catpath'] . '/' . $v['id'] . '.html' ?>"><?= mb_substr($v['title'], 0, 20); ?></a></li>
+                           <?php if ($k > 8) break;endforeach; 
+                                 else: foreach ($data['zxwz'] as $k=>$v):
+                                     if($k>9 && $k<20) :
+                           ?>
+                           <li>
+                              <a href="/<?= SITEDIR ?>/<?= $category[$v['catid']]['catpath'] ?>/<?= $v['id'] ?>.html"><?= mb_substr($v['title'], 0, 20); ?></a>
+                           </li>
+                           <?php endif;
+                                  endforeach;
+                                  endif;?>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="index_l">
+                <h1 class="title"><?= $data['title'] ?></h1>
+                <div class="date">
+                <span>来源：<a href="/<?= SITEDIR ?>/lywz/<?= date('Y-m-d', $data['inputtime']) ?>.html">本站</a></span>
+                    <span>编辑：<a href="/<?= SITEDIR ?>/zxyd/">其他</a></span> 
+                    <span>发布时间：<?= date('Y-n-j H:i:s', $data['inputtime']) ?></span>
+                </div>
+                <div class="rw_touxia" name="rw_touxia"><img src="<?= IMGURL ?>static/images/rw_touxia.jpg" /></div>
+                <div class="content">
+                    <?= isset($data['content']) ? misc::replacebr($data['content']) : misc::replacebr($data['description']); ?>
+                </div>
+                <div class="tag">关键词：<?= $data['tag'] ?></div>
+                <div class="sxp">
+                    <div class="syp"><?= $data['prenext']['previous'] ?></div>
+                    <div class="xyp"><?= $data['prenext']['next'] ?></div>
+                </div>
+
+                <div class="wxts">
+                    <img src="<?= IMGURL ?>static/images/20150130151529.jpg" />
+                    <div>声明：文章内容仅供参考，具体治疗及选购请咨询医生或相关专业人士。您若对该稿件内容有任何疑问或质疑，请即与杭州网行业资讯联系，本网将迅速给您回应并做处理。电话：010-57031801</div>
+                </div>
+                <div class="clear"></div>
+                <div class="nr_zxzx">
+                    <div class="name"><a href="">最新资讯</a></div>
+                    <ul>
+                        <?php foreach ($data['xgwz'] as $k => $v) : ?>
+                        <li><a href="/<?= SITEDIR . '/' . $category[$v['catid']]['catpath'] . '/' . $v['id'] . '.html' ?>"><?= mb_substr($v['title'], 0, 20); ?></a></li>
+                        <?php if ($k > 28) break;endforeach; ?>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        
+        <?php Yaf_Loader::import(PATH_VIEW . '/footer.phtml');?>

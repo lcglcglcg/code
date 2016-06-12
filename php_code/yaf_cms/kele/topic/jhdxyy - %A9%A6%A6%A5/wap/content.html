@@ -1,0 +1,100 @@
+<script src="http://www.muia.net/shangwutong/js.php?w=1" type="text/javascript" language="javascript"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?=$data['title']?></title>
+<meta name="description" content="<?=$data['description']?>" />
+<meta name="keywords" content="<?=$data['keywords']?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" /> 
+<meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+<meta content="telephone=yes" name="format-detection" /> 
+<base target="_blank" />
+<link href="<?=TOPIC_URL.$topic?>/wap/css/css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="head">
+  <div class="heada" id="fq_heada"><a href="/"><img src="<?=TOPIC_URL.$topic?>/wap/images/jhlogo.jpg" width="320" height="85" /></a></div>
+  <div class="headc">
+    <span><a href="<?=$guidec_links?>" rel="nofollow">首页</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">关于军海</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">新闻动态</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">专家团队</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">权威技术</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">康复案例</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">来院路线</a></span>
+    <span><a href="<?=$guidec_links?>" rel="nofollow">咨询预约</a></span>
+  </div>
+  <div class="headb" id="fq_headb"><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/jhlft.gif" width="320" height="95" alt="在线咨询" /></a></div>
+</div>
+<div class="main">
+  <div class="era"><span>当前位置：<a href="/<?=SITEDIR?>/<?=$topic?>/">首页</a> >> <a href="/<?=SITEDIR?>/<?=$topic?>/<?=$subtopic?>/"><?=$data['sub']['title']?></a> >> 正文</div>
+  <div class="san">
+    <div class="san_a">
+	  <span><?=misc::stringFormat($data['data']['title'],0,11)?></span>
+	  <p>时间:<?=date('Y-m-d H:i',$data['data']['inputtime']);?> 来源:<?=$topicinfo['topic_name']?></p>
+	</div>
+	<div class="san_b">
+    <?=$data['data']['content']?>
+  <div>
+	<br />
+</div><br><!-- 文章TAG: --></p>
+	</div>
+	<div class="san_c">
+	  <span><?=$data['prenext']['previous']?></span>
+	  <span><?=$data['prenext']['next']?></span>
+	</div>
+  </div>
+    <div class="erc">
+    <span><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/znsj201413_16.jpg" width="151" height="57" /></a></span>
+	<p><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/znsj201413_17.jpg" width="152" height="50" /></a></p>
+  </div>
+  <div class="maind">
+	  <ul>
+	    <li><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/znsj201413_10.jpg" width="99" height="117" /></a></li>
+	    <li><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/zj1.gif" width="95" height="114" /></a></li>
+	    <li><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/zj2.gif" width="95" height="114" /></a></li>
+	  </ul>
+	  <ul>
+	    <li><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/znsj201413_10.jpg" width="99" height="117" /></a></li>
+	    <li><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/zj3.gif" width="95" height="114" /></a></li>
+	    <li><a href="<?=$guidec_links?>" rel="nofollow"><img src="<?=TOPIC_URL.$topic?>/wap/images/zj4.gif" width="95" height="114" /></a></li>
+	  </ul>
+  </div>
+</div>
+<div class="foot">
+  <div class="foota">
+    <ul>
+    	<li><a href="<?=$guidec_links?>" rel="nofollow">首页</a></li>
+    	<li><a href="<?=$guidec_links?>" rel="nofollow">关于军海</a></li>
+      <li><a href="<?=$guidec_links?>" rel="nofollow">新闻动态</a></li>
+      <li><a href="<?=$guidec_links?>" rel="nofollow">专家团队</a></li>
+      <li><a href="<?=$guidec_links?>" rel="nofollow">权威技术</a></li>
+      <li><a href="<?=$guidec_links?>" rel="nofollow">康复案例</a></li>
+      <li><a href="<?=$guidec_links?>" rel="nofollow">来院路线</a></li>
+    </ul>
+	  <p>北京军海医院<br/>预约电话:<a href="tel:4000120860">4000-120-860</a><br/>地址：北京市亦庄经济开发区经海三路3号</p>
+  </div>
+</div>
+<div id="fdc"> 
+  <table width="100%" border="0" align="center">
+    <tr>
+      <td>
+        <div class="fdcnr">
+          <div class="fdcleft">
+            <img src="<?=TOPIC_URL.$topic?>/wap/images/bottom.gif" border="0" usemap="#Map6"/>
+            <map name="Map6" id="Map6">
+              <area shape="rect" coords="3,17,107,79" href="<?=$guidec_links?>" rel="nofollow" />
+              <area shape="rect" coords="107,3,215,78" href="tel:4000120860" />
+              <area shape="rect" coords="214,25,320,81" href="<?=$guidec_links?>" rel="nofollow" />
+            </map>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

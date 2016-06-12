@@ -1,0 +1,6 @@
+
+CORE_INCS="$CORE_INCS $ngx_addon_dir"
+CORE_INCS="$CORE_INCS $ngx_addon_dir/leveldb-src/include"
+CORE_LIBS="$CORE_LIBS $ngx_addon_dir/leveldb-src/libleveldb.a -lsnappy"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/lg_leveldb.cpp"
+

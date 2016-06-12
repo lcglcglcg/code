@@ -1,0 +1,82 @@
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/head.phtml'); ?>
+
+<link href="/static/admin/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+<script charset="utf-8" src="/static/admin/swfupload/swfupload/swfupload.js"></script>
+<script charset="utf-8" src="/static/admin/swfupload/js/swfupload.queue.js"></script>
+<script charset="utf-8" src="/static/admin/swfupload/js/fileprogress.js"></script>
+<script charset="utf-8" src="/static/admin/swfupload/js/handlers.js"></script>
+
+<script type="text/javascript">
+    var swfu;
+
+    window.onload = function () {
+        var settings = {
+            flash_url: "/static/admin/swfupload/swfupload/swfupload.swf",
+            upload_url: "/admin/topicdata/batchAdd?tid=<?=$tid?>&sid=<?=$sid?>",
+            file_post_name : "news",
+            post_params: {"PHPSESSID": "<?php echo session_id(); ?>"},
+            file_size_limit: "100 MB",
+            file_types: "*.*",
+            file_types_description: "All Files",
+            file_upload_limit: 200, //配置上传个数
+            file_queue_limit: 0,
+            custom_settings: {
+                progressTarget: "fsUploadProgress",
+                cancelButtonId: "btnCancel"
+            },
+            debug: false,
+            // Button settings
+            button_image_url: "/static/admin/swfupload/images/TestImageNoText_65x29.png",
+            button_width: "65",
+            button_height: "29",
+            button_placeholder_id: "spanButtonPlaceHolder",
+            button_text: '<span class="theFont">浏览</span>',
+            button_text_style: ".theFont { font-size: 16; }",
+            button_text_left_padding: 12,
+            button_text_top_padding: 3,
+            file_queued_handler: fileQueued,
+            file_queue_error_handler: fileQueueError,
+            file_dialog_complete_handler: fileDialogComplete,
+            upload_start_handler: uploadStart,
+            upload_progress_handler: uploadProgress,
+            upload_error_handler: uploadError,
+            upload_success_handler: uploadSuccess,
+            upload_complete_handler: uploadComplete,
+            queue_complete_handler: queueComplete
+        };
+
+        swfu = new SWFUpload(settings);
+    };
+</script>
+
+
+<div class="navbar content-navbar navbar-default navbar-xs" data-toggle="breakpoint"
+     data-class-xs="navbar content-navbar navbar-inverse navbar-xs"
+     data-class-sm="navbar content-navbar navbar-default navbar-xs">
+    <div class="navbar-header">
+        <a class="navbar-brand" data-toggle="collapse" data-target="#top-nav .navbar-collapse">
+            <i class="icon-home" style='position:relative;top:4px;'></i> 当前位置：文章批量添加
+        </a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <div class="navbar-btn navbar-right hide-xs">
+            <a title="添加用户"  href="/admin/document/index" class="btn btn-primary">
+                <i class="icon-plus icon-white"></i> <span>返回列表</span>
+            </a>
+        </div>
+    </div>
+</div> 
+
+
+<form class="exform rended" enctype="multipart/form-data" action="" method="post" id="version_form">
+    <div class="fieldset flash" id="fsUploadProgress">
+        <span class="legend">快速上传</span>
+    </div>
+    <div id="divStatus">0 个文件已上传</div>
+    <div>
+        <span id="spanButtonPlaceHolder"></span>
+        <input id="btnCancel" type="button" value="取消所有上传" onclick="swfu.cancelQueue();" disabled="disabled" style="margin-left: 2px; font-size: 8pt; height: 29px;" />
+    </div>
+</form>
+
+<?php Yaf_Loader::import(PATH_APP . '/modules/Admin/views/foot.phtml'); ?>
